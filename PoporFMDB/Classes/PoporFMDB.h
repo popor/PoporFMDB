@@ -8,7 +8,7 @@
 
 #import "PoporFMDBBase.h"
 
-#define PdbShare [PoporFMDB share]
+#define PDBShare [PoporFMDB share]
 
 #define PDB      PoporFMDB
 

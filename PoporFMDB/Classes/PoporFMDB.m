@@ -15,7 +15,7 @@
 
 // 第一步需要注入数据库class
 + (void)injectTableArray:(NSArray<Class> *)tableArray {
-    PoporFMDB * tool = PdbShare;
+    PoporFMDB * tool = PDBShare;
     if (!tool.classDic) {
         NSMutableDictionary * classDic = [NSMutableDictionary new];
         [classDic setObject:[AppInfoEntity class] forKey:NSStringFromClass([AppInfoEntity class])];

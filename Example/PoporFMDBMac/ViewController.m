@@ -8,14 +8,14 @@
 
 #import "ViewController.h"
 
-#import <PoporFMDB/DBBaseTool.h>
+#import <PoporFMDB/PoporFMDB.h>
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    PoporFMDB * tool = [PoporFMDB shadow];
+    PoporFMDB * tool = [PoporFMDB share];
     
     
 }

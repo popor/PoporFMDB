@@ -16,22 +16,13 @@
   },
   "requires_arc": true,
   "ios": {
-    "frameworks": [
-      "Foundation",
-      "UIKit"
-    ]
+    "frameworks": "Foundation"
   },
   "tvos": {
-    "frameworks": [
-      "Foundation",
-      "UIKit"
-    ]
+    "frameworks": "Foundation"
   },
   "osx": {
-    "frameworks": [
-      "Foundation",
-      "AppKit"
-    ]
+    "frameworks": "Foundation"
   },
   "platforms": {
     "ios": "8.0",

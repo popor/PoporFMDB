@@ -17,18 +17,19 @@
 		18DD0867E3A31254F3FC5047047088A4 /* NSString+format.m in Sources */ = {isa = PBXBuildFile; fileRef = 58089670C04B9D99715D78B47FDF218E /* NSString+format.m */; };
 		1A872E8BD684A3F2C8CADACB32A34BDC /* FMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FFDD690F71A857071000609016BA47 /* FMDB-macOS-dummy.m */; };
 		1ABEF5692BFE84231A2B2DA6739EA54C /* PoporFoundation-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2450EB1D1A9318D545CD246D4C9D8EB /* PoporFoundation-iOS-dummy.m */; };
+		207219E5A05483EA0062B4F537E0CEB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCD6F8A315A9B1C37E1A8F4BD45E41 /* Cocoa.framework */; };
 		20A58D0929365B42889720B155969712 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ACAB5E8C3415E9F1A100C17003BAF4 /* PoporFMDB.m */; };
 		20F7A59088AD1F2F34626E26B92E8382 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F664EF67E5209538DC9A417D7C4AF0B /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21E6DDE0BEC45211B45FB541C50A9D97 /* PoporFMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71069F17ED22D3D34DA0A0BE5D653CB2 /* PoporFMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2472633A8EE11BB3F9D5BA1CACD7CA27 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F664EF67E5209538DC9A417D7C4AF0B /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27CE725558148B804178A18157B1F033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
 		292E0320A854D35BA243B1CC864CAA79 /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 861514F2EFC71CF585AA85662A2A368B /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF458FD14113466303F6098A241C127 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0205E5C7CA2875D0D507CCD1B3AB7 /* FMDB.framework */; };
 		2F167E7C5D3D1AC79B4401D86D1D180B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD146A067A0EA2870C2871448AA47D1 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		30295C0E8846D401536F93EB6CB2ABA9 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = E30883FE632EAE10ECB8A8207AB63C1F /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3306FDBC81EAA0650A69EAAC3CFAB94A /* NSString+IDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D8196B8C3AA1079064EFF6D26534B69 /* NSString+IDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3313F07FABB66E1452490ED58CEFDBB9 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 55709E57803536B13F06F1F6F32EA250 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36BB6A022C47F1A117BFF972A6B243B2 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5100FFAED10519F3257A0C7E18A049B /* PoporFoundation.framework */; };
 		3947E51EF90165EC2F5CEB88C12E1B44 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32B79579CF80FAC243C44F145C808C /* NSString+MD5.m */; };
-		396D44127E0AC829D4E5F938C1A9FF84 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5100FFAED10519F3257A0C7E18A049B /* PoporFoundation.framework */; };
 		39C0DE3A9B6E82AA178FDF917FB6E2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
 		3C53DE710D12757250D3E78A36A53FE5 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 49882D42FAFF3A581154603C7998D731 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DFD4043962773117EFB291605EF4E1C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D865561387A54AD7094B9F55B68851D4 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -37,16 +38,12 @@
 		42F60A334C9CE7352913933D33708B83 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F771C918A0ADDEE7706324D813B96 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		432B4258EE039C14CC68B857154C755F /* FMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B324AB9115CE561F3692FA3CD40A8F /* FMDB-iOS-dummy.m */; };
 		4982D782FA811335CE42C5E431D0E15B /* PoporFoundation-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC017AB70888D9003A88A6D10DB7 /* PoporFoundation-macOS-dummy.m */; };
-		49CBBEE76AFC8ADFD2D88E39A7F02D39 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0205E5C7CA2875D0D507CCD1B3AB7 /* FMDB.framework */; };
 		519FA1BADB6C75E3597E67A67CD18160 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ABF9989D7F396BABBF74C8CF47FCC0 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51C23A4F6FA08A83816CC1081AB3D9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE4AE4B61F8303E217369AE38A8C4F3 /* Foundation.framework */; };
 		51DF7A71D87D02A9D0A4680D37C2F222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
 		53CD58400EAB0CD1854F4D9CE001F799 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 55709E57803536B13F06F1F6F32EA250 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B370410CA278ABEEE4816FF673FEC7D /* NSString+format.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2BCADA308084E9CD861AA46EAE724D /* NSString+format.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B56AC75E1EC0D5868A8A26703D7444C /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0205E5C7CA2875D0D507CCD1B3AB7 /* FMDB.framework */; };
 		5DD678775AFBA6B0076BD2E511CD1331 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF024A5768DEACE3DA1BEB76AD1BFD2 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5FB3C8FA2706308340F18F9BEB008D75 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF024A5768DEACE3DA1BEB76AD1BFD2 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		601F1FDE1307C86E62C3DB5166AAF583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
 		63E66E7947B0AB14074426D6E219A609 /* Pods-PoporFMDBMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3794D3D317095270AF6F5041A00F52F9 /* Pods-PoporFMDBMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64BDD9FFB63A08EF8373FA189622B410 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ABF9989D7F396BABBF74C8CF47FCC0 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65885B49C6C1FDA6CA5347926109069A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F771C918A0ADDEE7706324D813B96 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -58,6 +55,7 @@
 		6D2DE759118610632EC1EB068EF763E5 /* Pods-PoporFMDB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144D9D91717531E8129BFD0D6328AFA /* Pods-PoporFMDB_Example-dummy.m */; };
 		6E9B629A9E101E661F476F2A0FB2CAC8 /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FEA6BFB1CE1C478E42378EF7691249 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EF8C2D2E877B84C6E2C8441790383A2 /* PoporFMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C182DAC5918B088D039F6FC4D04A9413 /* PoporFMDB-iOS-dummy.m */; };
+		73021E5B6D429353E7AF1AB090FCE969 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5100FFAED10519F3257A0C7E18A049B /* PoporFoundation.framework */; };
 		77B194177DA6F070709CA331E5F04DB6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCD6F8A315A9B1C37E1A8F4BD45E41 /* Cocoa.framework */; };
 		77B282124A06C6AF680245661B7ACEE3 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A8ED79C1D059935CE49A971D89BF4 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C86A5E90CE6C99BD91A480DA0B349C9 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ACAB5E8C3415E9F1A100C17003BAF4 /* PoporFMDB.m */; };
@@ -77,11 +75,11 @@
 		A607716C9F1058BDDEFBC9EDA18CC956 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B7A27FDC486127316BD23714AD6583 /* NSFMDB.m */; };
 		A8AF6E316C6520D4F9FBBB3F5AB1500C /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 591723F05BD2D1B7C579A50EEFAF7AA3 /* NSString+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8E838C946D76C307CB8DCD7C1932307 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCD6F8A315A9B1C37E1A8F4BD45E41 /* Cocoa.framework */; };
-		AAF1A58851DB3CC36A0A416B0B33D5FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCD6F8A315A9B1C37E1A8F4BD45E41 /* Cocoa.framework */; };
 		B2A2C30C6417CB3B78265C8BD564D66B /* NSString+IDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 812C3E4F2975944E313C3CAF62EE2EEF /* NSString+IDCard.m */; };
 		B3E93FF6B50A1422C4A15779E1BDAD10 /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 591723F05BD2D1B7C579A50EEFAF7AA3 /* NSString+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB04E9835B7DAE8309D120720B4283DF /* PoporFoundation-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0260866ADC32EA0A1EEFE1D407D486 /* PoporFoundation-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB225A97EF6B631CF65E09878DE75A85 /* NSString+email.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D91872B6C756FE59039C25B4ACF456C /* NSString+email.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF7C3D97979CE08DC704F4A38958F0FA /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5100FFAED10519F3257A0C7E18A049B /* PoporFoundation.framework */; };
 		BF9F96CA684C6408166D0B91E32E6ABE /* NSString+Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A765AF76F4AB3F985B733AE8952DC92 /* NSString+Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0242B5F6A75AE01D7718B31C22425A1 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 47381B1875950ABAE124E737CAD213F3 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0C0C497FB6224814C07D8A332D6DAE9 /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FEA6BFB1CE1C478E42378EF7691249 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,13 +96,13 @@
 		E299729FAE848F6A370C1599A14F195A /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF496CC7587247967373B22A3AB969 /* NSString+Size.m */; };
 		E385A9C7DDE923525F6F842DA4631AE6 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 49882D42FAFF3A581154603C7998D731 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5274825955269AB2067D8AA77BCBD36 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642C2A74E2557267A13266E47B0A3A5 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E5AA2FF6BEE38A513912B76AC9B9E959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE4AE4B61F8303E217369AE38A8C4F3 /* Foundation.framework */; };
 		E8074757ED29880163ADB69F443DCAC8 /* NSString+format.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2BCADA308084E9CD861AA46EAE724D /* NSString+format.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8E703C27783F70A2D4096B8E5DC44F6 /* PoporFoundation-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33353980FDBC1B062CE8EAF9DD2B2477 /* PoporFoundation-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F25C8AF15787E4210C0FFC74EEBBCA50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
-		F33F09546CF7410F91F21CFF584CA480 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AA48429279A3FD3C16EDEE305A3B6E /* AppKit.framework */; };
 		F5FD584972BEE5D34298EEA84E13C1A4 /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9464A7AD1CEC010EB6362C63FA8E174B /* NSString+Tool.m */; };
-		F80CA48787ADA64924E9A02F2AE5A89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03CE7DD395428D064BAC73848704DA2 /* UIKit.framework */; };
 		FE2FA3D443B6E33348EEC4B916F6C757 /* PoporFMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F29E3161CEC36974AE8A0A7A83FBB5D3 /* PoporFMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE63977130A9C1FAEBC438FDFBF3B8C9 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0205E5C7CA2875D0D507CCD1B3AB7 /* FMDB.framework */; };
 		FEF146EF43E4308B0636FFFB3DBF5659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9997413B267FCE1FB9144F015BC3F51 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -309,17 +307,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D3F7C81D900450125EA0A2F0A8CEE8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B56AC75E1EC0D5868A8A26703D7444C /* FMDB.framework in Frameworks */,
-				601F1FDE1307C86E62C3DB5166AAF583 /* Foundation.framework in Frameworks */,
-				36BB6A022C47F1A117BFF972A6B243B2 /* PoporFoundation.framework in Frameworks */,
-				F80CA48787ADA64924E9A02F2AE5A89E /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3906088AEC5F4E2C77D67917C897A339 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +350,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B22709218F18753A1D880A2E840493A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF458FD14113466303F6098A241C127 /* FMDB.framework in Frameworks */,
+				27CE725558148B804178A18157B1F033 /* Foundation.framework in Frameworks */,
+				BF7C3D97979CE08DC704F4A38958F0FA /* PoporFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B51E7193D800B6694AF390C736E10311 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,15 +376,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCF46C2D809896EECF4FBD8445CD876E /* Frameworks */ = {
+		EE1A642C57AB03FDF2F71BF701B11D53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33F09546CF7410F91F21CFF584CA480 /* AppKit.framework in Frameworks */,
-				AAF1A58851DB3CC36A0A416B0B33D5FE /* Cocoa.framework in Frameworks */,
-				49CBBEE76AFC8ADFD2D88E39A7F02D39 /* FMDB.framework in Frameworks */,
-				51C23A4F6FA08A83816CC1081AB3D9A8 /* Foundation.framework in Frameworks */,
-				396D44127E0AC829D4E5F938C1A9FF84 /* PoporFoundation.framework in Frameworks */,
+				207219E5A05483EA0062B4F537E0CEB8 /* Cocoa.framework in Frameworks */,
+				FE63977130A9C1FAEBC438FDFBF3B8C9 /* FMDB.framework in Frameworks */,
+				E5AA2FF6BEE38A513912B76AC9B9E959 /* Foundation.framework in Frameworks */,
+				73021E5B6D429353E7AF1AB090FCE969 /* PoporFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,7 +844,7 @@
 			buildConfigurationList = 6F2A020ED83F9D543E3928581A3C60D5 /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */;
 			buildPhases = (
 				30B84CB7FDAB7AA2AE02C37D28A8778C /* Sources */,
-				2D3F7C81D900450125EA0A2F0A8CEE8E /* Frameworks */,
+				B22709218F18753A1D880A2E840493A6 /* Frameworks */,
 				ACF3183E27D14D351DBB458BAA9F237B /* Headers */,
 			);
 			buildRules = (
@@ -904,7 +900,7 @@
 			buildConfigurationList = 315E2EF2012DE19AA80705B1CCFF4F3B /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */;
 			buildPhases = (
 				8B8E22941A4231A3FD587F75A2A00FD9 /* Sources */,
-				BCF46C2D809896EECF4FBD8445CD876E /* Frameworks */,
+				EE1A642C57AB03FDF2F71BF701B11D53 /* Frameworks */,
 				62125195B22648ED292614ED97D9137C /* Headers */,
 			);
 			buildRules = (

@@ -1,0 +1,6 @@
+framework module PoporFMDB {
+  umbrella header "PoporFMDB-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

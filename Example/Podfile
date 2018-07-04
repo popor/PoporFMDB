@@ -1,0 +1,16 @@
+use_frameworks!
+
+target 'PoporFMDB_Example' do
+  pod 'PoporFMDB', :path => '../'
+
+  target 'PoporFMDB_Tests' do
+    inherit! :search_paths
+
+  end
+  
+end
+
+target 'PoporFMDBMac' do
+    pod 'PoporFMDB', :path => '../'
+
+end

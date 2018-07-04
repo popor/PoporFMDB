@@ -214,31 +214,15 @@
     return strCount / [searchString length];
 }
 
-
-#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
-- (UIColor *)toColor {
+- (COLOR_CLASS *)toColor {
     if (self.length == 6) {
         int red   = (int)strtoul([[self substringWithRange:(NSRange){0, 2}] UTF8String], 0, 16);
         int green = (int)strtoul([[self substringWithRange:(NSRange){2, 2}] UTF8String], 0, 16);
         int blue  = (int)strtoul([[self substringWithRange:(NSRange){4, 2}] UTF8String], 0, 16);
-        return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1];
+        return [COLOR_CLASS colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1];
     }else{
-        return [UIColor clearColor];
+        return [COLOR_CLASS clearColor];
     }
 }
-
-#elif TARGET_OS_MAC
-- (NSColor *)toColor {
-    if (self.length == 6) {
-        int red   = (int)strtoul([[self substringWithRange:(NSRange){0, 2}] UTF8String], 0, 16);
-        int green = (int)strtoul([[self substringWithRange:(NSRange){2, 2}] UTF8String], 0, 16);
-        int blue  = (int)strtoul([[self substringWithRange:(NSRange){4, 2}] UTF8String], 0, 16);
-        return [NSColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1];
-    }else{
-        return [NSColor clearColor];
-    }
-}
-
-#endif
 
 @end

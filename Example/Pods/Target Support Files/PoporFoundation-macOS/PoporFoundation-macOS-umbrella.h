@@ -16,6 +16,7 @@
 #import "NSString+MD5.h"
 #import "NSString+Size.h"
 #import "NSString+Tool.h"
+#import "PrefixOs.h"
 
 FOUNDATION_EXPORT double PoporFoundationVersionNumber;
 FOUNDATION_EXPORT const unsigned char PoporFoundationVersionString[];

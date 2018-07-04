@@ -8,13 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
-#import <UIKit/UIKit.h>
-
-#elif TARGET_OS_MAC
-#import <AppKit/AppKit.h>
-
-#endif
+#import "PrefixOs.h"
 
 @interface NSString (Tool)
 
@@ -51,12 +45,6 @@
 
 - (NSInteger)countOccurencesOfString:(NSString*)searchString;
 
-
-#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
-- (UIColor *)toColor;
-
-#elif TARGET_OS_MAC
-- (NSColor *)toColor;
-#endif
+- (COLOR_CLASS *)toColor;
 
 @end

@@ -405,7 +405,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB-macOS/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFMDB-macOS/PoporFMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFoundation-macOS/PoporFoundation.framework",
@@ -418,7 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BDDD002BD1BFCD0EFBA2969 /* [CP] Check Pods Manifest.lock */ = {
@@ -445,7 +445,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB-iOS/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFMDB-iOS/PoporFMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFoundation-iOS/PoporFoundation.framework",
@@ -458,7 +458,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90B3F3D96C3ED380C181EB04 /* [CP] Check Pods Manifest.lock */ = {

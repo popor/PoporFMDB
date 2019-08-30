@@ -1,17 +1,17 @@
 //
-//  NSString+IDCard.m
-//  linRunShengPi
+//  NSString+pIDCard.m
+//  PoporFoundation
 //
 //  Created by popor on 2018/1/5.
 //  Copyright © 2018年 popor. All rights reserved.
 //
 
-#import "NSString+IDCard.h"
+#import "NSString+pIDCard.h"
 
 #define IDCardNoCheckOriginArray @[@"7",@"9",@"10",@"5",@"8",@"4",@"2",@"1",@"6",@"3",@"7",@"9",@"10",@"5",@"8",@"4",@"2"]
 #define IDCardNoCheckResultArray @[@"1", @"0", @"X", @"9", @"8", @"7", @"6", @"5", @"4", @"3", @"2"]
 
-@implementation NSString (IDCard)
+@implementation NSString (pIDCard)
 
 - (BOOL)isChinaIdCardNoLength {
     if (self.length == 15 || self.length == 18) {

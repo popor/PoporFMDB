@@ -8,7 +8,7 @@
 
 #import "NSFMDB.h"
 #import <objc/runtime.h>
-#import <PoporFoundation/NSString+Tool.h>
+#import <PoporFoundation/NSString+pTool.h>
 
 @implementation NSFMDB
 
@@ -113,8 +113,8 @@
         // Tq: NSIntger(64位)
         if ([propAttributesString hasPrefix:@"T@\"NSString\""]
             || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
-            valueString=[NSString stringWithFormat:@"%@",value];
-            valueString=[NSString replaceString:valueString withREG:@"'" withNewString:@"''"];
+            valueString = [NSString stringWithFormat:@"%@",value];
+            valueString = [valueString replaceWithREG:@"'" newString:@"''"];
         }
         if ([propAttributesString hasPrefix:@"Tc"]
             || [propAttributesString hasPrefix:@"Ti"]
@@ -199,8 +199,8 @@
         // Tq: NSIntger(64位)
         if ([propAttributesString hasPrefix:@"T@\"NSString\""]
             || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
-            valueString=[NSString stringWithFormat:@"%@",value];
-            valueString=[NSString replaceString:valueString withREG:@"'" withNewString:@"''"];
+            valueString = [NSString stringWithFormat:@"%@",value];
+            valueString = [valueString replaceWithREG:@"'" newString:@"''"];
         }
         if ([propAttributesString hasPrefix:@"Tc"]
             || [propAttributesString hasPrefix:@"Ti"]

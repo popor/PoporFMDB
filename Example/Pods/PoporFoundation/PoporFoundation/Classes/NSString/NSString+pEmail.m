@@ -1,12 +1,12 @@
 //
-//  NSString+email.m
-//  WanziTG
+//  NSString+pEmail.m
+//  PoporFoundation
 //
 //  Created by popor on 2017/1/9.
 //  Copyright © 2017年 popor. All rights reserved.
 //
 
-#import "NSString+email.h"
+#import "NSString+pEmail.h"
 
 // ---- 原因https://blog.csdn.net/wxs0124/article/details/50148873
 //自定义的打印日志宏 如：
@@ -15,17 +15,16 @@
 //
 //解决办法：
 //＃import ”宏定义所在的文件“
-#import "NSString+Tool.h"
+#import "NSString+pTool.h"
 
-@implementation NSString (email)
+@implementation NSString (pEmail)
 
 #pragma mark - 判断邮箱格式是否正确
-+ (BOOL)isValidateEmail:(NSString *)email
-{
-    if (email.length == 0) {
+- (BOOL)isValidateEmail {
+    if (self.length == 0) {
         return YES;
     }else{
-        email = [NSString replaceString:email withREG:EmailRegStr withNewString:@""];
+        NSString * email = [self replaceWithREG:EmailRegStr newString:@""];
         if ([email isEqualToString:@""]) {
             return YES;
         }else{

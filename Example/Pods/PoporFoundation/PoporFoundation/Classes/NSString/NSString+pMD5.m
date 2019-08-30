@@ -1,21 +1,23 @@
 //
-//  NSString+MD5.m
-//  linRunShengPi
+//  NSString+pMD5.m
+//  PoporFoundation
 //
 //  Created by popor on 2017/12/26.
 //  Copyright © 2017年 popor. All rights reserved.
 //
 
-#import "NSString+MD5.h"
+#import "NSString+pMD5.h"
 #import <CommonCrypto/CommonDigest.h>
 
 #define FileHashDefaultChunkSizeForReadingData 1024*8// 8K
 #define CC_MD5_DIGEST_LENGTH                   16
 
-@implementation NSString (MD5)
+@implementation NSString (pMD5)
 
-+ (NSString*)getMD5WithString:(NSString *)string
-{
++ (NSString*)getMD5WithString:(NSString * _Nullable)string {
+    if (!string) {
+        return nil;
+    }
     const char* original_str=[string UTF8String];
     unsigned char digist[CC_MD5_DIGEST_LENGTH]; //CC_MD5_DIGEST_LENGTH = 16
     CC_MD5(original_str, (uint)strlen(original_str), digist);
@@ -26,7 +28,10 @@
     return [outPutStr lowercaseString];
 }
 
-+ (NSString*)getMD5WithData:(NSData *)data{
++ (NSString*)getMD5WithData:(NSData * _Nullable)data {
+    if (!data) {
+        return nil;
+    }
     const char* original_str = (const char *)[data bytes];
     unsigned char digist[CC_MD5_DIGEST_LENGTH]; //CC_MD5_DIGEST_LENGTH = 16
     CC_MD5(original_str, (uint)strlen(original_str), digist);
@@ -48,8 +53,10 @@
     
 }
 
-+(NSString*)getFileMD5WithPath:(NSString*)path
-{
++ (NSString*)getFileMD5WithPath:(NSString * _Nullable)path {
+    if (!path) {
+        return nil;
+    }
     return (__bridge_transfer NSString *)FileMD5HashCreateWithPath((__bridge CFStringRef)path,FileHashDefaultChunkSizeForReadingData);
 }
 
@@ -132,8 +139,7 @@ done:
     return result;
 }
 
-- (NSString *)sha1
-{
+- (NSString *)sha1 {
     // see http://www.makebetterthings.com/iphone/how-to-get-md5-and-sha1-in-objective-c-ios-sdk/
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
@@ -153,8 +159,10 @@ done:
     return [NSString getMD5WithString:self];
 }
 
-+ (NSString *)encryptByMd5:(NSString *)str
-{
++ (NSString *)encryptByMd5:(NSString * _Nullable)str {
+    if (!str) {
+        return nil;
+    }
     const char *cStr = [str UTF8String];
     unsigned char result[16];
     

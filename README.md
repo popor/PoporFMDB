@@ -22,6 +22,10 @@ it, simply add the following line to your Podfile:
 pod 'PoporFMDB'
 ```
 
+1.02
+getCreateSQLS:with:
+该方法检测实体是否包含id,如果包含就不创建自增id INTEGER
+
 ## Author
 
 wangkq, 908891024@qq.com

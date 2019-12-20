@@ -1,6 +1,6 @@
 {
   "name": "PoporFMDB",
-  "version": "1.01",
+  "version": "1.02",
   "summary": "Init FMDB table; update db table column; simple sql tool;",
   "homepage": "https://github.com/popor/PoporFMDB",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/popor/PoporFMDB.git",
-    "tag": "1.01"
+    "tag": "1.02"
   },
   "requires_arc": true,
   "ios": {

@@ -16,16 +16,16 @@
  S:Statement
  只支持全额属性集
  */
-+ (NSString *)getCreateSQLS:(id)theClassEntity with:(NSString *)theTableName
++ (NSString *)getCreateSQLS:(NSObject *)theClassEntity with:(NSString *)theTableName
 {
-    NSMutableString * tempSQLS=[[NSMutableString alloc] init];
-    [tempSQLS appendString:@"CREATE TABLE "];// 开头
-    [tempSQLS appendString:theTableName];    // tableName// truncate
-    //NSLog(@"theTableName: %@", theTableName);
-    [tempSQLS appendString:@"(id INTEGER PRIMARY KEY AUTOINCREMENT "];// 自增ID
+    NSMutableString * sql_all      = [NSMutableString new];
+    NSMutableString * sql_property = [NSMutableString new];
+    NSString * idAutoIncrement     = @"id INTEGER PRIMARY KEY AUTOINCREMENT,";
+    
+    [sql_all appendFormat:@"CREATE TABLE %@ (", theTableName];// 开头
     
     unsigned propertyCount;
-    
+    BOOL isHasId = NO;
     objc_property_t *properties = class_copyPropertyList([theClassEntity class],&propertyCount);
     for(int i=0;i<propertyCount;i++){
         NSString * propNameString;
@@ -36,17 +36,21 @@
         const char *propName = property_getName(prop);
         propNameString =[NSString stringWithCString:propName encoding:NSASCIIStringEncoding];
         
+        // 如果entity包含id,则忽略
+        if ([propNameString isEqualToString:@"id"]) {
+            isHasId = YES;
+        }
         const char * propAttributes=property_getAttributes(prop);
         propAttributesString =[NSString stringWithCString:propAttributes encoding:NSASCIIStringEncoding];
         // 根据各个情况处理.
         if ([propAttributesString hasPrefix:@"T@\"NSString\""]
             || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
             // 字符类型
-            [tempSQLS appendString:[NSString stringWithFormat:@", %@ TEXT",propNameString]];
+            [sql_property appendString:[NSString stringWithFormat:@"%@ TEXT,",propNameString]];
         }
         if ([propAttributesString hasPrefix:@"Tf"]){
             // 字符类型
-            [tempSQLS appendString:[NSString stringWithFormat:@", %@ Float",propNameString]];
+            [sql_property appendString:[NSString stringWithFormat:@"%@ Float,",propNameString]];
         }
         if ([propAttributesString hasPrefix:@"Tc"]
             || [propAttributesString hasPrefix:@"TB"]
@@ -60,19 +64,21 @@
             // 新增
             // TB:BOOL(64位)
             // Tq: NSIntger(64位)
-            [tempSQLS appendString:[NSString stringWithFormat:@", %@ integer",propNameString]];
+            [sql_property appendString:[NSString stringWithFormat:@"%@ integer,",propNameString]];
         }
     } // end for.
     
-    [tempSQLS appendString:@")"];// 结尾.
-    NSString * sql=[NSString stringWithFormat:@"%@", tempSQLS];
-    tempSQLS=nil;
+    if (!isHasId) {
+        [sql_all appendString:idAutoIncrement];
+    }
+    [sql_all appendString:sql_property];
+    [sql_all setString:[sql_all substringToIndex:sql_all.length-1]];
+    [sql_all appendString:@")"];// 结尾.
     
     free(properties);
+    //NSLog(@"sql_all: %@", sql_all);
     
-    //NSLog(@"Sql = %@ \n",sql);
-    
-    return sql;
+    return sql_all;
 }
 
 // 只支持全额属性集
@@ -155,19 +161,17 @@
         [tempSQLS appendString:@"VALUES "];
         [tempSQLS appendString:parameterValues];
     }
-    NSString * sql=[NSString stringWithFormat:@"%@",tempSQLS];
-    tempSQLS=nil;
-    parameterIDs=nil;
-    parameterValues=nil;
+    parameterIDs    = nil;
+    parameterValues = nil;
     free(properties);
-    return sql;
+    return tempSQLS;
 }
 
-+ (NSString *)getInsertEmojSQLS:(id)theClassEntity 	with:(NSString *)theTableName{
++ (NSString *)getInsertEmojSQLS:(id)theClassEntity     with:(NSString *)theTableName{
     NSMutableString * tempSQLS=[[NSMutableString alloc] init];
     
-    NSMutableString * parameterIDs=[[NSMutableString alloc] init];
-    NSMutableString * parameterValues=[[NSMutableString alloc] init];
+    NSMutableString * parameterIDs    = [NSMutableString new];
+    NSMutableString * parameterValues = [NSMutableString new];
     
     [tempSQLS appendString:@"INSERT INTO "];// 开头
     [tempSQLS appendString:theTableName];    // tableName
@@ -241,12 +245,10 @@
         [tempSQLS appendString:@"VALUES "];
         [tempSQLS appendString:parameterValues];
     }
-    NSString * sql=[NSString stringWithFormat:@"%@",tempSQLS];
-    tempSQLS=nil;
-    parameterIDs=nil;
-    parameterValues=nil;
+    parameterIDs    = nil;
+    parameterValues = nil;
     free(properties);
-    return sql;
+    return tempSQLS;
 }
 
 

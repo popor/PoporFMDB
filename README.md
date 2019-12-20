@@ -26,6 +26,9 @@ pod 'PoporFMDB'
 getCreateSQLS:with:
 该方法检测实体是否包含id,如果包含就不创建自增id INTEGER
 
+1.03
+getCreateSQLS getInsertSQLS 针对有id类型的sql优化,
+
 ## Author
 
 wangkq, 908891024@qq.com

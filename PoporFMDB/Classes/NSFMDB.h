@@ -10,16 +10,29 @@
 
 #import <FMDB/FMDatabase.h>
 
-#define NeedDrop	@"NeedDrop"
-#define NeedAdd		@"NeedAdd"
+#define NeedDrop @"NeedDrop"
+#define NeedAdd  @"NeedAdd"
 
 @interface NSFMDB : NSObject
 
-+ (NSString *)getCreateSQLS:(id)theClassEntity 	with:(NSString *)theTableName;
-+ (NSString *)getInsertSQLS:(id)theClassEntity 	with:(NSString *)theTableName;
-+ (NSString *)getInsertEmojSQLS:(id)theClassEntity 	with:(NSString *)theTableName;
+/**
+ 假如theClassEntity 包含 id 且不为string, 则默认为 INTEGER PRIMARY KEY AUTOINCREMENT
+ */
++ (NSString *)getCreateSQLS:(id)theClassEntity with:(NSString *)theTableName;
+
+/**
+ 假如theClassEntity 包含 id 且不为string, 则忽略该项, 让其执行自增长
+*/
++ (NSString *)getInsertSQLS:(id)theClassEntity with:(NSString *)theTableName;
+
+/**
+ 暂且不考虑 emoj 表情
+ */
+//+ (NSString *)getInsertEmojSQLS:(id)theClassEntity with:(NSString *)theTableName;
+
 + (void)setFullEntity:(id)theClassEntity withRS:(FMResultSet *)rs;
 + (NSMutableDictionary *)getPropertyArray:(id)theClassEntity;
 + (NSString *)getPropertyAttributesString:(id)theClassEntity with:(NSString *)propertyName;
 
 @end
+

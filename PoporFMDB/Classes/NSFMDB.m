@@ -21,6 +21,7 @@
     NSMutableString * sql_all      = [NSMutableString new];
     NSMutableString * sql_property = [NSMutableString new];
     NSString * idAutoIncrement     = @"id INTEGER PRIMARY KEY AUTOINCREMENT,";
+    NSString * idValue             = @"id";
     
     [sql_all appendFormat:@"CREATE TABLE %@ (", theTableName];// 开头
     
@@ -36,36 +37,40 @@
         const char *propName = property_getName(prop);
         propNameString =[NSString stringWithCString:propName encoding:NSASCIIStringEncoding];
         
-        // 如果entity包含id,则忽略
-        if ([propNameString isEqualToString:@"id"]) {
-            isHasId = YES;
-        }
         const char * propAttributes=property_getAttributes(prop);
         propAttributesString =[NSString stringWithCString:propAttributes encoding:NSASCIIStringEncoding];
-        // 根据各个情况处理.
-        if ([propAttributesString hasPrefix:@"T@\"NSString\""]
-            || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
-            // 字符类型
-            [sql_property appendString:[NSString stringWithFormat:@"%@ TEXT,",propNameString]];
-        }
-        if ([propAttributesString hasPrefix:@"Tf"]){
-            // 字符类型
-            [sql_property appendString:[NSString stringWithFormat:@"%@ Float,",propNameString]];
-        }
-        if ([propAttributesString hasPrefix:@"Tc"]
-            || [propAttributesString hasPrefix:@"TB"]
-            || [propAttributesString hasPrefix:@"Ti"]
-            || [propAttributesString hasPrefix:@"Tq"]
+        
+        // 根据各个情况处理, 如果entity包含id,则忽略
+        if ([propNameString isEqualToString:idValue]) {
+            isHasId = YES;
             
-            || [propAttributesString hasPrefix:@"T@\"NSNumber\""]){
-            // int类型
-            // Tc: BOOL;
-            // Ti: int;
-            // 新增
-            // TB:BOOL(64位)
-            // Tq: NSIntger(64位)
-            [sql_property appendString:[NSString stringWithFormat:@"%@ integer,",propNameString]];
+            [sql_property appendString:idAutoIncrement];
+        } else {
+            if ([propAttributesString hasPrefix:@"T@\"NSString\""]
+                || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
+                // 字符类型
+                [sql_property appendString:[NSString stringWithFormat:@"%@ TEXT,",propNameString]];
+            }
+            else if ([propAttributesString hasPrefix:@"Tf"]){
+                // 字符类型
+                [sql_property appendString:[NSString stringWithFormat:@"%@ Float,",propNameString]];
+            }
+            else if ([propAttributesString hasPrefix:@"Tc"]
+                || [propAttributesString hasPrefix:@"TB"]
+                || [propAttributesString hasPrefix:@"Ti"]
+                || [propAttributesString hasPrefix:@"Tq"]
+                
+                || [propAttributesString hasPrefix:@"T@\"NSNumber\""]){
+                // int类型
+                // Tc: BOOL;
+                // Ti: int;
+                // 新增
+                // TB:BOOL(64位)
+                // Tq: NSIntger(64位)
+                [sql_property appendString:[NSString stringWithFormat:@"%@ integer,",propNameString]];
+            }
         }
+        
     } // end for.
     
     if (!isHasId) {
@@ -84,10 +89,10 @@
 // 只支持全额属性集
 + (NSString *)getInsertSQLS:(id)theClassEntity with:(NSString *)theTableName
 {
-    NSMutableString * tempSQLS=[[NSMutableString alloc] init];
-    
-    NSMutableString * parameterIDs=[[NSMutableString alloc] init];
-    NSMutableString * parameterValues=[[NSMutableString alloc] init];
+    NSMutableString * tempSQLS        =[NSMutableString new];
+    NSString        * idValue         = @"id";
+    NSMutableString * parameterIDs    =[NSMutableString new];
+    NSMutableString * parameterValues =[NSMutableString new];
     
     [tempSQLS appendString:@"INSERT INTO "];// 开头
     [tempSQLS appendString:theTableName];    // tableName
@@ -113,6 +118,13 @@
         id value = [theClassEntity valueForKey:propNameString];
         NSString * valueString;
         
+        // 假如为 id, 且为非 str 类型,则忽略
+        if ([propNameString isEqualToString:idValue]) {
+            if (![propAttributesString hasPrefix:@"T@\"NSString\""] &&
+                ![propAttributesString hasPrefix:@"T@\"NSMutableString\""] ) {
+                continue;
+            }
+        }
         // 根据各个情况处理.
         // 新增
         // TB:BOOL(64位)
@@ -122,38 +134,41 @@
             valueString = [NSString stringWithFormat:@"%@",value];
             valueString = [valueString replaceWithREG:@"'" newString:@"''"];
         }
-        if ([propAttributesString hasPrefix:@"Tc"]
+        else if ([propAttributesString hasPrefix:@"Tc"]
             || [propAttributesString hasPrefix:@"Ti"]
             || [propAttributesString hasPrefix:@"TB"]
             || [propAttributesString hasPrefix:@"Tq"]
             ){
             valueString=[NSString stringWithFormat:@"%i",[value intValue]];
         }
-        if ([propAttributesString hasPrefix:@"Tf"]){
+        else if ([propAttributesString hasPrefix:@"Tf"]){
             valueString=[NSString stringWithFormat:@"%f",[value floatValue]];
         }
-        if ([propAttributesString hasPrefix:@"T@\"NSNumber\""]){
+        else if ([propAttributesString hasPrefix:@"T@\"NSNumber\""]){
             
             NSNumber * oneNumber=(NSNumber *)value;
             valueString=[NSString stringWithFormat:@"%i",[oneNumber intValue]];
         }
+        
         if (valueString==nil) {
             continue;
         }else {
             // 修改,加上单引号
             valueString=[NSString stringWithFormat:@"'%@'",valueString];
             // 赋值
-            if (i==0) {
-                [parameterIDs appendString:propNameString];
-                [parameterValues appendString:valueString];
-            }else {
-                [parameterIDs appendString:[NSString stringWithFormat:@", %@",propNameString]];
-                [parameterValues appendString:[NSString stringWithFormat:@", %@",valueString]];
-            }
+            [parameterIDs    appendString:[NSString stringWithFormat:@"%@,",propNameString]];
+            [parameterValues appendString:[NSString stringWithFormat:@"%@,",valueString]];
         }
     } // end for.
     {
         // 组装
+        if (parameterIDs.length > 1) {
+            [parameterIDs setString:[parameterIDs substringToIndex:parameterIDs.length-1]];
+        }
+        if (parameterValues.length > 1) {
+            [parameterValues setString:[parameterValues substringToIndex:parameterValues.length-1]];
+        }
+        
         [parameterIDs appendString:@")"];
         [parameterValues appendString:@")"];
         

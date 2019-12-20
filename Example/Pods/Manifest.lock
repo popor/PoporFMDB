@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - PoporFMDB (1.02):
+  - PoporFMDB (1.03):
     - FMDB
     - PoporFoundation/NSString
   - PoporFoundation/NSString (1.04):
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  PoporFMDB: d29f3a757d3522acb511f3f55dc067a4c16f277f
+  PoporFMDB: f7a81e6d6ecfff9c3f9f45a9ccbc03ec3ec56117
   PoporFoundation: f2d6a1484ed875024bcf5ab6fd404a0d7c485d10
 
 PODFILE CHECKSUM: ea9b2afa5c44ad4b9b37e7b071310f3c891a6533

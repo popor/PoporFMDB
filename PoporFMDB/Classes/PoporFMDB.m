@@ -41,25 +41,29 @@
 }
 
 #pragma mark - baseMethod
-+ (void)addEntity:(id)entity {
++ (BOOL)addEntity:(id)entity {
+    BOOL success = NO;
     if (!entity) {
-        return;
+        return success;
     }
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
     
-    [tool.db executeUpdate:[NSFMDB getInsertSQLS:entity with:NSStringFromClass([entity class])]];
+    success = [tool.db executeUpdate:[NSFMDB getInsertSQLS:entity with:NSStringFromClass([entity class])]];
     
     [tool end];
+    
+    return success;
 }
 
-+ (void)deleteEntity:(id)entity where:(NSString *)whereKey {
-    [self deleteEntity:entity where:whereKey equal:nil];
++ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey {
+    return [self deleteEntity:entity where:whereKey equal:nil];
 }
 
-+ (void)deleteEntity:(id)entity where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey equal:(id)whereValue {
+    BOOL success = NO;
     if (!entity || !whereKey) {
-        return;
+        return success;
     }
     
     NSString * tableName  = NSStringFromClass([entity class]);
@@ -67,17 +71,19 @@
         whereValue = [entity valueForKey:whereKey];
     }
     
-    [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
+    success = [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
+    return success;
 }
 
-+ (void)deleteClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)deleteClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue {
     NSString * tableName  = NSStringFromClass(class);
-    [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
+    return [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
 }
 
-+ (void)deleteTable:(NSString *)tableName where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)deleteTable:(NSString *)tableName where:(NSString *)whereKey equal:(id)whereValue {
+    BOOL success = NO;
     if (!tableName || !whereKey) {
-        return;
+        return success;
     }
     
     NSString * futureSQL = [NSString stringWithFormat:@"DELETE FROM %@ where %@ = ?;", tableName, whereKey];
@@ -88,19 +94,21 @@
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
     
-    [tool.db executeUpdate:futureSQL, whereValue];
+    success = [tool.db executeUpdate:futureSQL, whereValue];
     
     [tool end];
+    return success;
 }
 
 // !!!:目前没有非或者不需要wherekey的接口
-+ (void)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(id)whereKey {
-    [self updateEntity:entity key:key equal:value where:whereKey equal:nil];
++ (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(id)whereKey {
+    return [self updateEntity:entity key:key equal:value where:whereKey equal:nil];
 }
 
-+ (void)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
+    BOOL success = NO;
     if (!entity || !key || !whereKey) {
-        return;
+        return success;
     }
     
     [entity setValue:value forKey:key];
@@ -109,25 +117,27 @@
         whereValue = [entity valueForKey:whereKey];
     }
     
-    [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
+    return [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
 }
 
-+ (void)updateClass:(Class)class key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)updateClass:(Class)class key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
     NSString * tableName  = NSStringFromClass(class);
-    [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
+    return [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
 }
 
-+ (void)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
+    BOOL success = NO;
     if (!tableName || !key || !whereKey) {
-        return;
+        return success;
     }
     
     NSString * futureSQL = [NSString stringWithFormat:@"UPDATE %@ set %@ = ? where %@ = ?;", tableName, key, whereKey];
     
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
-    [tool.db executeUpdate:futureSQL, value, whereValue];
+    success = [tool.db executeUpdate:futureSQL, value, whereValue];
     [tool end];
+    return success;
 }
 
 + (NSMutableArray *)arrayClass:(Class)class {
@@ -143,6 +153,18 @@
 }
 
 + (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
+    return [self arrayClass:class where:whereKey equalSymbol:@"="    equal:whereValue orderBy:orderKey asc:asc];
+}
+
++ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue {
+    return [self arrayClass:class where:whereKey equalSymbol:@"like" equal:whereValue orderBy:nil asc:YES];
+}
+
++ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
+    return [self arrayClass:class where:whereKey equalSymbol:@"like" equal:whereValue orderBy:orderKey asc:asc];
+}
+
++ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
     if (!class) {
         return nil;
     }
@@ -156,7 +178,7 @@
     FMResultSet *rs;
     NSString * futureSQL;
     if (whereKey && !orderKey) {
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ = ?;", tableName, whereKey];
+        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ %@ ?;", tableName, whereKey, equalSymbol];
         rs = [tool.db executeQuery:futureSQL, whereValue];
         
     }else if(!whereKey && orderKey){
@@ -164,7 +186,7 @@
         rs = [tool.db executeQuery:futureSQL];
         
     } else if (whereKey && orderKey) {
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ = ? ORDER BY %@ %@;", tableName, whereKey, orderKey, ascValue];
+        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ %@ ? ORDER BY %@ %@;", tableName, whereKey, equalSymbol, orderKey, ascValue];
         rs = [tool.db executeQuery:futureSQL, whereValue];
         
     }else{

@@ -29,6 +29,9 @@ getCreateSQLS:with:
 1.03
 getCreateSQLS getInsertSQLS 针对有id类型的sql优化,
 
+1.04
+部分函数增加 返回执行结果
+
 ## Author
 
 wangkq, 908891024@qq.com

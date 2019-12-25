@@ -215,6 +215,12 @@
 }
 
 + (void)addPlistKey:(NSString *)key value:(NSString *)value {
+    
+    NSMutableArray * array = [PoporFMDB arrayClass:[AppInfoEntity class] where:@"key" equal:key];
+    if (array.count >= 1) {
+        [PoporFMDB deleteClass:[AppInfoEntity class] where:@"key" equal:key];
+    }
+    
     AppInfoEntity * entity = [AppInfoEntity new];
     entity.key   = key;
     entity.value = value;

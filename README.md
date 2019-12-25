@@ -32,6 +32,9 @@ getCreateSQLS getInsertSQLS 针对有id类型的sql优化,
 1.04
 部分函数增加 返回执行结果
 
+1.05
+addPlistKey 增加检查 key 是否重复
+
 ## Author
 
 wangkq, 908891024@qq.com

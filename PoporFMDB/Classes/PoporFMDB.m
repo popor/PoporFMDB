@@ -214,7 +214,7 @@
     }
 }
 
-+ (void)addPlistKey:(NSString *)key value:(NSString *)value {
++ (BOOL)addPlistKey:(NSString *)key value:(NSString *)value {
     
     NSMutableArray * array = [PoporFMDB arrayClass:[AppInfoEntity class] where:@"key" equal:key];
     if (array.count >= 1) {
@@ -224,14 +224,14 @@
     AppInfoEntity * entity = [AppInfoEntity new];
     entity.key   = key;
     entity.value = value;
-    [PoporFMDB addEntity:entity];
+    return [PoporFMDB addEntity:entity];
 }
 
-+ (void)updatePlistKey:(NSString *)key value:(NSString *)value {
++ (BOOL)updatePlistKey:(NSString *)key value:(NSString *)value {
     AppInfoEntity * entity = [AppInfoEntity new];
     entity.key   = key;
     entity.value = value;
-    [PoporFMDB updateEntity:entity key:@"value" equal:value where:@"key" equal:key];
+    return [PoporFMDB updateEntity:entity key:@"value" equal:value where:@"key" equal:key];
 }
 
 @end

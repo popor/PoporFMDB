@@ -44,8 +44,8 @@
 #pragma mark - 模仿plist数据
 
 + (NSString *)getPlistKey:(NSString *)key;
-+ (void)addPlistKey:(NSString *)key value:(NSString *)value;
-+ (void)updatePlistKey:(NSString *)key value:(NSString *)value;
++ (BOOL)addPlistKey:(NSString *)key value:(NSString *)value;
++ (BOOL)updatePlistKey:(NSString *)key value:(NSString *)value;
 
 
 

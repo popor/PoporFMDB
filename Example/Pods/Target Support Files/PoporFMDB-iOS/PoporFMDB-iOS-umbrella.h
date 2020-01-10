@@ -14,6 +14,7 @@
 #import "NSFMDB.h"
 #import "PoporFMDB.h"
 #import "PoporFMDBBase.h"
+#import "PoporFMDBPath.h"
 
 FOUNDATION_EXPORT double PoporFMDBVersionNumber;
 FOUNDATION_EXPORT const unsigned char PoporFMDBVersionString[];

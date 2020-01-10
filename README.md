@@ -35,6 +35,9 @@ getCreateSQLS getInsertSQLS 针对有id类型的sql优化,
 1.05
 addPlistKey 增加检查 key 是否重复
 
+1.07
+允许修改db path
+
 ## Author
 
 wangkq, 908891024@qq.com

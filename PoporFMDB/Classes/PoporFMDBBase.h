@@ -12,11 +12,10 @@
 #import <Foundation/Foundation.h>
 
 #import "NSFMDB.h"
+#import "PoporFMDBPath.h"
 
 @class FMDatabase;
 @class FMResultSet;
-
-#define VCDBFileName @"AppDB.db"
 
 /**
  *这是一个只读VCTable的数据库dao.
@@ -24,10 +23,6 @@
 @interface PoporFMDBBase : NSObject
 
 @property (nonatomic, strong) FMDatabase * db;
-@property (nonatomic, strong) NSString   * DBPath;
-@property (nonatomic, strong) NSString   * cachesPath;
-@property (nonatomic, strong) NSString   * projectPath;
-
 @property (nonatomic, strong) NSMutableDictionary * classDic;
 
 - (void)start;

@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+    [PoporFMDBPath share];// 可以修改路径
+    
+    [PoporFMDB share];
     [PoporFMDB injectTableArray:@[[TestEntity class]]];
     // 1. add
     //    {

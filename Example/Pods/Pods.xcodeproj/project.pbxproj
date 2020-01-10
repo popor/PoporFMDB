@@ -7,114 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0069E9C0B768EC2BA36ED6370C8E3823 /* NSString+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF94CDC210CF7920B802F6BA5DDE124 /* NSString+pSize.m */; };
-		01E2F82717DFBBD14738A80FE4F1B588 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
-		020D17463E895389499A59DC4D252484 /* NSString+pIDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F05D9F2FCE11974135C6593FD37EAB9 /* NSString+pIDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0532F1A82FB754751515ADC135104B95 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4F48281CE2001D218AB9CA5BFEFE69 /* PoporFoundation.framework */; };
-		0A9D55DD642ED5363E63E3829E37D286 /* Os+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCE0958D7678C9DFFC842272C97944C /* Os+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		170F0964D9F41152EACCC5D593BF4378 /* NSString+pMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 836974AEE001EE8AA1638F4FDE3118A6 /* NSString+pMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		186B023E0D3C8D16FE6EC8146DC83A49 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CD4A2C604DBBE21F3ED7239272478 /* PoporFMDB.m */; };
-		1FAAFF2A6680D608DDB5644F815188D2 /* NSString+pIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DC0D3FD7A698A530E2268CB3404025 /* NSString+pIDCard.m */; };
-		22819A95ACF1323E390DDD99AB131F3B /* PoporFoundation-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E79EC43696648CACF8F729FDFE6CBF /* PoporFoundation-iOS-dummy.m */; };
-		22AF59676D991ADF71ABAC8E1F47B38C /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 434BF162C3168AE0C658146F5E156928 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2562A5DDC844C511DAE8D3670C6097A5 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4F48281CE2001D218AB9CA5BFEFE69 /* PoporFoundation.framework */; };
-		257F6EB9C7A9CC60F1971A755B7B4304 /* PoporFMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A58F5693DC9BEFE2B1427BB243C4745 /* PoporFMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		262B9E7E69081BCF3B472478C7B5A162 /* NSString+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EDFE4E13BC828DBDB1D3885B689F1E /* NSString+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2644BFA60648EF017480A26E33437F5C /* NSString+pEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A1B82396A7C791ADE5614105A5DE3 /* NSString+pEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		286F9BA5216728DA1BE3498529B77FDF /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DB504FA48126A4AFE33D88D2B8BBA6 /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B059DE766D883B4DDD0F201327B2ABB /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9E43EB4FEDF40B71975A13ACCFEC7 /* NSFMDB.m */; };
-		308198206A2B06186293B545047D6C55 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F384FA0FCBF221EE72D488C4BC35969 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30AA06F1B420D671F141DAD229177E09 /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DB504FA48126A4AFE33D88D2B8BBA6 /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30F3A3DD7235831C9F25A2328B2F6DEC /* NSString+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EDFE4E13BC828DBDB1D3885B689F1E /* NSString+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320641864C533AFF1EED510A20397FDB /* NSString+pAtt.m in Sources */ = {isa = PBXBuildFile; fileRef = F14FD1901972B44C752EDAEFDA2B3486 /* NSString+pAtt.m */; };
-		336BF0A6E535325C34E23AD5D0A6046C /* NSString+pAtt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1E3380A38F0ECD154E305A17D2E1AC /* NSString+pAtt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		361DB4B61C0DBAD81E52A4B76DB6A963 /* PoporFoundation-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA6262AF7A2EA587731C0547FCFFD12 /* PoporFoundation-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01F4DDAEEA544B2FFE629FFFD86D73CE /* NSString+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EDFE4E13BC828DBDB1D3885B689F1E /* NSString+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05E88E144D7A65CAE6CFE3785BA68433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
+		09C7BE104C97B8320BC335D8B4E1EBAA /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
+		0A9426EFD74D18D37E7516A5D773A582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBF9F09DD49A464F4ED614C4839D389 /* Foundation.framework */; };
+		0F61635B3F6DAA4D9ACE165F24C8CABC /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
+		10734D14CF4EB154B90EDA1ADFF4E554 /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
+		16A7644E6012FF0195D51C3F1CE4F80D /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4F48281CE2001D218AB9CA5BFEFE69 /* PoporFoundation.framework */; };
+		1AA9E585F754F03CD405522A6316FE2D /* NSString+pIDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F05D9F2FCE11974135C6593FD37EAB9 /* NSString+pIDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DCB31B57974A5BA6577367B0B00B7F6 /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B21A44ACA746CD4418345E339EFF70 /* NSString+pMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 836974AEE001EE8AA1638F4FDE3118A6 /* NSString+pMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2306546F071600C6E0E65318390CC5B3 /* PoporFMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B957DFD6C7F7A90461CBD9172F8E054 /* PoporFMDB-iOS-dummy.m */; };
+		239C43494D0F7614563402BAA10D32DD /* NSString+pIDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F05D9F2FCE11974135C6593FD37EAB9 /* NSString+pIDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		266F416D76928ED9190E45F7BA594D42 /* NSString+pAtt.m in Sources */ = {isa = PBXBuildFile; fileRef = F14FD1901972B44C752EDAEFDA2B3486 /* NSString+pAtt.m */; };
+		32F62BD223574CB9B31D5B65BE538EA0 /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C595EFE7C18F69BA12E3F1853963FC /* PoporFoundation-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E16C679B48BC69A271D0C9161F3F3E62 /* PoporFoundation-macOS-dummy.m */; };
 		3E2E3EDCD58E49F9EBE75F5F2DDB5643 /* Pods-PoporFMDB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FEBFB7E3E9BA416F474F00C337F82C /* Pods-PoporFMDB_Tests-dummy.m */; };
-		3E49A06F15D33B538E434414E7E532F5 /* NSString+pEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19895C008BC256D3892E884F0B7BF9 /* NSString+pEmail.m */; };
-		44693FF3C4A5E6B831F095E2C822E453 /* NSString+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F741B1BEE0B25D26420268AE28A5FD5 /* NSString+pTool.m */; };
-		46D028D84616A331B4727183033F702D /* NSString+pMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C4AADC9C41374FD6A94F8079B4835 /* NSString+pMD5.m */; };
+		44DEEF3B5EE9FCBE9ECB8109D320F435 /* NSString+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF94CDC210CF7920B802F6BA5DDE124 /* NSString+pSize.m */; };
 		46FBE08C32F38B7E3945F63104D1D6CC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ECC4DD441520E063FE684FDF30EDE /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		475E29D7C07EF25D0CB421DD31E86B41 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CD290A3B4B5AA5CE89FB263D5A687E /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D949D9BD216A53F157E82B07926F910 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
-		524D799F223490C0A6C3FD88C03E8086 /* NSString+pMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 836974AEE001EE8AA1638F4FDE3118A6 /* NSString+pMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD91BE1737832C760D374C58689E001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBF9F09DD49A464F4ED614C4839D389 /* Foundation.framework */; };
+		4EBCF2AD4963E4F1DF798119CD67BF22 /* NSString+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C2A60071EEA56454F2FB04D84837A5 /* NSString+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F107B5DF9372419046B0D2D7030FFE1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B53C82863C3B68A0AAFD289906FB67D /* AppKit.framework */; };
+		50E80C457FE7A59272294C6F43135B1D /* NSString+pSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EDFE4E13BC828DBDB1D3885B689F1E /* NSString+pSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DC3AEA67832FAEBEEDC399083A019D /* PoporFMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFF3D5BA2DCFE9980D4B37E913B28FB /* PoporFMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		552D9ACFAF168896A2128DFCAD6320FC /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
+		5563068FF141E2BBA8F9791BE7D49C0B /* NSString+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF94CDC210CF7920B802F6BA5DDE124 /* NSString+pSize.m */; };
 		55A44B7482A5DEC3F92F5365A43C3D48 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CBE1260DF6D91ED618CD27855BF83E /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		575561B501BB5EAA5628B6943ABEEB92 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 07585E831F66859E380DC00529404920 /* AppInfoEntity.m */; };
-		581D809AA807E8EB1A6ED64CB20B7395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
-		581EAD19556039E9CCCB18D259CCBDAC /* NSString+pMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C4AADC9C41374FD6A94F8079B4835 /* NSString+pMD5.m */; };
 		5B8F5D9D3E8E53EB1E5A04A2B7A2B7A1 /* Pods-PoporFMDB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BABEC2961E22A7CCAE166134638B43F0 /* Pods-PoporFMDB_Example-dummy.m */; };
-		5D0D9FFE4B1F37A74D62C28A86D02057 /* NSString+pAtt.m in Sources */ = {isa = PBXBuildFile; fileRef = F14FD1901972B44C752EDAEFDA2B3486 /* NSString+pAtt.m */; };
 		5E4C24A7DA7F9AADAE97502399A0B4D9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AA68EF3FE410344C7B825DA5BAE10B /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		61E74A098445CE28392C3E8D1CD59FBA /* NSString+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C2A60071EEA56454F2FB04D84837A5 /* NSString+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EFD61C635DB1DF9C2FB343770D36841 /* PoporFMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6530ED35EF5E42AF406B9FBBEDD046 /* PoporFMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB67BA91AFCE8C1BA81BD2DEB8B45F6 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61FB907CF251C6C5C663EF0C74B5F0CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
+		66F93B6C06307A79197C24F851211334 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600205B4922369E310A72058B19230A9 /* FMDB.framework */; };
 		69E228655F624E1D5AD2216E18EBADB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
 		6A87EDE9C0F6A516BD766C2266705B47 /* FMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33863C1CED5AA38C79F5454E034ECA44 /* FMDB-macOS-dummy.m */; };
 		6AA1F3664F8C29784384154501909346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
-		6F26A3288F18D0E5FF9F8B3431E83F6F /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 07585E831F66859E380DC00529404920 /* AppInfoEntity.m */; };
-		70CB03895C6D4769F2CCCA29745DB5F0 /* PoporFMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390BC9C414A12F70DBDB0B9655B51121 /* PoporFMDB-macOS-dummy.m */; };
+		70A953AFF9B072B3AE190C176A234654 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
 		70D312E3CFEF5AAC17FF66FD94E0FC5B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9538FA304CE59F1FD490B88D5BA901A /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7FAAB2CEDFAA874D683605D2FE14774F /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F384FA0FCBF221EE72D488C4BC35969 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8236306964F53FF132CDE228E719D395 /* PoporFoundation-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445FC14EFB7D8E2173F807C3347B1607 /* PoporFoundation-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82C96180C1DEA8CFE39427EA1A41CC9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
+		71B8DF39F111A680359D8E402485D641 /* NSString+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C2A60071EEA56454F2FB04D84837A5 /* NSString+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7281AB04942501BC128E4E6B1B02B17F /* NSString+pMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C4AADC9C41374FD6A94F8079B4835 /* NSString+pMD5.m */; };
+		72CF3FFCCCED449FB2F8DD85E6BEDFD2 /* Os+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCE0958D7678C9DFFC842272C97944C /* Os+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7325FEA4BD4F6269C5AA54B2B41068C1 /* PoporFMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50281AD2280EEB55B46D794AF0B04964 /* PoporFMDB-macOS-dummy.m */; };
+		7400832DD6B75DD9FFC6732CC5B40898 /* NSString+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F741B1BEE0B25D26420268AE28A5FD5 /* NSString+pTool.m */; };
+		74D839182EAAE3D63F4927618F28758C /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
+		76B4ACDB33C87E2B4E48BCAEC74C865F /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
+		7B1E204BB3C489A1CE570B534EB889BC /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600205B4922369E310A72058B19230A9 /* FMDB.framework */; };
+		7CDDD31187CBA3001B34B6D9D0DE32D7 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		836084FE433F2A5A81C321A677305318 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E893019014250240DA24D214239A43 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8630269E285B7AC68DE2EA120D6217CA /* PoporFoundation-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E16C679B48BC69A271D0C9161F3F3E62 /* PoporFoundation-macOS-dummy.m */; };
+		88B7F15B4BAB9426FEE0BC750CECD37C /* NSString+pMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C4AADC9C41374FD6A94F8079B4835 /* NSString+pMD5.m */; };
 		89A6BA2B52976D51482BD69095358992 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9538FA304CE59F1FD490B88D5BA901A /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A11D3513D9E1E807AA89D5C5ED1DB04 /* NSString+pIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DC0D3FD7A698A530E2268CB3404025 /* NSString+pIDCard.m */; };
 		8A13756165C91312056BA40842BCBF25 /* Pods-PoporFMDBMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AE07EBEAC18D823B6197B589BA3B94 /* Pods-PoporFMDBMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C15A8ED4ED16533A35B5E1FC932DC91 /* NSString+pTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C2A60071EEA56454F2FB04D84837A5 /* NSString+pTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBDADC863CC9C8977C1EECAAC810F8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
 		8C4211B2858AEAFA4DBD85F0C23CD5A1 /* FMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2361805A733DC8981B1D83E0F3DA596 /* FMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EA40D7ED184BCAA6818CA4E415BA91B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F84EAB4F255A6201D6EAC3D3097D63 /* UIKit.framework */; };
-		91AB3B0262A456294BDD64FBDB8DF5F4 /* NSString+pAtt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1E3380A38F0ECD154E305A17D2E1AC /* NSString+pAtt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91D7A02320DB555A10CD6428CA7126FC /* NSString+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F741B1BEE0B25D26420268AE28A5FD5 /* NSString+pTool.m */; };
-		98492EF4611598748E9451D9D912BFF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBF9F09DD49A464F4ED614C4839D389 /* Foundation.framework */; };
-		9A2A87EF8D6FBE14B8FF249ADB59A4A9 /* NSString+pSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF94CDC210CF7920B802F6BA5DDE124 /* NSString+pSize.m */; };
+		8CEAF9A56E86D464A160C0FD8E69979E /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD25BF1C514B682C36F2EE469EADD89 /* NSString+pAtt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1E3380A38F0ECD154E305A17D2E1AC /* NSString+pAtt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E0F87CA25B67506E5B7FFFAA5A0FB9 /* NSString+pEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A1B82396A7C791ADE5614105A5DE3 /* NSString+pEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C74F7F7CAC3E71B22F2F8A5EFD8F66 /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95F4B386207FDB415D9C62A5F2D0953A /* PoporFoundation-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445FC14EFB7D8E2173F807C3347B1607 /* PoporFoundation-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9746F3EF382606E158FFFDE204286D48 /* NSString+pTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F741B1BEE0B25D26420268AE28A5FD5 /* NSString+pTool.m */; };
 		9A57D194F18796A6DC1031FABC53E919 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E893019014250240DA24D214239A43 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C698CBF37EC1D0EA6C859721DDEDFE7 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C88787D28618271C189171668A050289 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DA153A54409A3AABC9317F5BA192E9C /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF17F032C2E33651CDEC43A48527B61 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1B7AEF1B662EBDBC80561A5CDCDEDB3 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600205B4922369E310A72058B19230A9 /* FMDB.framework */; };
+		9E849F4FB81120D734E81F184C5E87EC /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03348D31C1E6B313EE68E732B82D540 /* NSString+pEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19895C008BC256D3892E884F0B7BF9 /* NSString+pEmail.m */; };
 		A31DA44E3785804F82AFE06E96BE01CE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D04917BB69ACAF4FE82BF4AA39F6777 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A4CD4942EC1C40D4E8E6E622994EC988 /* FMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F18A284A89934558C53A9DD46BA6224 /* FMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6B44B7DEE64E5B6C2BF16A2C39BC090 /* Os+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCE0958D7678C9DFFC842272C97944C /* Os+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8B09F1923C5C20F488421246CAE91C7 /* PoporFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4F48281CE2001D218AB9CA5BFEFE69 /* PoporFoundation.framework */; };
 		A8FACCDA052CD324F7A45C8CA3194137 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F35D56ECD54482C540E54AAA9A7A1A /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91E27103C9D00EE62A848F7EB1E5898 /* NSString+pIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DC0D3FD7A698A530E2268CB3404025 /* NSString+pIDCard.m */; };
+		ACBCD31D1163D50B968AA90C4C4DF771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
 		AE0A52EBBE36F46049DD8A0971B8943E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = C5CBE1260DF6D91ED618CD27855BF83E /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B07773063F144A4465BC38F0C5715277 /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
+		B3806D07EAF02B5591FF1EC4C34D0C43 /* NSString+pEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19895C008BC256D3892E884F0B7BF9 /* NSString+pEmail.m */; };
+		B44479F4F1008073455D6BB20BFC6E0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
 		B51B3325662704BF5EADD11D69E9D4A8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D360DD3907BB990EEC046654EDA9D62F /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B729086A2DBADB8F18A071006E8F1990 /* NSString+pEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A1B82396A7C791ADE5614105A5DE3 /* NSString+pEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B795AF3E8E37A83C0B8C00DD46BCAED8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AA68EF3FE410344C7B825DA5BAE10B /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BA08CA4AA5AC7E512F5F873C4B5A8BA5 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF17F032C2E33651CDEC43A48527B61 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB2C9DB9BB2F915DE0C1ECCB9556CE97 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C88787D28618271C189171668A050289 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBD0825AFF604A5F54D36CE55CC88DBB /* Pods-PoporFMDB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1B9AE528AD4F3101869C90CE0F93BD /* Pods-PoporFMDB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC05BAB6104ABBA69A133A6FEB27271C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D360DD3907BB990EEC046654EDA9D62F /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C053DBC3EBC5D5FBEDC3AE5DCD9FEA89 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600205B4922369E310A72058B19230A9 /* FMDB.framework */; };
+		BD33C688FA675E401BF026FEE7080580 /* PoporFoundation-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA6262AF7A2EA587731C0547FCFFD12 /* PoporFoundation-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDCADA0B100AC85A73003643AB37E494 /* NSString+pMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 836974AEE001EE8AA1638F4FDE3118A6 /* NSString+pMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBB4E5F90E3FFEB62C366222352C62A /* Os+pPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCE0958D7678C9DFFC842272C97944C /* Os+pPrefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1D09EED476719E34F64321BDF83446A /* FMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92980B014549EF3BC490AD132A8E1FAA /* FMDB-iOS-dummy.m */; };
-		C4610FE4C42673661E7DA0D2EF793178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBF9F09DD49A464F4ED614C4839D389 /* Foundation.framework */; };
+		C348E3A8384436B5F847D45150CFAC2E /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
 		C7A0673AF1C65345B63248E74CEB35E9 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F35D56ECD54482C540E54AAA9A7A1A /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA842C092A876CCCA31BE9D7C00535C4 /* NSString+pIDCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DC0D3FD7A698A530E2268CB3404025 /* NSString+pIDCard.m */; };
-		CE1F1A7801541A02FF7A7EAB38A6C8B3 /* PoporFMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FF140A02F15B9B024FDF29A75802F1 /* PoporFMDB-iOS-dummy.m */; };
-		CFE0FFDEB7D281700EA12F5ECF1BBAB9 /* NSString+pEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9A1B82396A7C791ADE5614105A5DE3 /* NSString+pEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D21290B15F993D41543689EE893AF91A /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FF9BBA710A897762009364F3D73D37 /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB81C1401AE4F9C836697650E4EB55FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F84EAB4F255A6201D6EAC3D3097D63 /* UIKit.framework */; };
+		CF96385CD409451F0098D3A4880D15B7 /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F247B06889EDEEB25F2DFC1207714B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7ECC4DD441520E063FE684FDF30EDE /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DCD2EF48CBC48E7814DD3A223238ACF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */; };
-		E0873B44B96A99CA09E6BA12F2671425 /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FF9BBA710A897762009364F3D73D37 /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E144B19B438FABEBD662A06424EB26D2 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CD4A2C604DBBE21F3ED7239272478 /* PoporFMDB.m */; };
-		EAD83E6118EA025FA8E51A66748C58B3 /* NSString+pIDCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F05D9F2FCE11974135C6593FD37EAB9 /* NSString+pIDCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2258F1B33544E2064BE3EA61A4477E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D04917BB69ACAF4FE82BF4AA39F6777 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EBFF6E28F64F3DE88209E027ECFEFBA1 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9E43EB4FEDF40B71975A13ACCFEC7 /* NSFMDB.m */; };
+		EB8B23420FCF804F0430C5325188448E /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A6D6C34CDACAD6FF456B6E1A6664FF /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CD290A3B4B5AA5CE89FB263D5A687E /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0D730B7724EF986A479408ECAE70A53 /* Pods-PoporFMDBMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E4D5B72BB4D0D5007C88FABBBDABA /* Pods-PoporFMDBMac-dummy.m */; };
+		F21EF6B477029F2F2F3F7D32BE76FA95 /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2D51B5E521804E429E3FED76215A6D8 /* Pods-PoporFMDB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504C52BBE3846C50E01706DB7612C34 /* Pods-PoporFMDB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3950585A7075020E4F2523FF9A738C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */; };
-		F524C6A522525F66830957F1568F319A /* PoporFMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5136ABE86B77B98393190C679001D4AC /* PoporFMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F673689DF35F029B2ADD72EAD55FF877 /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A77A4A151555F43BA5D36767F99E92A /* PoporFMDBBase.m */; };
-		FBAD56E8B8127EF52510E22F7AC8F8FF /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 434BF162C3168AE0C658146F5E156928 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEAC1471D9AC041A9DD87CB224F3055B /* NSString+pEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C19895C008BC256D3892E884F0B7BF9 /* NSString+pEmail.m */; };
-		FF2FD8FF55CF1D81B606683A93D0651C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B53C82863C3B68A0AAFD289906FB67D /* AppKit.framework */; };
-		FF3C7A07799DB1E30AAA1A3918EBCD54 /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A77A4A151555F43BA5D36767F99E92A /* PoporFMDBBase.m */; };
+		F4EB9372895741699A50336832595CD6 /* PoporFoundation-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E79EC43696648CACF8F729FDFE6CBF /* PoporFoundation-iOS-dummy.m */; };
+		F50E58EECD9E496B0106F2F11E4B8984 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
+		F55CF20DC7AFFD0DF4BBC67605E8D33C /* NSString+pAtt.m in Sources */ = {isa = PBXBuildFile; fileRef = F14FD1901972B44C752EDAEFDA2B3486 /* NSString+pAtt.m */; };
+		F8E69C3F89AC32E7AB56944B5E587E3C /* NSString+pAtt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1E3380A38F0ECD154E305A17D2E1AC /* NSString+pAtt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12EBC396C84241AC2A8B383DBFC0A298 /* PBXContainerItemProxy */ = {
+		0AB0AEFC849398B154AA2D6EA67FC60D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61E37E119BAE62E0733B0497F43155D5;
-			remoteInfo = "PoporFoundation-iOS";
+			remoteGlobalIDString = D83C546BEFE959D67C51C445D2BC04FB;
+			remoteInfo = "PoporFoundation-macOS";
 		};
 		191E9E0055171D7B95EC591C0BADECB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,12 +127,12 @@
 			remoteGlobalIDString = 273A0D12E237D6F775EC6DC6588959C3;
 			remoteInfo = "FMDB-macOS";
 		};
-		1F2F0B83C6877D66C276A7660C1A5026 /* PBXContainerItemProxy */ = {
+		2D68AC256734D0D9144ED348EC7823D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 273A0D12E237D6F775EC6DC6588959C3;
-			remoteInfo = "FMDB-macOS";
+			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
+			remoteInfo = "FMDB-iOS";
 		};
 		509B39CF63C63A903F0387910011DF44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -151,12 +155,19 @@
 			remoteGlobalIDString = D83C546BEFE959D67C51C445D2BC04FB;
 			remoteInfo = "PoporFoundation-macOS";
 		};
-		954DC37BC67F52EA139BAC30EDF1398B /* PBXContainerItemProxy */ = {
+		869DE667ADD6F972D2DA38D52A99D97A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D83C546BEFE959D67C51C445D2BC04FB;
-			remoteInfo = "PoporFoundation-macOS";
+			remoteGlobalIDString = 273A0D12E237D6F775EC6DC6588959C3;
+			remoteInfo = "FMDB-macOS";
+		};
+		8BA2539D7543DB4593D5CCF5803E274B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E37E119BAE62E0733B0497F43155D5;
+			remoteInfo = "PoporFoundation-iOS";
 		};
 		A051327DEEA023F07B0E32C5F58F1D1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -179,80 +190,70 @@
 			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
 			remoteInfo = "FMDB-iOS";
 		};
-		F53833A4F9F86D45168AA3DC2F29221B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
-			remoteInfo = "FMDB-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0207A84F9E9F956C24F2BD45B1050BF8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		04A5DF93BE6F180049A0832204CEE2E4 /* PoporFoundation-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFoundation-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		050EF9EB21A64345FC527367D14FDE50 /* PoporFMDB-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporFMDB-iOS-Info.plist"; sourceTree = "<group>"; };
-		07585E831F66859E380DC00529404920 /* AppInfoEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppInfoEntity.m; path = PoporFMDB/Classes/AppInfoEntity.m; sourceTree = "<group>"; };
 		07EFA51A88D5C3F8F6BB556F9D9D1019 /* PoporFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporFoundation.framework; path = "PoporFoundation-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FEBFB7E3E9BA416F474F00C337F82C /* Pods-PoporFMDB_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporFMDB_Tests-dummy.m"; sourceTree = "<group>"; };
-		0C4CD4A2C604DBBE21F3ED7239272478 /* PoporFMDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporFMDB.m; path = PoporFMDB/Classes/PoporFMDB.m; sourceTree = "<group>"; };
-		0D2743BE1CCB3A54263DA53E66348FC9 /* PoporFMDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PoporFMDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0F332C3CD7A5233F5C4B5D5EA12CFD8C /* Pods_PoporFMDBMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporFMDBMac.framework; path = "Pods-PoporFMDBMac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13FF9BBA710A897762009364F3D73D37 /* NSFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSFMDB.h; path = PoporFMDB/Classes/NSFMDB.h; sourceTree = "<group>"; };
+		145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSFMDB.h; path = PoporFMDB/Classes/NSFMDB.h; sourceTree = "<group>"; };
 		1504C52BBE3846C50E01706DB7612C34 /* Pods-PoporFMDB_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporFMDB_Tests-umbrella.h"; sourceTree = "<group>"; };
-		160E4EEA1266649E4C1E7E614D230559 /* PoporFMDB-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "PoporFMDB-macOS-Info.plist"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-Info.plist"; sourceTree = "<group>"; };
-		192C09438DF09C808EF64C9A45A31D4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		195E704E64C55C0B98641980CBD992DF /* PoporFMDB-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFMDB-macOS.debug.xcconfig"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporFMDBBase.m; path = PoporFMDB/Classes/PoporFMDBBase.m; sourceTree = "<group>"; };
+		1BFF3D5BA2DCFE9980D4B37E913B28FB /* PoporFMDB-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFMDB-iOS-umbrella.h"; sourceTree = "<group>"; };
 		1FBC9E439FDDEBC738BF3A0E924500A4 /* FMDB-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FMDB-macOS-prefix.pch"; path = "../FMDB-macOS/FMDB-macOS-prefix.pch"; sourceTree = "<group>"; };
 		2166B4024203D84169A7F62CD8266D5B /* Pods-PoporFMDB_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDB_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		257DC9E60FF45E479BA82CD9B706F6AC /* Pods-PoporFMDBMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporFMDBMac-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A77A4A151555F43BA5D36767F99E92A /* PoporFMDBBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporFMDBBase.m; path = PoporFMDB/Classes/PoporFMDBBase.m; sourceTree = "<group>"; };
+		269C4CF98EC92849EF1DF1C2A6BD64EA /* PoporFMDB-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFMDB-macOS.release.xcconfig"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		2C9A1B82396A7C791ADE5614105A5DE3 /* NSString+pEmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pEmail.h"; path = "PoporFoundation/Classes/NSString/NSString+pEmail.h"; sourceTree = "<group>"; };
 		2DCE0958D7678C9DFFC842272C97944C /* Os+pPrefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Os+pPrefix.h"; path = "PoporFoundation/Classes/Os/Os+pPrefix.h"; sourceTree = "<group>"; };
 		2F05D9F2FCE11974135C6593FD37EAB9 /* NSString+pIDCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pIDCard.h"; path = "PoporFoundation/Classes/NSString/NSString+pIDCard.h"; sourceTree = "<group>"; };
 		2F0FF51472036A8573A5B0DA65B26DFC /* Pods-PoporFMDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		319C527836576119E4F9BEB26BE3BBD1 /* PoporFMDB-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFMDB-macOS-prefix.pch"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch"; sourceTree = "<group>"; };
 		33863C1CED5AA38C79F5454E034ECA44 /* FMDB-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FMDB-macOS-dummy.m"; path = "../FMDB-macOS/FMDB-macOS-dummy.m"; sourceTree = "<group>"; };
 		34E8D01CEB164FFCBA2CF5031E56CF97 /* Pods-PoporFMDBMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDBMac.debug.xcconfig"; sourceTree = "<group>"; };
 		34F35D56ECD54482C540E54AAA9A7A1A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		36B28D2C77E4EF5FEF72839D14F5F72B /* Pods-PoporFMDBMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDBMac-Info.plist"; sourceTree = "<group>"; };
 		36C2A60071EEA56454F2FB04D84837A5 /* NSString+pTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pTool.h"; path = "PoporFoundation/Classes/NSString/NSString+pTool.h"; sourceTree = "<group>"; };
-		373D9E27D37B5E3DB8DAADA13200F3B3 /* PoporFMDB-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PoporFMDB-iOS.modulemap"; sourceTree = "<group>"; };
 		374C4AADC9C41374FD6A94F8079B4835 /* NSString+pMD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pMD5.m"; path = "PoporFoundation/Classes/NSString/NSString+pMD5.m"; sourceTree = "<group>"; };
 		37ECE4F27B0236FB362FFFC85D34FCDD /* PoporFoundation-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporFoundation-iOS-Info.plist"; sourceTree = "<group>"; };
-		390BC9C414A12F70DBDB0B9655B51121 /* PoporFMDB-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PoporFMDB-macOS-dummy.m"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-dummy.m"; sourceTree = "<group>"; };
-		3C4C60D9C7D0B0A41CAA6AE9D2C3FB4D /* PoporFMDB-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFMDB-macOS-prefix.pch"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch"; sourceTree = "<group>"; };
 		3D9915D6AAD969AB777D6C5E7C0316EA /* FMDB-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "FMDB-iOS.modulemap"; sourceTree = "<group>"; };
 		3DF17F032C2E33651CDEC43A48527B61 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		3F18A284A89934558C53A9DD46BA6224 /* FMDB-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FMDB-macOS-umbrella.h"; path = "../FMDB-macOS/FMDB-macOS-umbrella.h"; sourceTree = "<group>"; };
+		3F692910C0A5635FC72EF3868C842049 /* PoporFMDB-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PoporFMDB-macOS.modulemap"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.modulemap"; sourceTree = "<group>"; };
 		3F89E79DE38AED08B50B73A15097952B /* Pods-PoporFMDB_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporFMDB_Tests.modulemap"; sourceTree = "<group>"; };
-		434BF162C3168AE0C658146F5E156928 /* AppInfoEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppInfoEntity.h; path = PoporFMDB/Classes/AppInfoEntity.h; sourceTree = "<group>"; };
 		445FC14EFB7D8E2173F807C3347B1607 /* PoporFoundation-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-iOS-umbrella.h"; sourceTree = "<group>"; };
+		48E6A4A6806600D12C82F5806E94E75C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4B53C82863C3B68A0AAFD289906FB67D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		4CBF9F09DD49A464F4ED614C4839D389 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4D04917BB69ACAF4FE82BF4AA39F6777 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		4EF94CDC210CF7920B802F6BA5DDE124 /* NSString+pSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pSize.m"; path = "PoporFoundation/Classes/NSString/NSString+pSize.m"; sourceTree = "<group>"; };
-		5136ABE86B77B98393190C679001D4AC /* PoporFMDB-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFMDB-iOS-umbrella.h"; sourceTree = "<group>"; };
+		50281AD2280EEB55B46D794AF0B04964 /* PoporFMDB-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PoporFMDB-macOS-dummy.m"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-dummy.m"; sourceTree = "<group>"; };
 		53D6218D7734C5CA3BB7F73896CCEBCB /* PoporFoundation-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFoundation-iOS-prefix.pch"; sourceTree = "<group>"; };
 		5635CD208840455A5C54C8CA4582736E /* PoporFoundation-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "PoporFoundation-macOS-Info.plist"; path = "../PoporFoundation-macOS/PoporFoundation-macOS-Info.plist"; sourceTree = "<group>"; };
+		57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporFMDB.m; path = PoporFMDB/Classes/PoporFMDB.m; sourceTree = "<group>"; };
 		59BA67134BE05BCE91E1D611CB440F7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5A58F5693DC9BEFE2B1427BB243C4745 /* PoporFMDB-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFMDB-macOS-umbrella.h"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-umbrella.h"; sourceTree = "<group>"; };
-		5B64164B402F2D9899F57ED4D6EE3573 /* PoporFMDB-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFMDB-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5F384FA0FCBF221EE72D488C4BC35969 /* PoporFMDBBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporFMDBBase.h; path = PoporFMDB/Classes/PoporFMDBBase.h; sourceTree = "<group>"; };
 		600205B4922369E310A72058B19230A9 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CD290A3B4B5AA5CE89FB263D5A687E /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		66C9E43EB4FEDF40B71975A13ACCFEC7 /* NSFMDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSFMDB.m; path = PoporFMDB/Classes/NSFMDB.m; sourceTree = "<group>"; };
-		67FF140A02F15B9B024FDF29A75802F1 /* PoporFMDB-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporFMDB-iOS-dummy.m"; sourceTree = "<group>"; };
 		6B2BB0D0098197EFA791C91FCD69B1D2 /* Pods-PoporFMDB_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDB_Tests-Info.plist"; sourceTree = "<group>"; };
+		6B7CEC3AFDA356E3251439229875E3D8 /* PoporFMDB-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PoporFMDB-iOS.modulemap"; sourceTree = "<group>"; };
 		6C19895C008BC256D3892E884F0B7BF9 /* NSString+pEmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pEmail.m"; path = "PoporFoundation/Classes/NSString/NSString+pEmail.m"; sourceTree = "<group>"; };
 		6D4F48281CE2001D218AB9CA5BFEFE69 /* PoporFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PoporFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7ECC4DD441520E063FE684FDF30EDE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6DF0B3376136A54E86BA7149F356B3CA /* PoporFMDB-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporFMDB-iOS-Info.plist"; sourceTree = "<group>"; };
 		6F3A4A3E0BB6BCAAD67CAD1D0B5C9740 /* FMDB-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FMDB-macOS.debug.xcconfig"; path = "../FMDB-macOS/FMDB-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6F741B1BEE0B25D26420268AE28A5FD5 /* NSString+pTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pTool.m"; path = "PoporFoundation/Classes/NSString/NSString+pTool.m"; sourceTree = "<group>"; };
 		7360DE8FEA4E4B350653106CD31C6A89 /* Pods-PoporFMDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7450DBA07A86D363FA99DAE088A7B2A5 /* Pods-PoporFMDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDB_Example.release.xcconfig"; sourceTree = "<group>"; };
+		74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporFMDB.h; path = PoporFMDB/Classes/PoporFMDB.h; sourceTree = "<group>"; };
+		7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSFMDB.m; path = PoporFMDB/Classes/NSFMDB.m; sourceTree = "<group>"; };
 		76E79EC43696648CACF8F729FDFE6CBF /* PoporFoundation-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporFoundation-iOS-dummy.m"; sourceTree = "<group>"; };
+		784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporFMDBPath.m; path = PoporFMDB/Classes/PoporFMDBPath.m; sourceTree = "<group>"; };
 		7883D3ECEAF993A20E21144B14BA854F /* PoporFoundation-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFoundation-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7B957DFD6C7F7A90461CBD9172F8E054 /* PoporFMDB-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PoporFMDB-iOS-dummy.m"; sourceTree = "<group>"; };
+		80B0BC6B9FB4AC12C1B5AAC371142CCE /* PoporFMDB-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFMDB-iOS-prefix.pch"; sourceTree = "<group>"; };
 		80EDFE4E13BC828DBDB1D3885B689F1E /* NSString+pSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pSize.h"; path = "PoporFoundation/Classes/NSString/NSString+pSize.h"; sourceTree = "<group>"; };
-		81DB504FA48126A4AFE33D88D2B8BBA6 /* PoporFMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporFMDB.h; path = PoporFMDB/Classes/PoporFMDB.h; sourceTree = "<group>"; };
 		836974AEE001EE8AA1638F4FDE3118A6 /* NSString+pMD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pMD5.h"; path = "PoporFoundation/Classes/NSString/NSString+pMD5.h"; sourceTree = "<group>"; };
 		836A4159560DC12FD66F84FE0EF8F6A0 /* Pods_PoporFMDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporFMDB_Tests.framework; path = "Pods-PoporFMDB_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4BC53CBB2A583F6421BD0B67E14F3 /* Pods-PoporFMDB_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDB_Example-Info.plist"; sourceTree = "<group>"; };
@@ -260,68 +261,63 @@
 		8AA17E8DB8E15542246F7C9D7AFEE6FF /* Pods-PoporFMDB_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporFMDB_Example-frameworks.sh"; sourceTree = "<group>"; };
 		92980B014549EF3BC490AD132A8E1FAA /* FMDB-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-iOS-dummy.m"; sourceTree = "<group>"; };
 		94F84EAB4F255A6201D6EAC3D3097D63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppInfoEntity.m; path = PoporFMDB/Classes/AppInfoEntity.m; sourceTree = "<group>"; };
 		9757EB43990C4BEA53BCFB947B6D1B0A /* Pods-PoporFMDBMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDBMac.release.xcconfig"; sourceTree = "<group>"; };
 		9A8476219D7F315B7208EF20D66D619C /* FMDB-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-iOS-Info.plist"; sourceTree = "<group>"; };
 		9BF47CAAF1B54711D0906AE2C080C7D5 /* PoporFoundation-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFoundation-macOS.debug.xcconfig"; path = "../PoporFoundation-macOS/PoporFoundation-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0640B7C359CBCEB03779622EC235B7D /* Pods-PoporFMDBMac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PoporFMDBMac-frameworks.sh"; sourceTree = "<group>"; };
+		A0ACBE7337DC13EBF006E2E6D272515F /* PoporFMDB-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFMDB-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B7E0B10F5FD68606075B92C8BC70CC /* Pods-PoporFMDB_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporFMDB_Example.modulemap"; sourceTree = "<group>"; };
-		A8B8F64F38BE78EAD7B7D9F8FE40966D /* PoporFMDB-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporFMDB-iOS-prefix.pch"; sourceTree = "<group>"; };
 		A8DC0D3FD7A698A530E2268CB3404025 /* NSString+pIDCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pIDCard.m"; path = "PoporFoundation/Classes/NSString/NSString+pIDCard.m"; sourceTree = "<group>"; };
 		A9538FA304CE59F1FD490B88D5BA901A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ABA618B7F286934B5C0C98BAEC12B5C6 /* PoporFMDB-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFMDB-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AD6D9E443FED7BDD3C4B2D01F493A1B5 /* Pods_PoporFMDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporFMDB_Example.framework; path = "Pods-PoporFMDB_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19FE357D457F6B9996FEF342A8B4B81 /* Pods-PoporFMDB_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporFMDB_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B2AE07EBEAC18D823B6197B589BA3B94 /* Pods-PoporFMDBMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporFMDBMac-umbrella.h"; sourceTree = "<group>"; };
 		B49E4D5B72BB4D0D5007C88FABBBDABA /* Pods-PoporFMDBMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporFMDBMac-dummy.m"; sourceTree = "<group>"; };
 		B6B740D5DB1E4D51AD2D8A5677B28403 /* FMDB-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-iOS-prefix.pch"; sourceTree = "<group>"; };
 		B9E79AA620CB7CB977D63D425844549B /* PoporFMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporFMDB.framework; path = "PoporFMDB-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAAD296D5FD947224EB7BF0384708352 /* PoporFMDB-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFMDB-macOS.release.xcconfig"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		BABEC2961E22A7CCAE166134638B43F0 /* Pods-PoporFMDB_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporFMDB_Example-dummy.m"; sourceTree = "<group>"; };
+		BB6530ED35EF5E42AF406B9FBBEDD046 /* PoporFMDB-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFMDB-macOS-umbrella.h"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-umbrella.h"; sourceTree = "<group>"; };
 		BF1E3380A38F0ECD154E305A17D2E1AC /* NSString+pAtt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+pAtt.h"; path = "PoporFoundation/Classes/NSString/NSString+pAtt.h"; sourceTree = "<group>"; };
 		C2361805A733DC8981B1D83E0F3DA596 /* FMDB-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-iOS-umbrella.h"; sourceTree = "<group>"; };
 		C2DA492E1B15CF6233751D926197B8CD /* PoporFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporFoundation.framework; path = "PoporFoundation-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4015320100A2A5F4E36C60A83E2DB83 /* FMDB-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "FMDB-macOS.modulemap"; path = "../FMDB-macOS/FMDB-macOS.modulemap"; sourceTree = "<group>"; };
+		C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppInfoEntity.h; path = PoporFMDB/Classes/AppInfoEntity.h; sourceTree = "<group>"; };
 		C50E0FA62D42129340400717B7AE6E77 /* PoporFMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporFMDB.framework; path = "PoporFMDB-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54C8DF27C9DE59FF64E26A19CD7EE28 /* Pods-PoporFMDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporFMDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C5CBE1260DF6D91ED618CD27855BF83E /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		C6595C93BD9AFE6A43D6E38A765E94CF /* Pods-PoporFMDB_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDB_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C88787D28618271C189171668A050289 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
 		C9A2DAEC6925882D9D86A19A09B4571C /* PoporFoundation-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PoporFoundation-macOS.modulemap"; path = "../PoporFoundation-macOS/PoporFoundation-macOS.modulemap"; sourceTree = "<group>"; };
-		CA3E39290308AFB862A7ED5092617B3F /* PoporFMDB-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PoporFMDB-macOS.modulemap"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.modulemap"; sourceTree = "<group>"; };
 		CA8193A92D2E9035E7314B61F0AC39AC /* PoporFoundation-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFoundation-macOS-prefix.pch"; path = "../PoporFoundation-macOS/PoporFoundation-macOS-prefix.pch"; sourceTree = "<group>"; };
 		CC1B9AE528AD4F3101869C90CE0F93BD /* Pods-PoporFMDB_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporFMDB_Example-umbrella.h"; sourceTree = "<group>"; };
+		CC1F2AE857C5DFF703D531164251542E /* PoporFMDB-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "PoporFMDB-macOS-Info.plist"; path = "../PoporFMDB-macOS/PoporFMDB-macOS-Info.plist"; sourceTree = "<group>"; };
 		CC57DEF7B44129F10BD0D080D1B363ED /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = "FMDB-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E4D09220D87386D00803F8E0C8B50F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		D360DD3907BB990EEC046654EDA9D62F /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporFMDBBase.h; path = PoporFMDB/Classes/PoporFMDBBase.h; sourceTree = "<group>"; };
 		E03E52B2F9DA6C589005391E8D2B49B7 /* Pods-PoporFMDB_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporFMDB_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E16C679B48BC69A271D0C9161F3F3E62 /* PoporFoundation-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PoporFoundation-macOS-dummy.m"; path = "../PoporFoundation-macOS/PoporFoundation-macOS-dummy.m"; sourceTree = "<group>"; };
 		E2C687E5027E67F013F29F661806D6A8 /* FMDB-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "FMDB-macOS-Info.plist"; path = "../FMDB-macOS/FMDB-macOS-Info.plist"; sourceTree = "<group>"; };
 		E5AA68EF3FE410344C7B825DA5BAE10B /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporFMDBPath.h; path = PoporFMDB/Classes/PoporFMDBPath.h; sourceTree = "<group>"; };
 		E5E893019014250240DA24D214239A43 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		E5ECF71EE161F3BF0F5297C8C11C3066 /* Pods-PoporFMDBMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporFMDBMac-acknowledgements.plist"; sourceTree = "<group>"; };
 		E66AB50F2C8491801EFF5A4762387336 /* PoporFoundation-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFoundation-macOS.release.xcconfig"; path = "../PoporFoundation-macOS/PoporFoundation-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		EA8927FA7A5CDEFEED23FADEFDC28C53 /* FMDB-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FMDB-macOS.release.xcconfig"; path = "../FMDB-macOS/FMDB-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		EC26976FFBBAA407EE6EDE5538B4C870 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EBDF63AC0F21F80F0C32F698856BBEF5 /* PoporFMDB-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PoporFMDB-macOS.debug.xcconfig"; path = "../PoporFMDB-macOS/PoporFMDB-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C31D84D95A8B45C7617593A83531F8 /* Pods-PoporFMDBMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporFMDBMac.modulemap"; sourceTree = "<group>"; };
 		F14FD1901972B44C752EDAEFDA2B3486 /* NSString+pAtt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+pAtt.m"; path = "PoporFoundation/Classes/NSString/NSString+pAtt.m"; sourceTree = "<group>"; };
 		F3247BD67F56DCA249755F42C4129D96 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = "FMDB-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57B3FF7C46B1648B61941916240E8B3 /* FMDB-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FMDB-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F6D2D9CF56580ADE1A5E35F4AA83AA0B /* PoporFMDB-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PoporFMDB-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F88D48F89C4C44632CF33846A0E71ECB /* PoporFoundation-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PoporFoundation-iOS.modulemap"; sourceTree = "<group>"; };
+		FC9A36F2CEA623F7F0BE5B0605752D97 /* PoporFMDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PoporFMDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FEA6262AF7A2EA587731C0547FCFFD12 /* PoporFoundation-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PoporFoundation-macOS-umbrella.h"; path = "../PoporFoundation-macOS/PoporFoundation-macOS-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02342912A018F0E46834660EAC3470CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF2FD8FF55CF1D81B606683A93D0651C /* AppKit.framework in Frameworks */,
-				01E2F82717DFBBD14738A80FE4F1B588 /* Cocoa.framework in Frameworks */,
-				98492EF4611598748E9451D9D912BFF6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		44CCE46217297BD1FA265BFCF9BC9DB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,13 +326,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4632F9677A8C66F031BE522F00BB7DB0 /* Frameworks */ = {
+		52FA2969FB1C38514595F88239D561F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B7AEF1B662EBDBC80561A5CDCDEDB3 /* FMDB.framework in Frameworks */,
-				82C96180C1DEA8CFE39427EA1A41CC9E /* Foundation.framework in Frameworks */,
-				2562A5DDC844C511DAE8D3670C6097A5 /* PoporFoundation.framework in Frameworks */,
+				4F107B5DF9372419046B0D2D7030FFE1 /* AppKit.framework in Frameworks */,
+				B44479F4F1008073455D6BB20BFC6E0E /* Cocoa.framework in Frameworks */,
+				0A9426EFD74D18D37E7516A5D773A582 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +341,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E228655F624E1D5AD2216E18EBADB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC16F0F28B9A5792D8DA1729C0D1867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBDADC863CC9C8977C1EECAAC810F8E /* Cocoa.framework in Frameworks */,
+				7B1E204BB3C489A1CE570B534EB889BC /* FMDB.framework in Frameworks */,
+				4BD91BE1737832C760D374C58689E001 /* Foundation.framework in Frameworks */,
+				16A7644E6012FF0195D51C3F1CE4F80D /* PoporFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F06D8F71BEC5D6FF42F41FB7DEE5ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F93B6C06307A79197C24F851211334 /* FMDB.framework in Frameworks */,
+				ACBCD31D1163D50B968AA90C4C4DF771 /* Foundation.framework in Frameworks */,
+				A8B09F1923C5C20F488421246CAE91C7 /* PoporFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,23 +389,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3104D667EE9C72DA3532B0800D09857 /* Frameworks */ = {
+		E09A1551EA3CA2C366CD3A64F52142F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581D809AA807E8EB1A6ED64CB20B7395 /* Foundation.framework in Frameworks */,
-				8EA40D7ED184BCAA6818CA4E415BA91B /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2261564841925D52A8592F717D5A4DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D949D9BD216A53F157E82B07926F910 /* Cocoa.framework in Frameworks */,
-				C053DBC3EBC5D5FBEDC3AE5DCD9FEA89 /* FMDB.framework in Frameworks */,
-				C4610FE4C42673661E7DA0D2EF793178 /* Foundation.framework in Frameworks */,
-				0532F1A82FB754751515ADC135104B95 /* PoporFoundation.framework in Frameworks */,
+				05E88E144D7A65CAE6CFE3785BA68433 /* Foundation.framework in Frameworks */,
+				CB81C1401AE4F9C836697650E4EB55FA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,44 +445,12 @@
 			path = "../Target Support Files/FMDB-iOS";
 			sourceTree = "<group>";
 		};
-		0F66AC89739D45B32BAA70AC8770AB96 /* PoporFMDB */ = {
+		364045BB0A384E5BAF66D36C9536FF44 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				434BF162C3168AE0C658146F5E156928 /* AppInfoEntity.h */,
-				07585E831F66859E380DC00529404920 /* AppInfoEntity.m */,
-				13FF9BBA710A897762009364F3D73D37 /* NSFMDB.h */,
-				66C9E43EB4FEDF40B71975A13ACCFEC7 /* NSFMDB.m */,
-				81DB504FA48126A4AFE33D88D2B8BBA6 /* PoporFMDB.h */,
-				0C4CD4A2C604DBBE21F3ED7239272478 /* PoporFMDB.m */,
-				5F384FA0FCBF221EE72D488C4BC35969 /* PoporFMDBBase.h */,
-				2A77A4A151555F43BA5D36767F99E92A /* PoporFMDBBase.m */,
-				963137F423E68B7D3BEF6A71429DC22C /* Pod */,
-				4695710A31CC8AABFE4EF1EB2C4D03EE /* Support Files */,
+				8B0E58CA71B9F7AF13514757BAAEB411 /* PoporFMDB */,
 			);
-			name = PoporFMDB;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		4695710A31CC8AABFE4EF1EB2C4D03EE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				373D9E27D37B5E3DB8DAADA13200F3B3 /* PoporFMDB-iOS.modulemap */,
-				67FF140A02F15B9B024FDF29A75802F1 /* PoporFMDB-iOS-dummy.m */,
-				050EF9EB21A64345FC527367D14FDE50 /* PoporFMDB-iOS-Info.plist */,
-				A8B8F64F38BE78EAD7B7D9F8FE40966D /* PoporFMDB-iOS-prefix.pch */,
-				5136ABE86B77B98393190C679001D4AC /* PoporFMDB-iOS-umbrella.h */,
-				5B64164B402F2D9899F57ED4D6EE3573 /* PoporFMDB-iOS.debug.xcconfig */,
-				F6D2D9CF56580ADE1A5E35F4AA83AA0B /* PoporFMDB-iOS.release.xcconfig */,
-				CA3E39290308AFB862A7ED5092617B3F /* PoporFMDB-macOS.modulemap */,
-				390BC9C414A12F70DBDB0B9655B51121 /* PoporFMDB-macOS-dummy.m */,
-				160E4EEA1266649E4C1E7E614D230559 /* PoporFMDB-macOS-Info.plist */,
-				3C4C60D9C7D0B0A41CAA6AE9D2C3FB4D /* PoporFMDB-macOS-prefix.pch */,
-				5A58F5693DC9BEFE2B1427BB243C4745 /* PoporFMDB-macOS-umbrella.h */,
-				195E704E64C55C0B98641980CBD992DF /* PoporFMDB-macOS.debug.xcconfig */,
-				BAAD296D5FD947224EB7BF0384708352 /* PoporFMDB-macOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PoporFMDB-iOS";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		5800E13A1BD1CEB2AAD0C7B2CB85D28A /* FMDB */ = {
@@ -524,6 +498,48 @@
 			path = "Target Support Files/Pods-PoporFMDBMac";
 			sourceTree = "<group>";
 		};
+		81FBE2772A4CE2D6F7FE4EBA4A27B604 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B7CEC3AFDA356E3251439229875E3D8 /* PoporFMDB-iOS.modulemap */,
+				7B957DFD6C7F7A90461CBD9172F8E054 /* PoporFMDB-iOS-dummy.m */,
+				6DF0B3376136A54E86BA7149F356B3CA /* PoporFMDB-iOS-Info.plist */,
+				80B0BC6B9FB4AC12C1B5AAC371142CCE /* PoporFMDB-iOS-prefix.pch */,
+				1BFF3D5BA2DCFE9980D4B37E913B28FB /* PoporFMDB-iOS-umbrella.h */,
+				A0ACBE7337DC13EBF006E2E6D272515F /* PoporFMDB-iOS.debug.xcconfig */,
+				ABA618B7F286934B5C0C98BAEC12B5C6 /* PoporFMDB-iOS.release.xcconfig */,
+				3F692910C0A5635FC72EF3868C842049 /* PoporFMDB-macOS.modulemap */,
+				50281AD2280EEB55B46D794AF0B04964 /* PoporFMDB-macOS-dummy.m */,
+				CC1F2AE857C5DFF703D531164251542E /* PoporFMDB-macOS-Info.plist */,
+				319C527836576119E4F9BEB26BE3BBD1 /* PoporFMDB-macOS-prefix.pch */,
+				BB6530ED35EF5E42AF406B9FBBEDD046 /* PoporFMDB-macOS-umbrella.h */,
+				EBDF63AC0F21F80F0C32F698856BBEF5 /* PoporFMDB-macOS.debug.xcconfig */,
+				269C4CF98EC92849EF1DF1C2A6BD64EA /* PoporFMDB-macOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PoporFMDB-iOS";
+			sourceTree = "<group>";
+		};
+		8B0E58CA71B9F7AF13514757BAAEB411 /* PoporFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */,
+				9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */,
+				145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */,
+				7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */,
+				74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */,
+				57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */,
+				DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */,
+				1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */,
+				E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */,
+				784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */,
+				B4893502F2E804BC9B87C8CCE09ECA7B /* Pod */,
+				81FBE2772A4CE2D6F7FE4EBA4A27B604 /* Support Files */,
+			);
+			name = PoporFMDB;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		8E4F8B34FB4E1E105831F06F9C8DDAD0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,24 +563,6 @@
 				07EFA51A88D5C3F8F6BB556F9D9D1019 /* PoporFoundation.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		963137F423E68B7D3BEF6A71429DC22C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				192C09438DF09C808EF64C9A45A31D4A /* LICENSE */,
-				0D2743BE1CCB3A54263DA53E66348FC9 /* PoporFMDB.podspec */,
-				EC26976FFBBAA407EE6EDE5538B4C870 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9B3C2CA546A4B7C2B51ABE8CBC4D805B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0F66AC89739D45B32BAA70AC8770AB96 /* PoporFMDB */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		AB9D4149777C7424E56B4D9711421ACC /* NSString */ = {
@@ -604,6 +602,16 @@
 			);
 			name = PoporFoundation;
 			path = PoporFoundation;
+			sourceTree = "<group>";
+		};
+		B4893502F2E804BC9B87C8CCE09ECA7B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				48E6A4A6806600D12C82F5806E94E75C /* LICENSE */,
+				FC9A36F2CEA623F7F0BE5B0605752D97 /* PoporFMDB.podspec */,
+				0207A84F9E9F956C24F2BD45B1050BF8 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B5F6FBBA5A3426B8E7A47210109825AE /* Pods-PoporFMDB_Tests */ = {
@@ -653,7 +661,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9B3C2CA546A4B7C2B51ABE8CBC4D805B /* Development Pods */,
+				364045BB0A384E5BAF66D36C9536FF44 /* Development Pods */,
 				D36622830D43AAF5F4FF971FC7FF2E38 /* Frameworks */,
 				B04AC75E41F6FDFF3D09AC0EC86652D2 /* Pods */,
 				904E1137DC17B1C8176D12D933131F34 /* Products */,
@@ -723,6 +731,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5923EC0BC87EA6A30E7B23202A69754C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF96385CD409451F0098D3A4880D15B7 /* AppInfoEntity.h in Headers */,
+				8CEAF9A56E86D464A160C0FD8E69979E /* NSFMDB.h in Headers */,
+				5EFD61C635DB1DF9C2FB343770D36841 /* PoporFMDB-macOS-umbrella.h in Headers */,
+				95C74F7F7CAC3E71B22F2F8A5EFD8F66 /* PoporFMDB.h in Headers */,
+				5FB67BA91AFCE8C1BA81BD2DEB8B45F6 /* PoporFMDBBase.h in Headers */,
+				EB8B23420FCF804F0430C5325188448E /* PoporFMDBPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F8970337E204A5A70F7021065BEED0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,18 +752,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7132295D17BFF7A9388CDDE97F3D9501 /* Headers */ = {
+		7AD1A06C25D6F10B1AA914261083121F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336BF0A6E535325C34E23AD5D0A6046C /* NSString+pAtt.h in Headers */,
-				2644BFA60648EF017480A26E33437F5C /* NSString+pEmail.h in Headers */,
-				EAD83E6118EA025FA8E51A66748C58B3 /* NSString+pIDCard.h in Headers */,
-				170F0964D9F41152EACCC5D593BF4378 /* NSString+pMD5.h in Headers */,
-				30F3A3DD7235831C9F25A2328B2F6DEC /* NSString+pSize.h in Headers */,
-				8C15A8ED4ED16533A35B5E1FC932DC91 /* NSString+pTool.h in Headers */,
-				A6B44B7DEE64E5B6C2BF16A2C39BC090 /* Os+pPrefix.h in Headers */,
-				8236306964F53FF132CDE228E719D395 /* PoporFoundation-iOS-umbrella.h in Headers */,
+				8DD25BF1C514B682C36F2EE469EADD89 /* NSString+pAtt.h in Headers */,
+				94E0F87CA25B67506E5B7FFFAA5A0FB9 /* NSString+pEmail.h in Headers */,
+				1AA9E585F754F03CD405522A6316FE2D /* NSString+pIDCard.h in Headers */,
+				BDCADA0B100AC85A73003643AB37E494 /* NSString+pMD5.h in Headers */,
+				01F4DDAEEA544B2FFE629FFFD86D73CE /* NSString+pSize.h in Headers */,
+				71B8DF39F111A680359D8E402485D641 /* NSString+pTool.h in Headers */,
+				72CF3FFCCCED449FB2F8DD85E6BEDFD2 /* Os+pPrefix.h in Headers */,
+				95F4B386207FDB415D9C62A5F2D0953A /* PoporFoundation-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,42 +781,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA302E2ECB2EB2C4A090232EA6EC1AFC /* Headers */ = {
+		916975EE9097CE7293889C086DF2DE14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AF59676D991ADF71ABAC8E1F47B38C /* AppInfoEntity.h in Headers */,
-				E0873B44B96A99CA09E6BA12F2671425 /* NSFMDB.h in Headers */,
-				F524C6A522525F66830957F1568F319A /* PoporFMDB-iOS-umbrella.h in Headers */,
-				286F9BA5216728DA1BE3498529B77FDF /* PoporFMDB.h in Headers */,
-				308198206A2B06186293B545047D6C55 /* PoporFMDBBase.h in Headers */,
+				9E849F4FB81120D734E81F184C5E87EC /* AppInfoEntity.h in Headers */,
+				F21EF6B477029F2F2F3F7D32BE76FA95 /* NSFMDB.h in Headers */,
+				51DC3AEA67832FAEBEEDC399083A019D /* PoporFMDB-iOS-umbrella.h in Headers */,
+				1DCB31B57974A5BA6577367B0B00B7F6 /* PoporFMDB.h in Headers */,
+				7CDDD31187CBA3001B34B6D9D0DE32D7 /* PoporFMDBBase.h in Headers */,
+				32F62BD223574CB9B31D5B65BE538EA0 /* PoporFMDBPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1841BF36DF0B1914F51324B4521EB87 /* Headers */ = {
+		B40F6DB8160794BEA7750B9DE553B40D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AB3B0262A456294BDD64FBDB8DF5F4 /* NSString+pAtt.h in Headers */,
-				CFE0FFDEB7D281700EA12F5ECF1BBAB9 /* NSString+pEmail.h in Headers */,
-				020D17463E895389499A59DC4D252484 /* NSString+pIDCard.h in Headers */,
-				524D799F223490C0A6C3FD88C03E8086 /* NSString+pMD5.h in Headers */,
-				262B9E7E69081BCF3B472478C7B5A162 /* NSString+pSize.h in Headers */,
-				61E74A098445CE28392C3E8D1CD59FBA /* NSString+pTool.h in Headers */,
-				0A9D55DD642ED5363E63E3829E37D286 /* Os+pPrefix.h in Headers */,
-				361DB4B61C0DBAD81E52A4B76DB6A963 /* PoporFoundation-macOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C31CA41D14A3ED3F2163B12293CB6DE1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FBAD56E8B8127EF52510E22F7AC8F8FF /* AppInfoEntity.h in Headers */,
-				D21290B15F993D41543689EE893AF91A /* NSFMDB.h in Headers */,
-				257F6EB9C7A9CC60F1971A755B7B4304 /* PoporFMDB-macOS-umbrella.h in Headers */,
-				30AA06F1B420D671F141DAD229177E09 /* PoporFMDB.h in Headers */,
-				7FAAB2CEDFAA874D683605D2FE14774F /* PoporFMDBBase.h in Headers */,
+				F8E69C3F89AC32E7AB56944B5E587E3C /* NSString+pAtt.h in Headers */,
+				B729086A2DBADB8F18A071006E8F1990 /* NSString+pEmail.h in Headers */,
+				239C43494D0F7614563402BAA10D32DD /* NSString+pIDCard.h in Headers */,
+				20B21A44ACA746CD4418345E339EFF70 /* NSString+pMD5.h in Headers */,
+				50E80C457FE7A59272294C6F43135B1D /* NSString+pSize.h in Headers */,
+				4EBCF2AD4963E4F1DF798119CD67BF22 /* NSString+pTool.h in Headers */,
+				BFBB4E5F90E3FFEB62C366222352C62A /* Os+pPrefix.h in Headers */,
+				BD33C688FA675E401BF026FEE7080580 /* PoporFoundation-macOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,18 +832,18 @@
 		};
 		3433F7E33A6AFF0BA7A5240DB89B6FE7 /* PoporFMDB-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 187B3C1B693BF9D505AB1D33916B0EA3 /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */;
+			buildConfigurationList = D820282ADF6D6C571DCA2C9CEFF421C3 /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */;
 			buildPhases = (
-				BA302E2ECB2EB2C4A090232EA6EC1AFC /* Headers */,
-				BC4E80341F4ED6A089A66D4B022A98B6 /* Sources */,
-				4632F9677A8C66F031BE522F00BB7DB0 /* Frameworks */,
-				94E884284C050364969AC5CBD3281EC9 /* Resources */,
+				916975EE9097CE7293889C086DF2DE14 /* Headers */,
+				E1555E20E97CAED934284E62758E6749 /* Sources */,
+				9F06D8F71BEC5D6FF42F41FB7DEE5ECB /* Frameworks */,
+				F12F423A7B0BF345DD361E84BB057867 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E4311DA6CEBEF8A30D50F762B3F602F /* PBXTargetDependency */,
-				1E05241F86FE7A6F1ACE58379E6E4788 /* PBXTargetDependency */,
+				D07E5A0C9C8B53FDD51AFADF1F8366D9 /* PBXTargetDependency */,
+				7BB4A7626A034E4C11A94AE99B1B935F /* PBXTargetDependency */,
 			);
 			name = "PoporFMDB-iOS";
 			productName = "PoporFMDB-iOS";
@@ -860,18 +870,18 @@
 		};
 		4671509451F85F96892A2D70011A00D8 /* PoporFMDB-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17AC91225A62A7D0E7AFDC0397A8BD28 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */;
+			buildConfigurationList = C8DD6B2BEC1F186681242123D703F5C3 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */;
 			buildPhases = (
-				C31CA41D14A3ED3F2163B12293CB6DE1 /* Headers */,
-				17D93449A4A1953A74EBCA535FC0965E /* Sources */,
-				E2261564841925D52A8592F717D5A4DB /* Frameworks */,
-				281F8A4EF2116D621D112D03B1A593B8 /* Resources */,
+				5923EC0BC87EA6A30E7B23202A69754C /* Headers */,
+				6989C6582C275C3F9FE8CDFA909E530B /* Sources */,
+				5CC16F0F28B9A5792D8DA1729C0D1867 /* Frameworks */,
+				32C3B1BDBCF38E55AB870FD7AA36FFFB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D5821BDD2781CF3F212E90B447A6EBAA /* PBXTargetDependency */,
-				2C21C30BEB754B7183CD8B76348E5359 /* PBXTargetDependency */,
+				5404CC6C70E8B059134318A0AA02EE02 /* PBXTargetDependency */,
+				32B48E8FE2AFCD3F68AD98A959E45585 /* PBXTargetDependency */,
 			);
 			name = "PoporFMDB-macOS";
 			productName = "PoporFMDB-macOS";
@@ -880,12 +890,12 @@
 		};
 		61E37E119BAE62E0733B0497F43155D5 /* PoporFoundation-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9626506EF5945E2041F02CF881E79240 /* Build configuration list for PBXNativeTarget "PoporFoundation-iOS" */;
+			buildConfigurationList = 71C953BB3B66B4823B4A06688D1779A4 /* Build configuration list for PBXNativeTarget "PoporFoundation-iOS" */;
 			buildPhases = (
-				7132295D17BFF7A9388CDDE97F3D9501 /* Headers */,
-				77744EDE764F7C65089873F87B37DCCC /* Sources */,
-				D3104D667EE9C72DA3532B0800D09857 /* Frameworks */,
-				FA5244C0F823AAD9FCCBAC8927BE24C3 /* Resources */,
+				7AD1A06C25D6F10B1AA914261083121F /* Headers */,
+				3B4C344E299CD8B2AE8096DFE3C7EC13 /* Sources */,
+				E09A1551EA3CA2C366CD3A64F52142F2 /* Frameworks */,
+				F0B881ADEEC8790E7FF975A73D315B50 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -959,12 +969,12 @@
 		};
 		D83C546BEFE959D67C51C445D2BC04FB /* PoporFoundation-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F4E010BB3A432EBC1FC4352F9F01C68 /* Build configuration list for PBXNativeTarget "PoporFoundation-macOS" */;
+			buildConfigurationList = 8E7F5D18BB87AE5227E053310A829333 /* Build configuration list for PBXNativeTarget "PoporFoundation-macOS" */;
 			buildPhases = (
-				C1841BF36DF0B1914F51324B4521EB87 /* Headers */,
-				D3120F54510519FBCDEACDD513C2496E /* Sources */,
-				02342912A018F0E46834660EAC3470CE /* Frameworks */,
-				372C507F07EBA71ECDC0154F0BC60199 /* Resources */,
+				B40F6DB8160794BEA7750B9DE553B40D /* Headers */,
+				F17C13D757BDA57F409F8513A04A376D /* Sources */,
+				52FA2969FB1C38514595F88239D561F8 /* Frameworks */,
+				0CE5676A31EEFB989BBA24C8C30BED6D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1018,6 +1028,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CE5676A31EEFB989BBA24C8C30BED6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		271625053F4E9D476600F55A1FF27EEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1025,7 +1042,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		281F8A4EF2116D621D112D03B1A593B8 /* Resources */ = {
+		32C3B1BDBCF38E55AB870FD7AA36FFFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1033,20 +1050,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		34BDFC57F9D72733AC3506537AF8DF86 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		372C507F07EBA71ECDC0154F0BC60199 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		94E884284C050364969AC5CBD3281EC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1067,7 +1070,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA5244C0F823AAD9FCCBAC8927BE24C3 /* Resources */ = {
+		F0B881ADEEC8790E7FF975A73D315B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12F423A7B0BF345DD361E84BB057867 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1077,15 +1087,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17D93449A4A1953A74EBCA535FC0965E /* Sources */ = {
+		3B4C344E299CD8B2AE8096DFE3C7EC13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575561B501BB5EAA5628B6943ABEEB92 /* AppInfoEntity.m in Sources */,
-				2B059DE766D883B4DDD0F201327B2ABB /* NSFMDB.m in Sources */,
-				70CB03895C6D4769F2CCCA29745DB5F0 /* PoporFMDB-macOS-dummy.m in Sources */,
-				E144B19B438FABEBD662A06424EB26D2 /* PoporFMDB.m in Sources */,
-				F673689DF35F029B2ADD72EAD55FF877 /* PoporFMDBBase.m in Sources */,
+				F55CF20DC7AFFD0DF4BBC67605E8D33C /* NSString+pAtt.m in Sources */,
+				B3806D07EAF02B5591FF1EC4C34D0C43 /* NSString+pEmail.m in Sources */,
+				A91E27103C9D00EE62A848F7EB1E5898 /* NSString+pIDCard.m in Sources */,
+				7281AB04942501BC128E4E6B1B02B17F /* NSString+pMD5.m in Sources */,
+				44DEEF3B5EE9FCBE9ECB8109D320F435 /* NSString+pSize.m in Sources */,
+				7400832DD6B75DD9FFC6732CC5B40898 /* NSString+pTool.m in Sources */,
+				F4EB9372895741699A50336832595CD6 /* PoporFoundation-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1131,6 +1143,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6989C6582C275C3F9FE8CDFA909E530B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A953AFF9B072B3AE190C176A234654 /* AppInfoEntity.m in Sources */,
+				F50E58EECD9E496B0106F2F11E4B8984 /* NSFMDB.m in Sources */,
+				7325FEA4BD4F6269C5AA54B2B41068C1 /* PoporFMDB-macOS-dummy.m in Sources */,
+				C348E3A8384436B5F847D45150CFAC2E /* PoporFMDB.m in Sources */,
+				0F61635B3F6DAA4D9ACE165F24C8CABC /* PoporFMDBBase.m in Sources */,
+				552D9ACFAF168896A2128DFCAD6320FC /* PoporFMDBPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DB7A79E0CA3AA9FA1D7EA6E45E005D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1139,72 +1164,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77744EDE764F7C65089873F87B37DCCC /* Sources */ = {
+		E1555E20E97CAED934284E62758E6749 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0D9FFE4B1F37A74D62C28A86D02057 /* NSString+pAtt.m in Sources */,
-				FEAC1471D9AC041A9DD87CB224F3055B /* NSString+pEmail.m in Sources */,
-				1FAAFF2A6680D608DDB5644F815188D2 /* NSString+pIDCard.m in Sources */,
-				46D028D84616A331B4727183033F702D /* NSString+pMD5.m in Sources */,
-				9A2A87EF8D6FBE14B8FF249ADB59A4A9 /* NSString+pSize.m in Sources */,
-				91D7A02320DB555A10CD6428CA7126FC /* NSString+pTool.m in Sources */,
-				22819A95ACF1323E390DDD99AB131F3B /* PoporFoundation-iOS-dummy.m in Sources */,
+				74D839182EAAE3D63F4927618F28758C /* AppInfoEntity.m in Sources */,
+				09C7BE104C97B8320BC335D8B4E1EBAA /* NSFMDB.m in Sources */,
+				2306546F071600C6E0E65318390CC5B3 /* PoporFMDB-iOS-dummy.m in Sources */,
+				76B4ACDB33C87E2B4E48BCAEC74C865F /* PoporFMDB.m in Sources */,
+				B07773063F144A4465BC38F0C5715277 /* PoporFMDBBase.m in Sources */,
+				10734D14CF4EB154B90EDA1ADFF4E554 /* PoporFMDBPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC4E80341F4ED6A089A66D4B022A98B6 /* Sources */ = {
+		F17C13D757BDA57F409F8513A04A376D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F26A3288F18D0E5FF9F8B3431E83F6F /* AppInfoEntity.m in Sources */,
-				EBFF6E28F64F3DE88209E027ECFEFBA1 /* NSFMDB.m in Sources */,
-				CE1F1A7801541A02FF7A7EAB38A6C8B3 /* PoporFMDB-iOS-dummy.m in Sources */,
-				186B023E0D3C8D16FE6EC8146DC83A49 /* PoporFMDB.m in Sources */,
-				FF3C7A07799DB1E30AAA1A3918EBCD54 /* PoporFMDBBase.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3120F54510519FBCDEACDD513C2496E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				320641864C533AFF1EED510A20397FDB /* NSString+pAtt.m in Sources */,
-				3E49A06F15D33B538E434414E7E532F5 /* NSString+pEmail.m in Sources */,
-				CA842C092A876CCCA31BE9D7C00535C4 /* NSString+pIDCard.m in Sources */,
-				581EAD19556039E9CCCB18D259CCBDAC /* NSString+pMD5.m in Sources */,
-				0069E9C0B768EC2BA36ED6370C8E3823 /* NSString+pSize.m in Sources */,
-				44693FF3C4A5E6B831F095E2C822E453 /* NSString+pTool.m in Sources */,
-				8630269E285B7AC68DE2EA120D6217CA /* PoporFoundation-macOS-dummy.m in Sources */,
+				266F416D76928ED9190E45F7BA594D42 /* NSString+pAtt.m in Sources */,
+				A03348D31C1E6B313EE68E732B82D540 /* NSString+pEmail.m in Sources */,
+				8A11D3513D9E1E807AA89D5C5ED1DB04 /* NSString+pIDCard.m in Sources */,
+				88B7F15B4BAB9426FEE0BC750CECD37C /* NSString+pMD5.m in Sources */,
+				5563068FF141E2BBA8F9791BE7D49C0B /* NSString+pSize.m in Sources */,
+				9746F3EF382606E158FFFDE204286D48 /* NSString+pTool.m in Sources */,
+				34C595EFE7C18F69BA12E3F1853963FC /* PoporFoundation-macOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1E05241F86FE7A6F1ACE58379E6E4788 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PoporFoundation-iOS";
-			target = 61E37E119BAE62E0733B0497F43155D5 /* PoporFoundation-iOS */;
-			targetProxy = 12EBC396C84241AC2A8B383DBFC0A298 /* PBXContainerItemProxy */;
-		};
-		2C21C30BEB754B7183CD8B76348E5359 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PoporFoundation-macOS";
-			target = D83C546BEFE959D67C51C445D2BC04FB /* PoporFoundation-macOS */;
-			targetProxy = 954DC37BC67F52EA139BAC30EDF1398B /* PBXContainerItemProxy */;
-		};
 		31A9A1F90B941885FA898D5BB8D3793F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PoporFoundation-macOS";
 			target = D83C546BEFE959D67C51C445D2BC04FB /* PoporFoundation-macOS */;
 			targetProxy = 77C800D8E9642988AD2D2961AB60FCF9 /* PBXContainerItemProxy */;
 		};
-		5E4311DA6CEBEF8A30D50F762B3F602F /* PBXTargetDependency */ = {
+		32B48E8FE2AFCD3F68AD98A959E45585 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FMDB-iOS";
-			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
-			targetProxy = F53833A4F9F86D45168AA3DC2F29221B /* PBXContainerItemProxy */;
+			name = "PoporFoundation-macOS";
+			target = D83C546BEFE959D67C51C445D2BC04FB /* PoporFoundation-macOS */;
+			targetProxy = 0AB0AEFC849398B154AA2D6EA67FC60D /* PBXContainerItemProxy */;
+		};
+		5404CC6C70E8B059134318A0AA02EE02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-macOS";
+			target = 273A0D12E237D6F775EC6DC6588959C3 /* FMDB-macOS */;
+			targetProxy = 869DE667ADD6F972D2DA38D52A99D97A /* PBXContainerItemProxy */;
+		};
+		7BB4A7626A034E4C11A94AE99B1B935F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PoporFoundation-iOS";
+			target = 61E37E119BAE62E0733B0497F43155D5 /* PoporFoundation-iOS */;
+			targetProxy = 8BA2539D7543DB4593D5CCF5803E274B /* PBXContainerItemProxy */;
 		};
 		9225295FCE7D9CC54B5CCDA2E183936E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1236,11 +1248,11 @@
 			target = 3433F7E33A6AFF0BA7A5240DB89B6FE7 /* PoporFMDB-iOS */;
 			targetProxy = 70184C812075916A494AF311E1291276 /* PBXContainerItemProxy */;
 		};
-		D5821BDD2781CF3F212E90B447A6EBAA /* PBXTargetDependency */ = {
+		D07E5A0C9C8B53FDD51AFADF1F8366D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FMDB-macOS";
-			target = 273A0D12E237D6F775EC6DC6588959C3 /* FMDB-macOS */;
-			targetProxy = 1F2F0B83C6877D66C276A7660C1A5026 /* PBXContainerItemProxy */;
+			name = "FMDB-iOS";
+			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
+			targetProxy = 2D68AC256734D0D9144ED348EC7823D5 /* PBXContainerItemProxy */;
 		};
 		ED8B5967CFA9525D2343B633E0F3BFBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1251,39 +1263,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		083E6CCFB72AB6185B0383AC4B29639F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BF47CAAF1B54711D0906AE2C080C7D5 /* PoporFoundation-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFoundation;
-				PRODUCT_NAME = PoporFoundation;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		12BAD3CCEACEB0E0EC2380F36D5B8171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F0FF51472036A8573A5B0DA65B26DFC /* Pods-PoporFMDB_Tests.release.xcconfig */;
@@ -1520,73 +1499,9 @@
 			};
 			name = Debug;
 		};
-		4D17F8407A4F66878D81B44B9B5609DA /* Release */ = {
+		74D56A93672121E2FBFC225C0D81D901 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAAD296D5FD947224EB7BF0384708352 /* PoporFMDB-macOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFMDB;
-				PRODUCT_NAME = PoporFMDB;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		50D95DE7C54E5392AC0F78C7822B060B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04A5DF93BE6F180049A0832204CEE2E4 /* PoporFoundation-iOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFoundation;
-				PRODUCT_NAME = PoporFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		838B8C120366D9B41D5F9D9FCE60491A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B64164B402F2D9899F57ED4D6EE3573 /* PoporFMDB-iOS.debug.xcconfig */;
+			baseConfigurationReference = ABA618B7F286934B5C0C98BAEC12B5C6 /* PoporFMDB-iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1609,14 +1524,45 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76EF608E3903012970535A00A2BDE403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7883D3ECEAF993A20E21144B14BA854F /* PoporFoundation-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFoundation;
+				PRODUCT_NAME = PoporFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8B96057D6132B181D58E66CA1F42EAA4 /* Release */ = {
+		7CBC54176CD9E642965B276F11769355 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E66AB50F2C8491801EFF5A4762387336 /* PoporFoundation-macOS.release.xcconfig */;
+			baseConfigurationReference = 9BF47CAAF1B54711D0906AE2C080C7D5 /* PoporFoundation-macOS.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1645,7 +1591,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		90C92B4B8A9C716D060005557CB89BCD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1705,6 +1651,37 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		95997385AF67910A3F1AF258507F332E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A5DF93BE6F180049A0832204CEE2E4 /* PoporFoundation-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFoundation;
+				PRODUCT_NAME = PoporFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1773,9 +1750,9 @@
 			};
 			name = Debug;
 		};
-		B4E813799BD842E67717D7D4794EDBC5 /* Debug */ = {
+		A51E5EFB654874C7CDB43973D708FD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7883D3ECEAF993A20E21144B14BA854F /* PoporFoundation-iOS.debug.xcconfig */;
+			baseConfigurationReference = A0ACBE7337DC13EBF006E2E6D272515F /* PoporFMDB-iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1786,18 +1763,51 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFoundation-iOS/PoporFoundation-iOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFoundation;
-				PRODUCT_NAME = PoporFoundation;
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFMDB;
+				PRODUCT_NAME = PoporFMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE3DFFCE263F2EEBB93BF61F809DB8B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBDF63AC0F21F80F0C32F698856BBEF5 /* PoporFMDB-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFMDB;
+				PRODUCT_NAME = PoporFMDB;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1866,32 +1876,67 @@
 			};
 			name = Debug;
 		};
-		F1022A43847AE779D1CE406C55072A0B /* Release */ = {
+		D675258D4FC81E71E6D816FE094854D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6D2D9CF56580ADE1A5E35F4AA83AA0B /* PoporFMDB-iOS.release.xcconfig */;
+			baseConfigurationReference = 269C4CF98EC92849EF1DF1C2A6BD64EA /* PoporFMDB-macOS.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-Info.plist";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS.modulemap";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
 				PRODUCT_MODULE_NAME = PoporFMDB;
 				PRODUCT_NAME = PoporFMDB;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEEAA9F69837CF23BF47A54A2DD57ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66AB50F2C8491801EFF5A4762387336 /* PoporFoundation-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PoporFoundation-macOS/PoporFoundation-macOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFoundation;
+				PRODUCT_NAME = PoporFoundation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1931,60 +1976,9 @@
 			};
 			name = Release;
 		};
-		FC3962D28BAE46BEA2A07AA81CEEC867 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 195E704E64C55C0B98641980CBD992DF /* PoporFMDB-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFMDB;
-				PRODUCT_NAME = PoporFMDB;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17AC91225A62A7D0E7AFDC0397A8BD28 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC3962D28BAE46BEA2A07AA81CEEC867 /* Debug */,
-				4D17F8407A4F66878D81B44B9B5609DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		187B3C1B693BF9D505AB1D33916B0EA3 /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				838B8C120366D9B41D5F9D9FCE60491A /* Debug */,
-				F1022A43847AE779D1CE406C55072A0B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2B97A3DD1488EAD34DBFE6640B906F2E /* Build configuration list for PBXNativeTarget "Pods-PoporFMDBMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2003,11 +1997,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F4E010BB3A432EBC1FC4352F9F01C68 /* Build configuration list for PBXNativeTarget "PoporFoundation-macOS" */ = {
+		71C953BB3B66B4823B4A06688D1779A4 /* Build configuration list for PBXNativeTarget "PoporFoundation-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				083E6CCFB72AB6185B0383AC4B29639F /* Debug */,
-				8B96057D6132B181D58E66CA1F42EAA4 /* Release */,
+				76EF608E3903012970535A00A2BDE403 /* Debug */,
+				95997385AF67910A3F1AF258507F332E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7F5D18BB87AE5227E053310A829333 /* Build configuration list for PBXNativeTarget "PoporFoundation-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBC54176CD9E642965B276F11769355 /* Debug */,
+				EEEAA9F69837CF23BF47A54A2DD57ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2017,15 +2020,6 @@
 			buildConfigurations = (
 				4C4328443F09C1E059C1A1BDC3B79042 /* Debug */,
 				47546CA2B8B95DDB52515DF6601C0C42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9626506EF5945E2041F02CF881E79240 /* Build configuration list for PBXNativeTarget "PoporFoundation-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B4E813799BD842E67717D7D4794EDBC5 /* Debug */,
-				50D95DE7C54E5392AC0F78C7822B060B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2053,6 +2047,24 @@
 			buildConfigurations = (
 				18361C6544E4A157D723034655207CE8 /* Debug */,
 				F23075455F4A4927AC7B75F2EF85F44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8DD6B2BEC1F186681242123D703F5C3 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3DFFCE263F2EEBB93BF61F809DB8B5 /* Debug */,
+				D675258D4FC81E71E6D816FE094854D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D820282ADF6D6C571DCA2C9CEFF421C3 /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51E5EFB654874C7CDB43973D708FD3B /* Debug */,
+				74D56A93672121E2FBFC225C0D81D901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

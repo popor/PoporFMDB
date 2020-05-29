@@ -124,6 +124,7 @@
     return [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
 }
 
+// 设置1个, 条件where 1个
 + (BOOL)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
     BOOL success = NO;
     if (!tableName || !key || !whereKey) {
@@ -136,6 +137,68 @@
     [tool start];
     success = [tool.db executeUpdate:futureSQL, value, whereValue];
     [tool end];
+    return success;
+}
+
+/**
+ where 仅支持 and 语法
+ */
++ (BOOL)updateTable:(NSString *)tableName keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
+    BOOL success = NO;
+    if (!tableName) {
+        NSLog(@"❌❌❌ PoporFMDB Error : tableName is nil");
+        return success;
+    }
+    if (keyArray.count == 0) {
+        NSLog(@"❌❌❌ PoporFMDB Error : keyArray is nil");
+        return success;
+    }
+    if (whereKeyArray.count == 0) {
+        NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray is nil");
+        return success;
+    }
+    
+    if (keyArray.count != valueArray.count) {
+        NSLog(@"❌❌❌ PoporFMDB Error : keyArray.count != valueArray.count");
+        return success;
+    }
+    if (whereKeyArray.count != whereValueArray.count) {
+        NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray.count != whereValueArray.count");
+        return success;
+    }
+    
+    
+    NSMutableString * sql = [NSMutableString new];
+    [sql appendFormat:@"UPDATE %@ ", tableName];
+    
+    // set 循环
+    [sql appendString:@"set "];
+    for (int i = 0; i<keyArray.count; i++) {
+        if (i == 0) {
+            [sql appendFormat:@"%@ = ? ", keyArray[i]];
+        } else {
+            [sql appendFormat:@", %@ = ? ", keyArray[i]];
+        }
+    }
+    
+    // where 循环
+    [sql appendString:@"where "];
+    for (int i=0; i<whereKeyArray.count; i++) {
+        if (i == 0) {
+             [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
+        } else {
+            [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+        }
+    }
+    NSMutableArray * updateArray = [NSMutableArray new];
+    [updateArray addObjectsFromArray:valueArray];
+    [updateArray addObjectsFromArray:whereValueArray];
+    
+    PoporFMDB * tool = [PoporFMDB share];
+    [tool start];
+    success = [tool.db executeUpdate:sql, value, whereValue];
+    [tool end];
+    
     return success;
 }
 

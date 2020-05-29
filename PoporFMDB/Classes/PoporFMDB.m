@@ -111,7 +111,6 @@
         return success;
     }
     
-    [entity setValue:value forKey:key];
     NSString * tableName  = NSStringFromClass([entity class]);
     if (!whereValue) {
         whereValue = [entity valueForKey:whereKey];

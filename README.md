@@ -38,6 +38,10 @@ addPlistKey 增加检查 key 是否重复
 1.07
 允许修改db path
 
+1.08
+移除了 PoporFMDB 的 + (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue, 内部一个给entity赋值的多余操作.
+
+
 ## Author
 
 wangkq, 908891024@qq.com

@@ -10,4 +10,8 @@
 
 @implementation TestEntity
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"title: %@, subtitle: %@, content: %@, t1: %@, t2: %i", self.title, self.subtitle, self.content, self.t1, self.t2];
+}
+
 @end

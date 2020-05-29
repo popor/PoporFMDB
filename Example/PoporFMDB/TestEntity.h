@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSString * content;
 
 @property (nonatomic, strong) NSString * t1;
-@property (nonatomic        ) int      t2;
+@property (nonatomic        ) int        t2;
 
 @end

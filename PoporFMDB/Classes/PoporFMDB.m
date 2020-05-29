@@ -101,6 +101,7 @@
 }
 
 // !!!:目前没有非或者不需要wherekey的接口
+// 设置1个, 条件where 1个
 + (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(id)whereKey {
     return [self updateEntity:entity key:key equal:value where:whereKey equal:nil];
 }
@@ -108,6 +109,7 @@
 + (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
     BOOL success = NO;
     if (!entity || !key || !whereKey) {
+        NSLog(@"❌❌❌ PoporFMDB Error : !entity || !key || !whereKey");
         return success;
     }
     
@@ -128,6 +130,7 @@
 + (BOOL)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
     BOOL success = NO;
     if (!tableName || !key || !whereKey) {
+        NSLog(@"❌❌❌ PoporFMDB Error : !tableName || !key || !whereKey");
         return success;
     }
     
@@ -138,6 +141,39 @@
     success = [tool.db executeUpdate:futureSQL, value, whereValue];
     [tool end];
     return success;
+}
+
+// 设置N个, 条件where N个
++ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray {
+    return [self updateEntity:entity keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:nil];
+}
+
++ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
+    if (!entity) {
+        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
+        return NO;
+    }
+    NSString * tableName  = NSStringFromClass([entity class]);
+    if (whereValueArray) {
+        return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray];
+    } else {
+        NSMutableArray * whereValueArray_edit = [NSMutableArray new];
+        for (NSString * whereKey in whereKeyArray) {
+            NSObject * ob = [entity valueForKey:whereKey];
+            if (ob) {
+                [whereValueArray_edit addObject:ob];
+            } else {
+                NSLog(@"❌❌❌ PoporFMDB Error : create whereValueArray with nil object");
+                return NO;
+            }
+        }
+        return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray_edit];
+    }
+}
+
++ (BOOL)updateClass:(Class)class keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
+    NSString * tableName  = NSStringFromClass(class);
+    return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray];
 }
 
 /**
@@ -167,7 +203,6 @@
         return success;
     }
     
-    
     NSMutableString * sql = [NSMutableString new];
     [sql appendFormat:@"UPDATE %@ ", tableName];
     
@@ -196,7 +231,8 @@
     
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
-    success = [tool.db executeUpdate:sql, value, whereValue];
+    // https://www.thinbug.com/q/431910
+    success = [tool.db executeUpdate:sql withArgumentsInArray:updateArray];
     [tool end];
     
     return success;

@@ -41,9 +41,6 @@
 + (BOOL)updateClass:(Class)class keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray;
 + (BOOL)updateTable:(NSString *)tableName keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray;
 
-// 一次性更新entity所有参数
-+ (BOOL)updateEntity:(id)entity where:(NSString *)whereKey;
-
 + (NSMutableArray *)arrayClass:(Class)class;
 + (NSMutableArray *)arrayClass:(Class)class orderBy:(NSString *)orderKey asc:(BOOL)asc;
 + (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue;

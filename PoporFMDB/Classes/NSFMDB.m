@@ -8,7 +8,6 @@
 
 #import "NSFMDB.h"
 #import <objc/runtime.h>
-#import <PoporFoundation/NSString+pTool.h>
 
 @implementation NSFMDB
 
@@ -132,7 +131,9 @@
         if ([propAttributesString hasPrefix:@"T@\"NSString\""]
             || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
             valueString = [NSString stringWithFormat:@"%@",value];
-            valueString = [valueString replaceWithREG:@"'" newString:@"''"];
+            
+            // 假如 value 包含'符号的话, 会和SQL语句冲突, 需要把'变为''
+            valueString = [valueString stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
         }
         else if ([propAttributesString hasPrefix:@"Tc"]
             || [propAttributesString hasPrefix:@"Ti"]
@@ -182,89 +183,89 @@
     return tempSQLS;
 }
 
-+ (NSString *)getInsertEmojSQLS:(id)theClassEntity     with:(NSString *)theTableName{
-    NSMutableString * tempSQLS=[[NSMutableString alloc] init];
-    
-    NSMutableString * parameterIDs    = [NSMutableString new];
-    NSMutableString * parameterValues = [NSMutableString new];
-    
-    [tempSQLS appendString:@"INSERT INTO "];// 开头
-    [tempSQLS appendString:theTableName];    // tableName
-    
-    [parameterIDs appendString:@"("];
-    [parameterValues appendString:@"("];
-    
-    unsigned propertyCount;
-    
-    objc_property_t *properties = class_copyPropertyList([theClassEntity class],&propertyCount);
-    for(int i=0;i<propertyCount;i++){
-        NSString * propNameString;
-        NSString * propAttributesString;
-        
-        objc_property_t prop=properties[i];
-        
-        const char *propName = property_getName(prop);
-        propNameString =[NSString stringWithCString:propName encoding:NSASCIIStringEncoding];
-        
-        const char * propAttributes=property_getAttributes(prop);
-        propAttributesString =[NSString stringWithCString:propAttributes encoding:NSASCIIStringEncoding];
-        
-        id value = [theClassEntity valueForKey:propNameString];
-        NSString * valueString;
-        
-        // 根据各个情况处理.
-        // 新增
-        // TB:BOOL(64位)
-        // Tq: NSIntger(64位)
-        if ([propAttributesString hasPrefix:@"T@\"NSString\""]
-            || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
-            valueString = [NSString stringWithFormat:@"%@",value];
-            valueString = [valueString replaceWithREG:@"'" newString:@"''"];
-        }
-        if ([propAttributesString hasPrefix:@"Tc"]
-            || [propAttributesString hasPrefix:@"Ti"]
-            || [propAttributesString hasPrefix:@"TB"]
-            || [propAttributesString hasPrefix:@"Tq"]
-            ){
-            valueString=[NSString stringWithFormat:@"%i",[value intValue]];
-        }
-        if ([propAttributesString hasPrefix:@"Tf"]){
-            valueString=[NSString stringWithFormat:@"%f",[value floatValue]];
-        }
-        if ([propAttributesString hasPrefix:@"T@\"NSNumber\""]){
-            
-            NSNumber * oneNumber=(NSNumber *)value;
-            valueString=[NSString stringWithFormat:@"%i",[oneNumber intValue]];
-        }
-        if (valueString==nil) {
-            continue;
-        }else {
-            // 修改,加上单引号
-            valueString=[NSString stringWithFormat:@"'%@'",valueString];
-            // 赋值
-            if (i==0) {
-                [parameterIDs appendString:propNameString];
-                [parameterValues appendString:valueString];
-            }else {
-                [parameterIDs appendString:[NSString stringWithFormat:@", %@",propNameString]];
-                [parameterValues appendString:[NSString stringWithFormat:@", %@",valueString]];
-            }
-        }
-    } // end for.
-    {
-        // 组装
-        [parameterIDs appendString:@")"];
-        [parameterValues appendString:@")"];
-        
-        [tempSQLS appendString:parameterIDs];
-        [tempSQLS appendString:@"VALUES "];
-        [tempSQLS appendString:parameterValues];
-    }
-    parameterIDs    = nil;
-    parameterValues = nil;
-    free(properties);
-    return tempSQLS;
-}
+//+ (NSString *)getInsertEmojSQLS:(id)theClassEntity     with:(NSString *)theTableName{
+//    NSMutableString * tempSQLS=[[NSMutableString alloc] init];
+//
+//    NSMutableString * parameterIDs    = [NSMutableString new];
+//    NSMutableString * parameterValues = [NSMutableString new];
+//
+//    [tempSQLS appendString:@"INSERT INTO "];// 开头
+//    [tempSQLS appendString:theTableName];    // tableName
+//
+//    [parameterIDs appendString:@"("];
+//    [parameterValues appendString:@"("];
+//
+//    unsigned propertyCount;
+//
+//    objc_property_t *properties = class_copyPropertyList([theClassEntity class],&propertyCount);
+//    for(int i=0;i<propertyCount;i++){
+//        NSString * propNameString;
+//        NSString * propAttributesString;
+//
+//        objc_property_t prop=properties[i];
+//
+//        const char *propName = property_getName(prop);
+//        propNameString =[NSString stringWithCString:propName encoding:NSASCIIStringEncoding];
+//
+//        const char * propAttributes=property_getAttributes(prop);
+//        propAttributesString =[NSString stringWithCString:propAttributes encoding:NSASCIIStringEncoding];
+//
+//        id value = [theClassEntity valueForKey:propNameString];
+//        NSString * valueString;
+//
+//        // 根据各个情况处理.
+//        // 新增
+//        // TB:BOOL(64位)
+//        // Tq: NSIntger(64位)
+//        if ([propAttributesString hasPrefix:@"T@\"NSString\""]
+//            || [propAttributesString hasPrefix:@"T@\"NSMutableString\""]){
+//            valueString = [NSString stringWithFormat:@"%@",value];
+//            valueString = [valueString replaceWithREG:@"'" newString:@"''"];
+//        }
+//        if ([propAttributesString hasPrefix:@"Tc"]
+//            || [propAttributesString hasPrefix:@"Ti"]
+//            || [propAttributesString hasPrefix:@"TB"]
+//            || [propAttributesString hasPrefix:@"Tq"]
+//            ){
+//            valueString=[NSString stringWithFormat:@"%i",[value intValue]];
+//        }
+//        if ([propAttributesString hasPrefix:@"Tf"]){
+//            valueString=[NSString stringWithFormat:@"%f",[value floatValue]];
+//        }
+//        if ([propAttributesString hasPrefix:@"T@\"NSNumber\""]){
+//
+//            NSNumber * oneNumber=(NSNumber *)value;
+//            valueString=[NSString stringWithFormat:@"%i",[oneNumber intValue]];
+//        }
+//        if (valueString==nil) {
+//            continue;
+//        }else {
+//            // 修改,加上单引号
+//            valueString=[NSString stringWithFormat:@"'%@'",valueString];
+//            // 赋值
+//            if (i==0) {
+//                [parameterIDs appendString:propNameString];
+//                [parameterValues appendString:valueString];
+//            }else {
+//                [parameterIDs appendString:[NSString stringWithFormat:@", %@",propNameString]];
+//                [parameterValues appendString:[NSString stringWithFormat:@", %@",valueString]];
+//            }
+//        }
+//    } // end for.
+//    {
+//        // 组装
+//        [parameterIDs appendString:@")"];
+//        [parameterValues appendString:@")"];
+//
+//        [tempSQLS appendString:parameterIDs];
+//        [tempSQLS appendString:@"VALUES "];
+//        [tempSQLS appendString:parameterValues];
+//    }
+//    parameterIDs    = nil;
+//    parameterValues = nil;
+//    free(properties);
+//    return tempSQLS;
+//}
 
 
 // 只支持全额属性集

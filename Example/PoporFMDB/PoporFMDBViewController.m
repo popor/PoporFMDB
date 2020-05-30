@@ -83,7 +83,7 @@
     TestEntity * entity = [TestEntity new];
     entity.t2       = 2;
     
-    entity.title    = [NSString stringWithFormat:@"title %i", entity.t2];
+    entity.title    = [NSString stringWithFormat:@"titl'e %i", entity.t2];
     entity.subtitle = [NSString stringWithFormat:@"subtitle %i", entity.t2];
     entity.content  = [NSString stringWithFormat:@"title %i", entity.t2];
     entity.t1       = [NSString stringWithFormat:@"t1 %i", entity.t2];

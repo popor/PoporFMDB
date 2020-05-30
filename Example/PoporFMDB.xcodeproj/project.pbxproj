@@ -408,13 +408,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB-macOS/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFMDB-macOS/PoporFMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/PoporFoundation-macOS/PoporFoundation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporFMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporFoundation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,13 +446,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB-iOS/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/PoporFMDB-iOS/PoporFMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/PoporFoundation-iOS/PoporFoundation.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporFMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PoporFoundation.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

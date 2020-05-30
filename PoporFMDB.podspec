@@ -42,6 +42,6 @@ Pod::Spec.new do |s|
     s.source_files = 'PoporFMDB/Classes/*.{h,m}'
     
     s.dependency 'FMDB'
-    s.dependency 'PoporFoundation/NSString'
+    #s.dependency 'PoporFoundation/NSString'
     
 end

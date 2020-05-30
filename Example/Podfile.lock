@@ -4,10 +4,6 @@ PODS:
   - FMDB/standard (2.7.5)
   - PoporFMDB (1.08):
     - FMDB
-    - PoporFoundation/NSString
-  - PoporFoundation/NSString (1.04):
-    - PoporFoundation/Os
-  - PoporFoundation/Os (1.04)
 
 DEPENDENCIES:
   - PoporFMDB (from `../`)
@@ -15,7 +11,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FMDB
-    - PoporFoundation
 
 EXTERNAL SOURCES:
   PoporFMDB:
@@ -23,8 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  PoporFMDB: 7416539a9f009ae3b069bec3abaa087bfcd6eea5
-  PoporFoundation: f2d6a1484ed875024bcf5ab6fd404a0d7c485d10
+  PoporFMDB: f9ad0fc3d54e037b608da95c5b65bfb0fea689c3
 
 PODFILE CHECKSUM: 806d2928f79edeeb49d8f7c60a38c2d7c96ace40
 

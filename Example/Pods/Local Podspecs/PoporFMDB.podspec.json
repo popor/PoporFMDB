@@ -33,9 +33,6 @@
   "dependencies": {
     "FMDB": [
 
-    ],
-    "PoporFoundation/NSString": [
-
     ]
   }
 }

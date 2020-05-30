@@ -199,12 +199,10 @@ fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB-macOS/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporFMDB-macOS/PoporFMDB.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PoporFoundation-macOS/PoporFoundation.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FMDB-macOS/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PoporFMDB-macOS/PoporFMDB.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PoporFoundation-macOS/PoporFoundation.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

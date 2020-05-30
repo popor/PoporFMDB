@@ -1,6 +1,0 @@
-framework module PoporFoundation {
-  umbrella header "PoporFoundation-macOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

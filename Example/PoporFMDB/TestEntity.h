@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestEntity : NSObject
+@interface TestEntity<WKQ> : NSObject
 
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * subtitle;
@@ -16,5 +16,7 @@
 
 @property (nonatomic, strong) NSString * t1;
 @property (nonatomic        ) int        t2;
+
+- (void)buy:(WKQ)product;
 
 @end

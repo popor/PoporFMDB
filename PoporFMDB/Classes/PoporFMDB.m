@@ -56,6 +56,7 @@
     return success;
 }
 
+// MARK: DELETE
 + (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey {
     return [self deleteEntity:entity where:whereKey equal:nil];
 }
@@ -100,105 +101,65 @@
     return success;
 }
 
-// !!!:目前没有非或者不需要wherekey的接口
-// 设置1个, 条件where 1个
-+ (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(id)whereKey {
-    return [self updateEntity:entity key:key equal:value where:whereKey equal:nil];
-}
-
-+ (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
-    BOOL success = NO;
-    if (!entity || !key || !whereKey) {
-        NSLog(@"❌❌❌ PoporFMDB Error : !entity || !key || !whereKey");
-        return success;
-    }
-    
-    NSString * tableName  = NSStringFromClass([entity class]);
-    if (!whereValue) {
-        whereValue = [entity valueForKey:whereKey];
-    }
-    
-    return [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
-}
-
-+ (BOOL)updateClass:(Class)class key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
-    NSString * tableName  = NSStringFromClass(class);
-    return [self updateTable:tableName key:key equal:value where:whereKey equal:whereValue];
-}
-
-// 设置1个, 条件where 1个
-+ (BOOL)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue {
-    BOOL success = NO;
-    if (!tableName || !key || !whereKey) {
-        NSLog(@"❌❌❌ PoporFMDB Error : !tableName || !key || !whereKey");
-        return success;
-    }
-    
-    NSString * futureSQL = [NSString stringWithFormat:@"UPDATE %@ set %@ = ? where %@ = ?;", tableName, key, whereKey];
-    
-    PoporFMDB * tool = [PoporFMDB share];
-    [tool start];
-    success = [tool.db executeUpdate:futureSQL, value, whereValue];
-    [tool end];
-    return success;
-}
-
-// 设置N个, 条件where N个
-+ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray {
-    return [self updateEntity:entity keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:nil];
-}
-
-+ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
+// MARK: update
++ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
     if (!entity) {
         NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
         return NO;
     }
     NSString * tableName  = NSStringFromClass([entity class]);
-    if (whereValueArray) {
-        return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray];
-    } else {
-        NSMutableArray * whereValueArray_edit = [NSMutableArray new];
-        for (NSString * whereKey in whereKeyArray) {
-            NSObject * ob = [entity valueForKey:whereKey];
-            if (ob) {
-                [whereValueArray_edit addObject:ob];
-            } else {
-                NSLog(@"❌❌❌ PoporFMDB Error : create whereValueArray with nil object");
-                return NO;
-            }
-        }
-        return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray_edit];
-    }
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue];
 }
 
-+ (BOOL)updateClass:(Class)class keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
++ (BOOL)updateClass:(Class)class set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
     NSString * tableName  = NSStringFromClass(class);
-    return [self updateTable:tableName keyS:keyArray equalS:valueArray whereS:whereKeyArray equalS:whereValueArray];
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue];
 }
 
 /**
  where 仅支持 and 语法
  */
-+ (BOOL)updateTable:(NSString *)tableName keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray {
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
     BOOL success = NO;
+    
+    NSArray * setKeyArray;
+    NSArray * setValueArray;
+    NSArray * whereKeyArray;
+    NSArray * whereValueArray;
+    
+    // 统一整理成数组
+    if ([setKey isKindOfClass:[NSArray class]]) {
+        setKeyArray   = (NSArray *)setKey;
+        setValueArray = (NSArray *)setValue;
+    } else {
+        setKeyArray   = @[setKey];
+        setValueArray = @[setValue];
+    }
+    if (whereKey) {
+        if ([whereKey isKindOfClass:[NSArray class]]) {
+            whereKeyArray   = (NSArray *)whereKey;
+            whereValueArray = (NSArray *)whereValue;
+        } else {
+            whereKeyArray   = @[whereKey];
+            whereValueArray = @[whereValue];
+        }
+    }
+    
+    // 异常排查
     if (!tableName) {
         NSLog(@"❌❌❌ PoporFMDB Error : tableName is nil");
         return success;
     }
-    if (keyArray.count == 0) {
-        NSLog(@"❌❌❌ PoporFMDB Error : keyArray is nil");
+    if (setKeyArray.count == 0) {
+        NSLog(@"❌❌❌ PoporFMDB Error : setKeyArray is nil");
         return success;
     }
-    if (whereKeyArray.count == 0) {
-        NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray is nil");
+    if (setKeyArray.count != setValueArray.count) {
+        NSLog(@"❌❌❌ PoporFMDB Error : setKeyArray.count != setValueArray.count");
         return success;
     }
-    
-    if (keyArray.count != valueArray.count) {
-        NSLog(@"❌❌❌ PoporFMDB Error : keyArray.count != valueArray.count");
-        return success;
-    }
-    if (whereKeyArray.count != whereValueArray.count) {
+    // where 可以为空
+    if (whereKeyArray.count != 0 && whereKeyArray.count != whereValueArray.count) {
         NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray.count != whereValueArray.count");
         return success;
     }
@@ -208,31 +169,36 @@
     
     // set 循环
     [sql appendString:@"set "];
-    for (int i = 0; i<keyArray.count; i++) {
+    for (int i = 0; i<setKeyArray.count; i++) {
         if (i == 0) {
-            [sql appendFormat:@"%@ = ? ", keyArray[i]];
+            [sql appendFormat:@"%@ = ? ", setKeyArray[i]];
         } else {
-            [sql appendFormat:@", %@ = ? ", keyArray[i]];
+            [sql appendFormat:@", %@ = ? ", setKeyArray[i]];
         }
     }
     
     // where 循环
-    [sql appendString:@"where "];
-    for (int i=0; i<whereKeyArray.count; i++) {
-        if (i == 0) {
-             [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
-        } else {
-            [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+    if (whereKeyArray.count > 0) {
+        [sql appendString:@"where "];
+        for (int i=0; i<whereKeyArray.count; i++) {
+            if (i == 0) {
+                [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
+            } else {
+                [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+            }
         }
     }
+    
+    // 拼接SQL
     NSMutableArray * updateArray = [NSMutableArray new];
-    [updateArray addObjectsFromArray:valueArray];
-    [updateArray addObjectsFromArray:whereValueArray];
+    [updateArray addObjectsFromArray:setValueArray];
+    if (whereKeyArray.count > 0) {
+        [updateArray addObjectsFromArray:whereValueArray];
+    }
     
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
-    // https://www.thinbug.com/q/431910
-    success = [tool.db executeUpdate:sql withArgumentsInArray:updateArray];
+    success = [tool.db executeUpdate:sql withArgumentsInArray:updateArray]; // https://www.thinbug.com/q/431910
     [tool end];
     
     return success;
@@ -329,7 +295,48 @@
     AppInfoEntity * entity = [AppInfoEntity new];
     entity.key   = key;
     entity.value = value;
-    return [PoporFMDB updateEntity:entity key:@"value" equal:value where:@"key" equal:key];
+    return [PoporFMDB updateEntity:entity set:@"value" equal:value where:@"key" equal:key];
 }
 
 @end
+
+// 移除的函数
+//+ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey {
+//    return [self updateEntity:entity set:setKey equal:setValue where:whereKey equal:nil];
+//}
+
+//+ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
+//    if (!entity) {
+//        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
+//        return NO;
+//    }
+//    NSString * tableName  = NSStringFromClass([entity class]);
+//
+//    if ((whereKey && whereValue) || (!whereKey && !whereValue)) {
+//        return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue];
+//    } else {
+//        if (!whereKey) {
+//            NSLog(@"❌❌❌ PoporFMDB Error : whereKey is nil, whereValue not nil.");
+//            return NO;
+//        } else {
+//            NSArray * whereKey_edit;
+//            if ([whereKey isKindOfClass:[NSArray class]]) {
+//                whereKey_edit = (NSArray *)whereKey;
+//            } else {
+//                whereKey_edit = @[whereKey];
+//            }
+//
+//            NSMutableArray * whereValue_edit = [NSMutableArray new];
+//            for (NSString * whereKey in whereKey_edit) {
+//                NSObject * ob = [entity valueForKey:whereKey];
+//                if (ob) {
+//                    [whereValue_edit addObject:ob];
+//                } else {
+//                    NSLog(@"❌❌❌ PoporFMDB Error : create whereValueArray with nil object");
+//                    return NO;
+//                }
+//            }
+//            return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue_edit];
+//        }
+//    }
+//}

@@ -100,6 +100,12 @@
 
 - (void)delete {
     [PDB deleteClass:[TestEntity class] where:@"t2" equal:@(2)];
+    
+    //    {// 其他 泛型
+    //        TestEntity * entity = [TestEntity new];
+    //        [entity buy:@"12"];
+    //        [entity buy:@[@"2333"]];
+    //    }
 }
 
 - (void)update {
@@ -108,8 +114,10 @@
     TestEntity * entity = array.firstObject;
     
     // 直接修改多个参数
-    [PDB updateEntity:entity keyS:@[@"title", @"subtitle"] equalS:@[@"wkqT", @"wkqST"] whereS:@[@"t2"]];
+    //[PDB updateEntity:entity set:[@[@"title", @"subtitle"] mutableCopy] equal:@[@"wkqT", @"wkqST"] where:@[@"t2"] equal:@[@(entity.t2)]];
     
+    // 修改单个
+    [PDB updateEntity:entity set:@"title" equal:@"wkq signal" where:@[@"t2"] equal:@(entity.t2)];
 }
 
 /**
@@ -139,5 +147,9 @@
     }
 
 }
+
+//- (void)testP2:(T<NSArray *>)dd {
+//    
+//}
 
 @end

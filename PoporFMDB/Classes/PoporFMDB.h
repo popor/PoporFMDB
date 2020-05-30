@@ -12,7 +12,7 @@
 
 #define PDB      PoporFMDB
 
-@interface PoporFMDB : PoporFMDBBase
+@interface PoporFMDB <PoporFMDB_T>: PoporFMDBBase
 
 // 1.first you need update and check DB table array.
 + (void)injectTableArray:(NSArray<Class> *)tableArray;
@@ -22,24 +22,22 @@
 
 #pragma mark - baseMethod
 + (BOOL)addEntity:(id)entity;
-+ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey;
-+ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey equal:(id)whereValue;
-+ (BOOL)deleteClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue;
+
+// MARK: DELETE
++ (BOOL)deleteEntity:(id)entity           where:(NSString *)whereKey;// 不再支持此函数, 满足函数单一原则, 维护太麻烦了, 而且比较浪费cpu.
++ (BOOL)deleteEntity:(id)entity           where:(NSString *)whereKey equal:(id)whereValue;
++ (BOOL)deleteClass:(Class)class          where:(NSString *)whereKey equal:(id)whereValue;
 + (BOOL)deleteTable:(NSString *)tableName where:(NSString *)whereKey equal:(id)whereValue;
 
-// !!!:目前没有非或者不需要wherekey的接口
-// 设置1个, 条件where 1个
-+ (BOOL)updateEntity:(id)entity  key:(NSString *)key equal:(id)value where:(NSString *)whereKey;
-+ (BOOL)updateEntity:(id)entity  key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue;
-+ (BOOL)updateClass:(Class)class key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue;
-+ (BOOL)updateTable:(NSString *)tableName key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue;
-
-
-// 设置N个, 条件where N个
-+ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray;
-+ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray;
-+ (BOOL)updateClass:(Class)class keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray;
-+ (BOOL)updateTable:(NSString *)tableName keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray equalS:(NSArray *)whereValueArray;
+// MARK: update
+/**
+ setKey 是数组的话, setValue必须是数组; setKey是NSString的话,setValue可以是id或者数组.
+ 同样针对于whereKey和whereValue.
+ */
+//+ (BOOL)updateEntity:(id)entity         set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey;// 不再支持此函数, 满足函数单一原则, 维护太麻烦了, 而且比较浪费cpu.
++ (BOOL)updateEntity:(id)entity           set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey equal:(id)whereValue;
++ (BOOL)updateClass:(Class)class          set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey equal:(id)whereValue;
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey          equal:(id)setValue where:(id)whereKey          equal:(id)whereValue;
 
 + (NSMutableArray *)arrayClass:(Class)class;
 + (NSMutableArray *)arrayClass:(Class)class orderBy:(NSString *)orderKey asc:(BOOL)asc;
@@ -52,7 +50,7 @@
 #pragma mark - 模仿plist数据
 
 + (NSString *)getPlistKey:(NSString *)key;
-+ (BOOL)addPlistKey:(NSString *)key value:(NSString *)value;
++ (BOOL)addPlistKey:(NSString *)key    value:(NSString *)value;
 + (BOOL)updatePlistKey:(NSString *)key value:(NSString *)value;
 
 

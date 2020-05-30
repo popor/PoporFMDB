@@ -14,4 +14,10 @@
     return [NSString stringWithFormat:@"title: %@, subtitle: %@, content: %@, t1: %@, t2: %i", self.title, self.subtitle, self.content, self.t1, self.t2];
 }
 
+
+- (void)buy:(id)product {
+    NSLog(@"class: %@", NSStringFromClass([product class]));
+    NSLog(@"T: %@", product);
+}
+
 @end

@@ -41,10 +41,7 @@ addPlistKey 增加检查 key 是否重复
 1.08
 移除了 PoporFMDB 的 + (BOOL)updateEntity:(id)entity key:(NSString *)key equal:(id)value where:(NSString *)whereKey equal:(id)whereValue, 内部一个给entity赋值的多余操作.
 
-+ (BOOL)updateEntity:(id)entity  keyS:(NSArray *)keyArray equalS:(NSArray *)valueArray whereS:(NSArray *)whereKeyArray;
-允许update的时候,修改多个参数,where也允许多个参数, demo 中包含了用法.
-
-
+DELETE 和 UPDATE 的 set 和 where 允许传递数组.
 
 ## Author
 

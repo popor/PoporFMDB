@@ -44,6 +44,7 @@
 + (BOOL)addEntity:(id)entity {
     BOOL success = NO;
     if (!entity) {
+        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
         return success;
     }
     PoporFMDB * tool = [PoporFMDB share];
@@ -57,47 +58,68 @@
 }
 
 // MARK: DELETE
-+ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey {
-    return [self deleteEntity:entity where:whereKey equal:nil];
-}
-
-+ (BOOL)deleteEntity:(id)entity where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)deleteEntity:(id)entity where:(id)whereKey equal:(id)whereValue {
     BOOL success = NO;
-    if (!entity || !whereKey) {
+    if (!entity) {
+        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
         return success;
     }
     
     NSString * tableName  = NSStringFromClass([entity class]);
-    if (!whereValue) {
-        whereValue = [entity valueForKey:whereKey];
-    }
-    
     success = [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
     return success;
 }
 
-+ (BOOL)deleteClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue {
++ (BOOL)deleteClass:(Class)class where:(id)whereKey equal:(id)whereValue {
     NSString * tableName  = NSStringFromClass(class);
     return [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
 }
 
 + (BOOL)deleteTable:(NSString *)tableName where:(NSString *)whereKey equal:(id)whereValue {
     BOOL success = NO;
-    if (!tableName || !whereKey) {
+    if (!tableName) {
+        NSLog(@"❌❌❌ PoporFMDB Error : tableName is nil");
         return success;
     }
     
-    NSString * futureSQL = [NSString stringWithFormat:@"DELETE FROM %@ where %@ = ?;", tableName, whereKey];
+    NSArray * whereKeyArray;
+    NSArray * whereValueArray;
     
-    //@"SELECT * FROM "noteBookTableName" WHERE pageIndex=?;"
-    //[self.db executeUpdate:@"UPDATE "noteBookTableName" set recordText=? , recordTitle=? where recordUUID=?;"
+    // 统一整理成数组
+    if (whereKey) {
+        if ([whereKey isKindOfClass:[NSArray class]]) {
+            whereKeyArray   = (NSArray *)whereKey;
+            whereValueArray = (NSArray *)whereValue;
+        } else {
+            whereKeyArray   = @[whereKey];
+            whereValueArray = @[whereValue];
+        }
+    }
+    
+    NSMutableString * sql = [NSMutableString new];
+    [sql appendFormat:@"DELETE FROM %@ ", tableName];
+        
+    // where 循环
+    if (whereKeyArray.count > 0) {
+        [sql appendString:@"where "];
+        for (int i=0; i<whereKeyArray.count; i++) {
+            if (i == 0) {
+                [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
+            } else {
+                [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+            }
+        }
+    }
     
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
-    
-    success = [tool.db executeUpdate:futureSQL, whereValue];
-    
+    if (whereKeyArray.count == 0) {
+        success = [tool.db executeUpdate:sql];
+    } else {
+        success = [tool.db executeUpdate:sql withArgumentsInArray:whereValueArray];
+    }
     [tool end];
+    
     return success;
 }
 

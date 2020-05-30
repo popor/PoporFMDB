@@ -8,7 +8,7 @@
 // 生成sql常用语句
 #import <Foundation/Foundation.h>
 
-#import <FMDB/FMDatabase.h>
+#import <fmdb/FMDatabase.h>
 
 #define NeedDrop @"NeedDrop"
 #define NeedAdd  @"NeedAdd"

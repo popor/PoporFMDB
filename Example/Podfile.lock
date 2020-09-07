@@ -2,7 +2,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - PoporFMDB (1.08):
+  - PoporFMDB (1.09):
     - FMDB
 
 DEPENDENCIES:
@@ -18,8 +18,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  PoporFMDB: f9ad0fc3d54e037b608da95c5b65bfb0fea689c3
+  PoporFMDB: 6b62d46f5f47fce02f3be228e34692cebaa72d1d
 
 PODFILE CHECKSUM: 806d2928f79edeeb49d8f7c60a38c2d7c96ace40
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.beta.2

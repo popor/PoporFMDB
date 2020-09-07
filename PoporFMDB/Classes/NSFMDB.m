@@ -50,7 +50,8 @@
                 // 字符类型
                 [sql_property appendString:[NSString stringWithFormat:@"%@ TEXT,",propNameString]];
             }
-            else if ([propAttributesString hasPrefix:@"Tf"]){
+            else if ([propAttributesString hasPrefix:@"Tf"] // float
+                     ||[propAttributesString hasPrefix:@"Td"]){ // CGFloat
                 // 字符类型
                 [sql_property appendString:[NSString stringWithFormat:@"%@ Float,",propNameString]];
             }
@@ -301,8 +302,8 @@
         ){
             [theClassEntity setValue:[NSNumber numberWithInt:[[rs stringForColumn:propNameString] intValue]] forKey:propNameString];
         }
-        if ([propAttributesString hasPrefix:@"Tf"])
-        {
+        if ([propAttributesString hasPrefix:@"Tf"] // float
+            || [propAttributesString hasPrefix:@"Td"]) { // CGFloat
             [theClassEntity setValue:[NSNumber numberWithFloat:[[rs stringForColumn:propNameString] floatValue]] forKey:propNameString];
         }
         

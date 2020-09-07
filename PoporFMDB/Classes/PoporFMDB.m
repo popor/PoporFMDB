@@ -181,9 +181,12 @@
         return success;
     }
     // where 可以为空
-    if (whereKeyArray.count != 0 && whereKeyArray.count != whereValueArray.count) {
-        NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray.count != whereValueArray.count");
-        return success;
+    if (whereKeyArray) {
+        if (whereKeyArray.count != whereValueArray.count) {
+            NSLog(@"❌❌❌ PoporFMDB Error : whereKeyArray.count != whereValueArray.count");
+            return success;
+        }
+        
     }
     
     NSMutableString * sql = [NSMutableString new];
@@ -227,59 +230,67 @@
 }
 
 + (NSMutableArray *)arrayClass:(Class)class {
-    return [self arrayClass:class where:nil equal:nil orderBy:nil asc:YES];
+    return [self arrayClass:class where:nil equal:nil];
 }
 
-+ (NSMutableArray *)arrayClass:(Class)class orderBy:(NSString *)orderKey asc:(BOOL)asc {
-    return [self arrayClass:class where:nil equal:nil orderBy:orderKey asc:asc];
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equal:(id)whereValue {
+    return [self arrayClass:class where:whereKey equalSymbol:@"="    equal:whereValue];
 }
 
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue {
-    return [self arrayClass:class where:whereKey equal:whereValue orderBy:nil asc:YES];
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey like:(id)whereValue {
+    return [self arrayClass:class where:whereKey equalSymbol:@"like" equal:whereValue];
 }
 
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
-    return [self arrayClass:class where:whereKey equalSymbol:@"="    equal:whereValue orderBy:orderKey asc:asc];
-}
-
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue {
-    return [self arrayClass:class where:whereKey equalSymbol:@"like" equal:whereValue orderBy:nil asc:YES];
-}
-
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
-    return [self arrayClass:class where:whereKey equalSymbol:@"like" equal:whereValue orderBy:orderKey asc:asc];
-}
-
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc {
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue {
     if (!class) {
         return nil;
     }
+    
+    NSMutableString * futureSQL = [NSMutableString new];
+    NSArray * whereKeyArray;
+    NSArray * whereValueArray;
+    
+    {   // table
+        NSString * tableName  = NSStringFromClass(class);
+        [futureSQL appendFormat:@"SELECT * FROM %@ ", tableName];
+    }
+    
+    {   // where
+        if (whereKey) {
+            if ([whereKey isKindOfClass:[NSArray class]]) {
+                whereKeyArray   = (NSArray *)whereKey;
+                whereValueArray = (NSArray *)whereValue;
+            } else {
+                whereKeyArray   = @[whereKey];
+                whereValueArray = @[whereValue];
+            }
+        }
+        if (whereKeyArray) {
+            [futureSQL appendString:@"where "];
+            for (int i=0; i<whereKeyArray.count; i++) {
+                if (i == 0) {
+                    [futureSQL appendFormat:@"%@ = ? ", whereKeyArray[i]];
+                } else {
+                    [futureSQL appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+                }
+            }
+            
+        }
+    }
+    
     PoporFMDB * tool = [PoporFMDB share];
     [tool start];
-    
-    NSString * tableName  = NSStringFromClass(class);
-    NSString * ascValue = asc ? @"ASC":@"DESC";
-    NSMutableArray * array = [[NSMutableArray alloc]  init];
-    
     FMResultSet *rs;
-    NSString * futureSQL;
-    if (whereKey && !orderKey) {
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ %@ ?;", tableName, whereKey, equalSymbol];
-        rs = [tool.db executeQuery:futureSQL, whereValue];
-        
-    }else if(!whereKey && orderKey){
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ ORDER BY %@ %@;", tableName, orderKey, ascValue];
-        rs = [tool.db executeQuery:futureSQL];
-        
-    } else if (whereKey && orderKey) {
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@ where %@ %@ ? ORDER BY %@ %@;", tableName, whereKey, equalSymbol, orderKey, ascValue];
-        rs = [tool.db executeQuery:futureSQL, whereValue];
-        
-    }else{
-        futureSQL = [NSString stringWithFormat:@"SELECT * FROM %@;", tableName];
+    
+    //[tool.db executeUpdate:sql withArgumentsInArray:updateArray]; // https://www.thinbug.com/q/431910
+    
+    if (whereValueArray) {
+        rs = [tool.db executeQuery:futureSQL withArgumentsInArray:whereValueArray];// https://www.thinbug.com/q/431910
+    } else {
         rs = [tool.db executeQuery:futureSQL];
     }
     
+    NSMutableArray * array = [[NSMutableArray alloc]  init];
     while ([rs next]) {
         id entity = [[class alloc] init];
         [NSFMDB setFullEntity:entity withRS:rs];

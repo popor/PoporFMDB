@@ -117,7 +117,7 @@
     //[PDB updateEntity:entity set:[@[@"title", @"subtitle"] mutableCopy] equal:@[@"wkqT", @"wkqST"] where:@[@"t2"] equal:@[@(entity.t2)]];
     
     // 修改单个
-    [PDB updateEntity:entity set:@"title" equal:@"wkq signal" where:@[@"t2"] equal:@(entity.t2)];
+    [PDB updateEntity:entity set:@"title" equal:@"wkq signal" where:@[@"t2"] equal:@[@(entity.t2)]];
 }
 
 /**

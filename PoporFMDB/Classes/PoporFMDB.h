@@ -38,13 +38,11 @@
 + (BOOL)updateClass:(Class)class          set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey equal:(id)whereValue;
 + (BOOL)updateTable:(NSString *)tableName set:(id)setKey          equal:(id)setValue where:(id)whereKey          equal:(id)whereValue;
 
+// 升降序功能失效了, 否则会出错.
 + (NSMutableArray *)arrayClass:(Class)class;
-+ (NSMutableArray *)arrayClass:(Class)class orderBy:(NSString *)orderKey asc:(BOOL)asc;
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue;
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey equal:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc;
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equal:(id)whereValue;
 
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue;
-+ (NSMutableArray *)arrayClass:(Class)class where:(NSString *)whereKey like:(id)whereValue orderBy:(NSString *)orderKey asc:(BOOL)asc;
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey like:(id)whereValue;
 
 #pragma mark - 模仿plist数据
 

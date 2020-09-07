@@ -7,123 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045F3D194A365E292D3ADCA5D5E1F188 /* PoporFMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFF3D5BA2DCFE9980D4B37E913B28FB /* PoporFMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0880638866792FB7DEA43586D784D3DB /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15D85589DBFEC99D1B996D1A5EF31255 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA98D9051DB27870C7A31C2C4FFEFB /* Cocoa.framework */; };
-		18813C4F69584EE7E6FD663F8979CD6F /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B0CACC5772D81FC3A16EE61A1C7AB43 /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
-		1B46139B2316A41C764191B3B424B2BD /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C8E7A8EF2814EA0D8C7A92888EF4FF8 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
-		37EC9ED4490DDD3B6091037186581E3D /* Pods-PoporFMDB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BABEC2961E22A7CCAE166134638B43F0 /* Pods-PoporFMDB_Example-dummy.m */; };
-		3B30BCAEAFC3D2A2AF0A27EA3BE9F011 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
-		3E2E3EDCD58E49F9EBE75F5F2DDB5643 /* Pods-PoporFMDB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FEBFB7E3E9BA416F474F00C337F82C /* Pods-PoporFMDB_Tests-dummy.m */; };
+		042393AD4EAC35A97D05ECED44BC5224 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
+		04660BC1CDE2AB879685127291E8FC2C /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A236460AE68ADAD23822FE4A960B091 /* FMDB.framework */; };
+		04CE597E59857DC73365CA1B28C912AE /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
+		09C8B936B59B239BAAD3848A7C5FCEE7 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
+		0EF8D59B589FA0411D8931F26B905A1C /* Pods-PoporFMDBMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AE07EBEAC18D823B6197B589BA3B94 /* Pods-PoporFMDBMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18FF218173DE0D363DA0C4D98C62074C /* Pods-PoporFMDB_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BABEC2961E22A7CCAE166134638B43F0 /* Pods-PoporFMDB_Example-dummy.m */; };
+		320D54DE21C34AEDA6CD489C8947FFC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
+		3466D536DC32E67D3809C75F3EEF6005 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F782CF3303F64D93E903F65F4CB3D3 /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A96DFE9EE0D1F2ED925876209C203F2 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
+		3B6842790095666B382888B1BD6D3A0D /* Pods-PoporFMDBMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E4D5B72BB4D0D5007C88FABBBDABA /* Pods-PoporFMDBMac-dummy.m */; };
+		3D132041A24E67F70934973EDA856242 /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42B9D6CBDC1BD481040F7B550AD93437 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A236460AE68ADAD23822FE4A960B091 /* FMDB.framework */; };
+		46AB0E959C1E17002A7404B81A024AC4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA98D9051DB27870C7A31C2C4FFEFB /* Cocoa.framework */; };
 		46FBE08C32F38B7E3945F63104D1D6CC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 625BAB8C8B8B3FF0BE1B4ED2F29B4F81 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		475E29D7C07EF25D0CB421DD31E86B41 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D6A8046DE244DFFE08EA445ADBCB62 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5254274AD5DB7166CE46BCF55C42726A /* PoporFMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B957DFD6C7F7A90461CBD9172F8E054 /* PoporFMDB-iOS-dummy.m */; };
+		4F938917C6AD008CD67EDBE9510406C5 /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55A44B7482A5DEC3F92F5365A43C3D48 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF0FACEFEC7A2D14E28BCB05F2471F0 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55C0A52473FAEA98751A7CCFC8B877C2 /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B38282C689718B2A7AF0445D9AA230F /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A236460AE68ADAD23822FE4A960B091 /* FMDB.framework */; };
-		5D7BD90E30A584EB2DAB039A7C8A94E0 /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D533B29216B9F7E65AA82290852EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90490FB53B84121198C927E25103806 /* Foundation.framework */; };
+		5A7775F26C95D6664B2D8BE5292CE7A0 /* Pods-PoporFMDB_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FEBFB7E3E9BA416F474F00C337F82C /* Pods-PoporFMDB_Tests-dummy.m */; };
 		5E4C24A7DA7F9AADAE97502399A0B4D9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 453D09B8EC5216D24716A3CA583998D6 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		639FA495CC0AAECB6B3D8F3CCD5D0177 /* PoporFMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50281AD2280EEB55B46D794AF0B04964 /* PoporFMDB-macOS-dummy.m */; };
+		5E50A7AE018F8CB70E82E71B8ADFB0AA /* PoporFMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFF3D5BA2DCFE9980D4B37E913B28FB /* PoporFMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66DBF0278A7F17D252FC03EA8BF94D17 /* Pods-PoporFMDB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1B9AE528AD4F3101869C90CE0F93BD /* Pods-PoporFMDB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6753AF47C05C74D070C5D7CE0BEE6732 /* PoporFMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50281AD2280EEB55B46D794AF0B04964 /* PoporFMDB-macOS-dummy.m */; };
+		6A12839DB2ADB8921A2398CEF2CEF0A5 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
 		6A87EDE9C0F6A516BD766C2266705B47 /* FMDB-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E0CD7B000603881B4136C9F1C8916 /* FMDB-macOS-dummy.m */; };
-		6AA1F3664F8C29784384154501909346 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
-		6C7317F5499002D3FD850CE997AC58F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90490FB53B84121198C927E25103806 /* Foundation.framework */; };
+		6B1D04FEC2A0D978D260C3CFC7AD45CE /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
+		6F1DAF84679155D71BF57929DB3BC833 /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
 		70D312E3CFEF5AAC17FF66FD94E0FC5B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 711CB92D243A40645E34D90750F7503E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		77BA72A9BA04441685796ADBF2CA1291 /* Pods-PoporFMDB_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1B9AE528AD4F3101869C90CE0F93BD /* Pods-PoporFMDB_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78C1C6EA894B3F9C4D76102319F08CA2 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
-		7E585B073182AC4C9AF91433B7408532 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
+		75E3661F4F12831CD1DDEAD5FC8BF87F /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79BDA5C0F63B8178EC72C8C1BFDB2950 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA98D9051DB27870C7A31C2C4FFEFB /* Cocoa.framework */; };
 		836084FE433F2A5A81C321A677305318 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 39706D7E504B1780231BA05302EA27CE /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87A7290C66609BA917C6DAA00D453EAB /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89A6BA2B52976D51482BD69095358992 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 711CB92D243A40645E34D90750F7503E /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8AF78C06629A7E46C5309FA533675844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
 		8C4211B2858AEAFA4DBD85F0C23CD5A1 /* FMDB-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2580BD835C5782479B87FB8665551F /* FMDB-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93E2BB43138D5CE9F948604C7E732D9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
+		8CE810E4981EECA1B149EE7FDE315291 /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
 		9A57D194F18796A6DC1031FABC53E919 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 39706D7E504B1780231BA05302EA27CE /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C698CBF37EC1D0EA6C859721DDEDFE7 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F0CFB90BEE9830FEC4F634EF6EFDE /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DA153A54409A3AABC9317F5BA192E9C /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9DEEFE81AEB5CCD5E4A4AC0B6A8C75 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A31DA44E3785804F82AFE06E96BE01CE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E974645EE0394FFD02CBD03BB5D88DA7 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A3219CD7BC6AEE91821CD945ADDDD190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
-		A3F253C34C76985A6EB3B363EF56E05B /* PoporFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F3483A613506416EBC549D916A94DD /* PoporFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CD4942EC1C40D4E8E6E622994EC988 /* FMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 494646D7AF303C62B5A17F10161130B9 /* FMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A570FA37A48AE261815DB6888C9A88F7 /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A83008F830D57D2B6B901677E453E497 /* PoporFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 57005BB53F6D108DB0B0D29B02B2D493 /* PoporFMDB.m */; };
 		A8FACCDA052CD324F7A45C8CA3194137 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FB69F0A82C7E0D287D20FEE3B54E0A9D /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A98D05FF59A5E4DB64F8850B070D6225 /* Pods-PoporFMDBMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AE07EBEAC18D823B6197B589BA3B94 /* Pods-PoporFMDBMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1E1E637F84359747D21315E92F2FF7 /* Pods-PoporFMDB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504C52BBE3846C50E01706DB7612C34 /* Pods-PoporFMDB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE0A52EBBE36F46049DD8A0971B8943E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF0FACEFEC7A2D14E28BCB05F2471F0 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4091B0B05DDF0BB5863B84125BB5E03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA98D9051DB27870C7A31C2C4FFEFB /* Cocoa.framework */; };
 		B51B3325662704BF5EADD11D69E9D4A8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A0245DE863386CA36657822CA36E7871 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B5AA08D54C36E9434D4F1854E9E0919D /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B795AF3E8E37A83C0B8C00DD46BCAED8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 453D09B8EC5216D24716A3CA583998D6 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B7FA2EF8D12809D602E7166C1D5A81E2 /* PoporFMDBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 784818307EBF82A86B6904972BF162FD /* PoporFMDBPath.m */; };
 		BA08CA4AA5AC7E512F5F873C4B5A8BA5 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9DEEFE81AEB5CCD5E4A4AC0B6A8C75 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAEDC3FA42438691DF089715C83602B0 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB2C9DB9BB2F915DE0C1ECCB9556CE97 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F0CFB90BEE9830FEC4F634EF6EFDE /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC05BAB6104ABBA69A133A6FEB27271C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A0245DE863386CA36657822CA36E7871 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BEBF66EB9F83BF465A513E84E8395578 /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1D09EED476719E34F64321BDF83446A /* FMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E79052E9A8C38416EB5372842A4CEE0A /* FMDB-iOS-dummy.m */; };
+		C6C6CE29224D50033E4B22ADD4AA29F1 /* PoporFMDB-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B957DFD6C7F7A90461CBD9172F8E054 /* PoporFMDB-iOS-dummy.m */; };
 		C7A0673AF1C65345B63248E74CEB35E9 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FB69F0A82C7E0D287D20FEE3B54E0A9D /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2F247B06889EDEEB25F2DFC1207714B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 625BAB8C8B8B3FF0BE1B4ED2F29B4F81 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D31864A1EFC179FD9AAA430E40BA5CD4 /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
-		DA7D3F6F53FE4264AB26385DBB5ECBC6 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A236460AE68ADAD23822FE4A960B091 /* FMDB.framework */; };
-		DC179D269CBB7525BD636710CAB4884A /* Pods-PoporFMDBMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49E4D5B72BB4D0D5007C88FABBBDABA /* Pods-PoporFMDBMac-dummy.m */; };
+		D8D457879C3D6EFC7983C0AA1BDC1F5C /* NSFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D922B27E4CA9590BCA267B5F3A4EE /* NSFMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB3A2DA7DB905C91B4FE9FCBD45E399 /* NSFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527AC4D1843D2A949705BF894C54E89 /* NSFMDB.m */; };
 		DCD2EF48CBC48E7814DD3A223238ACF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
-		E0A1B2981787721B834E5686186EA635 /* PoporFMDBPath.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B215AF670ECB8B5E5787E34DC38527 /* PoporFMDBPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E459A2F3EE93DF25228A702845E11E5F /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
+		E3152301D9B5109AA41E5B26CEE7ABBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC1CD9B937A6CA42120ACB49AE37BF /* Foundation.framework */; };
+		EA937F642B7FB002CC2D1C1142E5DF14 /* PoporFMDBBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF09E7A92E90BD97C5329BD20F74C89 /* PoporFMDBBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2258F1B33544E2064BE3EA61A4477E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E974645EE0394FFD02CBD03BB5D88DA7 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF3C0AC690074CF7CC5A87795279511B /* PoporFMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6530ED35EF5E42AF406B9FBBEDD046 /* PoporFMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A6D6C34CDACAD6FF456B6E1A6664FF /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D6A8046DE244DFFE08EA445ADBCB62 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0BD65E78034740D6DE8EEE8DA7C9C76 /* AppInfoEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D0E038DB7DF24864A8D5BEEAAE06C5 /* AppInfoEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D51B5E521804E429E3FED76215A6D8 /* Pods-PoporFMDB_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504C52BBE3846C50E01706DB7612C34 /* Pods-PoporFMDB_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E1D0A756A3F3826A6A5A750DB2E8E8 /* PoporFMDBBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E791DB0913369FE8D9E08923E666E /* PoporFMDBBase.m */; };
 		F3950585A7075020E4F2523FF9A738C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AA98D9051DB27870C7A31C2C4FFEFB /* Cocoa.framework */; };
-		FDB538A6FCA378BAA9F382D3C86CC781 /* AppInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668AE38CFE06E15764370B103F72BEB /* AppInfoEntity.m */; };
-		FE229828A0065CD974E288E429C1A371 /* PoporFMDB-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6530ED35EF5E42AF406B9FBBEDD046 /* PoporFMDB-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		26630BA81D10AC3491BB87BA1FD0242E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3433F7E33A6AFF0BA7A5240DB89B6FE7;
-			remoteInfo = "PoporFMDB-iOS";
-		};
-		45C8927C3F0514B5578925303BCC4034 /* PBXContainerItemProxy */ = {
+		15476F6FA8F636CB84D68AC8C8BB8DF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 273A0D12E237D6F775EC6DC6588959C3;
 			remoteInfo = "FMDB-macOS";
 		};
-		5D77640C091708601E98C85BC6B4AA7F /* PBXContainerItemProxy */ = {
+		2137393A171CA2B67625AD997C744013 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
 			remoteInfo = "FMDB-iOS";
 		};
-		98A151A7BE98E7AE193955B943F08820 /* PBXContainerItemProxy */ = {
+		89D0CAC98C0AC16A60C13F1A775CA174 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4671509451F85F96892A2D70011A00D8;
-			remoteInfo = "PoporFMDB-macOS";
+			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
+			remoteInfo = "FMDB-iOS";
 		};
-		B3664C07BC7B8A89BF815000426EA851 /* PBXContainerItemProxy */ = {
+		9B2DE6D0997720C5AE5B0BB24AC9BD6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 273A0D12E237D6F775EC6DC6588959C3;
 			remoteInfo = "FMDB-macOS";
 		};
-		D1F95E6068622A50E8DB82AC041E6F17 /* PBXContainerItemProxy */ = {
+		A336095F74D8DE95F8D589702C93525B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 704D999507025BAD074A0210612E118B;
 			remoteInfo = "Pods-PoporFMDB_Example";
 		};
-		E0E184E1559D88DA38170F7CD407950A /* PBXContainerItemProxy */ = {
+		C2ECA3AC9A62EDE070F1DF97BA5F0AA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3FDEFF0D795E620F69126992BD6EFE0C;
-			remoteInfo = "FMDB-iOS";
+			remoteGlobalIDString = 3433F7E33A6AFF0BA7A5240DB89B6FE7;
+			remoteInfo = "PoporFMDB-iOS";
+		};
+		D8BE4EB85E011F02E02B3627A92270E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4671509451F85F96892A2D70011A00D8;
+			remoteInfo = "PoporFMDB-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -221,28 +221,46 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4086C015D96992DAC2DD126726C46729 /* Frameworks */ = {
+		0364FA3E30D917F3EE302E3A12F92801 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B38282C689718B2A7AF0445D9AA230F /* FMDB.framework in Frameworks */,
-				A3219CD7BC6AEE91821CD945ADDDD190 /* Foundation.framework in Frameworks */,
+				320D54DE21C34AEDA6CD489C8947FFC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44CCE46217297BD1FA265BFCF9BC9DB2 /* Frameworks */ = {
+		24E7CA60A66DCAFEAB84586913F09D9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA1F3664F8C29784384154501909346 /* Foundation.framework in Frameworks */,
+				42B9D6CBDC1BD481040F7B550AD93437 /* FMDB.framework in Frameworks */,
+				E3152301D9B5109AA41E5B26CEE7ABBF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DB535DB1957D2E5C9CF65E89EF538E0 /* Frameworks */ = {
+		3805EB8042BE06F0C18D0594F84A1CED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4091B0B05DDF0BB5863B84125BB5E03 /* Cocoa.framework in Frameworks */,
+				8AF78C06629A7E46C5309FA533675844 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF8D70BDA12FE7773D78F29594AE205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46AB0E959C1E17002A7404B81A024AC4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3A1FF845320511FFD3852E7B36F69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BDA5C0F63B8178EC72C8C1BFDB2950 /* Cocoa.framework in Frameworks */,
+				04660BC1CDE2AB879685127291E8FC2C /* FMDB.framework in Frameworks */,
+				59D533B29216B9F7E65AA82290852EF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,24 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD2EF48CBC48E7814DD3A223238ACF7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C624A963E5546C831EEFADF49CE962BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15D85589DBFEC99D1B996D1A5EF31255 /* Cocoa.framework in Frameworks */,
-				DA7D3F6F53FE4264AB26385DBB5ECBC6 /* FMDB.framework in Frameworks */,
-				6C7317F5499002D3FD850CE997AC58F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF59FAD6C8D87516A99FF61DB0B8FD39 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93E2BB43138D5CE9F948604C7E732D9C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,24 +517,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		162A5587E2BECA05752E25467B4F266A /* Headers */ = {
+		154B242BF1002AA3C16B6A2A4014C0C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18813C4F69584EE7E6FD663F8979CD6F /* AppInfoEntity.h in Headers */,
-				5D7BD90E30A584EB2DAB039A7C8A94E0 /* NSFMDB.h in Headers */,
-				045F3D194A365E292D3ADCA5D5E1F188 /* PoporFMDB-iOS-umbrella.h in Headers */,
-				A3F253C34C76985A6EB3B363EF56E05B /* PoporFMDB.h in Headers */,
-				0880638866792FB7DEA43586D784D3DB /* PoporFMDBBase.h in Headers */,
-				A570FA37A48AE261815DB6888C9A88F7 /* PoporFMDBPath.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		266D34D1BE359F0BBAAE047E27403F6D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77BA72A9BA04441685796ADBF2CA1291 /* Pods-PoporFMDB_Example-umbrella.h in Headers */,
+				3D132041A24E67F70934973EDA856242 /* AppInfoEntity.h in Headers */,
+				35F782CF3303F64D93E903F65F4CB3D3 /* NSFMDB.h in Headers */,
+				EF3C0AC690074CF7CC5A87795279511B /* PoporFMDB-macOS-umbrella.h in Headers */,
+				87A7290C66609BA917C6DAA00D453EAB /* PoporFMDB.h in Headers */,
+				3466D536DC32E67D3809C75F3EEF6005 /* PoporFMDBBase.h in Headers */,
+				4F938917C6AD008CD67EDBE9510406C5 /* PoporFMDBPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,24 +544,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59F8970337E204A5A70F7021065BEED0 /* Headers */ = {
+		35684B112A8258812D9B414F223CA21C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D51B5E521804E429E3FED76215A6D8 /* Pods-PoporFMDB_Tests-umbrella.h in Headers */,
+				66DBF0278A7F17D252FC03EA8BF94D17 /* Pods-PoporFMDB_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64DAF9551F17DD4009206AD6589A0EB8 /* Headers */ = {
+		3EE89B6BF4AA1C8F892807203FB996F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0BD65E78034740D6DE8EEE8DA7C9C76 /* AppInfoEntity.h in Headers */,
-				55C0A52473FAEA98751A7CCFC8B877C2 /* NSFMDB.h in Headers */,
-				FE229828A0065CD974E288E429C1A371 /* PoporFMDB-macOS-umbrella.h in Headers */,
-				1B46139B2316A41C764191B3B424B2BD /* PoporFMDB.h in Headers */,
-				BAEDC3FA42438691DF089715C83602B0 /* PoporFMDBBase.h in Headers */,
-				E0A1B2981787721B834E5686186EA635 /* PoporFMDBPath.h in Headers */,
+				AA1E1E637F84359747D21315E92F2FF7 /* Pods-PoporFMDB_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,11 +574,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD7502B409638C56E05FEF1975B60EF9 /* Headers */ = {
+		B1CBC7A3CFB07B79A85B4F8714547F70 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98D05FF59A5E4DB64F8850B070D6225 /* Pods-PoporFMDBMac-umbrella.h in Headers */,
+				0EF8D59B589FA0411D8931F26B905A1C /* Pods-PoporFMDBMac-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF99F049B717FC4B55FD04F0CA4B34A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AA08D54C36E9434D4F1854E9E0919D /* AppInfoEntity.h in Headers */,
+				D8D457879C3D6EFC7983C0AA1BDC1F5C /* NSFMDB.h in Headers */,
+				5E50A7AE018F8CB70E82E71B8ADFB0AA /* PoporFMDB-iOS-umbrella.h in Headers */,
+				75E3661F4F12831CD1DDEAD5FC8BF87F /* PoporFMDB.h in Headers */,
+				EA937F642B7FB002CC2D1C1142E5DF14 /* PoporFMDBBase.h in Headers */,
+				BEBF66EB9F83BF465A513E84E8395578 /* PoporFMDBPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,17 +618,17 @@
 		};
 		3433F7E33A6AFF0BA7A5240DB89B6FE7 /* PoporFMDB-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09629AD8428358779C7B4BE7D9A3D4FC /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */;
+			buildConfigurationList = 4F34414E157133B241FEC72FB15150EC /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */;
 			buildPhases = (
-				162A5587E2BECA05752E25467B4F266A /* Headers */,
-				7F7639C3C4A6AAAB6F584E501A0D474F /* Sources */,
-				4086C015D96992DAC2DD126726C46729 /* Frameworks */,
-				9BB8C76DAD3D6D25CADAA5701D694B16 /* Resources */,
+				CBF99F049B717FC4B55FD04F0CA4B34A /* Headers */,
+				5BC7C2D244E09449A770781950792CFA /* Sources */,
+				24E7CA60A66DCAFEAB84586913F09D9E /* Frameworks */,
+				6CB62264D66105EA86A649A74E9FC6CB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24AAB56A5E55EB79CBAB44ACA7C8C75C /* PBXTargetDependency */,
+				AD7DE40F7812EE1A284BB18F045DEDFE /* PBXTargetDependency */,
 			);
 			name = "PoporFMDB-iOS";
 			productName = "PoporFMDB-iOS";
@@ -655,17 +655,17 @@
 		};
 		4671509451F85F96892A2D70011A00D8 /* PoporFMDB-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 751A600088B988E613A020C16380A7EA /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */;
+			buildConfigurationList = BDB5E5399A3CDD91C7CA24410B589E55 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */;
 			buildPhases = (
-				64DAF9551F17DD4009206AD6589A0EB8 /* Headers */,
-				F860F5ACB936ED59322A22A5E026F4ED /* Sources */,
-				C624A963E5546C831EEFADF49CE962BA /* Frameworks */,
-				E33488FDD3F3DCD3D54607E83CF7E0FF /* Resources */,
+				154B242BF1002AA3C16B6A2A4014C0C7 /* Headers */,
+				B85E4C0BB069523048320DAD9CD41E15 /* Sources */,
+				8D3A1FF845320511FFD3852E7B36F69D /* Frameworks */,
+				8D8D6A225A1C3EB464AFD7494E6F02D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3916D8B7E2825F1FC5DB2C10F947C4BF /* PBXTargetDependency */,
+				20405AFDD2DA34AFAF6E170B825F4DBE /* PBXTargetDependency */,
 			);
 			name = "PoporFMDB-macOS";
 			productName = "PoporFMDB-macOS";
@@ -674,18 +674,18 @@
 		};
 		704D999507025BAD074A0210612E118B /* Pods-PoporFMDB_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6900683ED9796DBD8E58F7707E65F29F /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Example" */;
+			buildConfigurationList = E06029F69D93D676DE149F976748FB87 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Example" */;
 			buildPhases = (
-				266D34D1BE359F0BBAAE047E27403F6D /* Headers */,
-				EFE9EF50F341D41989DAAABD63AE94C3 /* Sources */,
-				DF59FAD6C8D87516A99FF61DB0B8FD39 /* Frameworks */,
-				2989AB30C6AE524A308DCE6FBB4101E8 /* Resources */,
+				35684B112A8258812D9B414F223CA21C /* Headers */,
+				7CE7C3A25D147C43881FC2BEDA626209 /* Sources */,
+				0364FA3E30D917F3EE302E3A12F92801 /* Frameworks */,
+				BB4A471D0E833D72CA7BFD401F8152F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				73F0BB1F5D2D3DFA623CA796F3A20EAD /* PBXTargetDependency */,
-				003BB54E5DF3F83AA4799ED7A223F2F0 /* PBXTargetDependency */,
+				A3A753F72F7C9BA716570462C44B65F4 /* PBXTargetDependency */,
+				689C6A287763645BFD660A2EE99EA93A /* PBXTargetDependency */,
 			);
 			name = "Pods-PoporFMDB_Example";
 			productName = "Pods-PoporFMDB_Example";
@@ -694,18 +694,18 @@
 		};
 		9278F26BCDC189D392B3C7BB0528EEAC /* Pods-PoporFMDBMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5BB4AFE841C84149A93BE69755A7242 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDBMac" */;
+			buildConfigurationList = 88BF75192B883EAE58D8312959FB35A3 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDBMac" */;
 			buildPhases = (
-				AD7502B409638C56E05FEF1975B60EF9 /* Headers */,
-				9F7820DEAC2034D3CB414A7569AC5D26 /* Sources */,
-				7DB535DB1957D2E5C9CF65E89EF538E0 /* Frameworks */,
-				2F35BC564E8180F8EB369493FF90DF98 /* Resources */,
+				B1CBC7A3CFB07B79A85B4F8714547F70 /* Headers */,
+				DAF3E741DD1AD3C514E51DD01695C8BC /* Sources */,
+				3BF8D70BDA12FE7773D78F29594AE205 /* Frameworks */,
+				39D18DC2E5BFB6972229276259869FE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				576C45F086956E7E632197F1A845C9E2 /* PBXTargetDependency */,
-				98F39266C71366DA8549F36A1A1C4EDB /* PBXTargetDependency */,
+				A520D3FCCFC3762A2676CE8A2877000E /* PBXTargetDependency */,
+				B12CB2E009BA360E03D1705B7BF12918 /* PBXTargetDependency */,
 			);
 			name = "Pods-PoporFMDBMac";
 			productName = "Pods-PoporFMDBMac";
@@ -714,17 +714,17 @@
 		};
 		A60B275AAAB2EC1D236514BB62043360 /* Pods-PoporFMDB_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA22C85E7B21514375273FF22F178D4A /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Tests" */;
+			buildConfigurationList = 648C7BCD00E49C98429F444CAA29161E /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Tests" */;
 			buildPhases = (
-				59F8970337E204A5A70F7021065BEED0 /* Headers */,
-				4F0025FF4B3DD5DBC95DD191F8341BAC /* Sources */,
-				44CCE46217297BD1FA265BFCF9BC9DB2 /* Frameworks */,
-				34BDFC57F9D72733AC3506537AF8DF86 /* Resources */,
+				3EE89B6BF4AA1C8F892807203FB996F8 /* Headers */,
+				DD14D02D8E423E4E443B67F840DE9012 /* Sources */,
+				3805EB8042BE06F0C18D0594F84A1CED /* Frameworks */,
+				E6DEF08E045680F10F19058B40DBDE44 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B97D69FC88E7A7032F83F9E7EB5782EB /* PBXTargetDependency */,
+				6649EF28A0B8145B97182B783B27F3B9 /* PBXTargetDependency */,
 			);
 			name = "Pods-PoporFMDB_Tests";
 			productName = "Pods-PoporFMDB_Tests";
@@ -779,35 +779,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2989AB30C6AE524A308DCE6FBB4101E8 /* Resources */ = {
+		39D18DC2E5BFB6972229276259869FE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F35BC564E8180F8EB369493FF90DF98 /* Resources */ = {
+		6CB62264D66105EA86A649A74E9FC6CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34BDFC57F9D72733AC3506537AF8DF86 /* Resources */ = {
+		8D8D6A225A1C3EB464AFD7494E6F02D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BB8C76DAD3D6D25CADAA5701D694B16 /* Resources */ = {
+		BB4A471D0E833D72CA7BFD401F8152F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E33488FDD3F3DCD3D54607E83CF7E0FF /* Resources */ = {
+		E6DEF08E045680F10F19058B40DBDE44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -830,11 +830,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F0025FF4B3DD5DBC95DD191F8341BAC /* Sources */ = {
+		5BC7C2D244E09449A770781950792CFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2E3EDCD58E49F9EBE75F5F2DDB5643 /* Pods-PoporFMDB_Tests-dummy.m in Sources */,
+				3A96DFE9EE0D1F2ED925876209C203F2 /* AppInfoEntity.m in Sources */,
+				09C8B936B59B239BAAD3848A7C5FCEE7 /* NSFMDB.m in Sources */,
+				C6C6CE29224D50033E4B22ADD4AA29F1 /* PoporFMDB-iOS-dummy.m in Sources */,
+				042393AD4EAC35A97D05ECED44BC5224 /* PoporFMDB.m in Sources */,
+				F2E1D0A756A3F3826A6A5A750DB2E8E8 /* PoporFMDBBase.m in Sources */,
+				6F1DAF84679155D71BF57929DB3BC833 /* PoporFMDBPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,100 +856,161 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F7639C3C4A6AAAB6F584E501A0D474F /* Sources */ = {
+		7CE7C3A25D147C43881FC2BEDA626209 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB538A6FCA378BAA9F382D3C86CC781 /* AppInfoEntity.m in Sources */,
-				78C1C6EA894B3F9C4D76102319F08CA2 /* NSFMDB.m in Sources */,
-				5254274AD5DB7166CE46BCF55C42726A /* PoporFMDB-iOS-dummy.m in Sources */,
-				A83008F830D57D2B6B901677E453E497 /* PoporFMDB.m in Sources */,
-				D31864A1EFC179FD9AAA430E40BA5CD4 /* PoporFMDBBase.m in Sources */,
-				1B0CACC5772D81FC3A16EE61A1C7AB43 /* PoporFMDBPath.m in Sources */,
+				18FF218173DE0D363DA0C4D98C62074C /* Pods-PoporFMDB_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F7820DEAC2034D3CB414A7569AC5D26 /* Sources */ = {
+		B85E4C0BB069523048320DAD9CD41E15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC179D269CBB7525BD636710CAB4884A /* Pods-PoporFMDBMac-dummy.m in Sources */,
+				6A12839DB2ADB8921A2398CEF2CEF0A5 /* AppInfoEntity.m in Sources */,
+				DAB3A2DA7DB905C91B4FE9FCBD45E399 /* NSFMDB.m in Sources */,
+				6753AF47C05C74D070C5D7CE0BEE6732 /* PoporFMDB-macOS-dummy.m in Sources */,
+				04CE597E59857DC73365CA1B28C912AE /* PoporFMDB.m in Sources */,
+				6B1D04FEC2A0D978D260C3CFC7AD45CE /* PoporFMDBBase.m in Sources */,
+				8CE810E4981EECA1B149EE7FDE315291 /* PoporFMDBPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFE9EF50F341D41989DAAABD63AE94C3 /* Sources */ = {
+		DAF3E741DD1AD3C514E51DD01695C8BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37EC9ED4490DDD3B6091037186581E3D /* Pods-PoporFMDB_Example-dummy.m in Sources */,
+				3B6842790095666B382888B1BD6D3A0D /* Pods-PoporFMDBMac-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F860F5ACB936ED59322A22A5E026F4ED /* Sources */ = {
+		DD14D02D8E423E4E443B67F840DE9012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8E7A8EF2814EA0D8C7A92888EF4FF8 /* AppInfoEntity.m in Sources */,
-				3B30BCAEAFC3D2A2AF0A27EA3BE9F011 /* NSFMDB.m in Sources */,
-				639FA495CC0AAECB6B3D8F3CCD5D0177 /* PoporFMDB-macOS-dummy.m in Sources */,
-				7E585B073182AC4C9AF91433B7408532 /* PoporFMDB.m in Sources */,
-				E459A2F3EE93DF25228A702845E11E5F /* PoporFMDBBase.m in Sources */,
-				B7FA2EF8D12809D602E7166C1D5A81E2 /* PoporFMDBPath.m in Sources */,
+				5A7775F26C95D6664B2D8BE5292CE7A0 /* Pods-PoporFMDB_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		003BB54E5DF3F83AA4799ED7A223F2F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PoporFMDB-iOS";
-			target = 3433F7E33A6AFF0BA7A5240DB89B6FE7 /* PoporFMDB-iOS */;
-			targetProxy = 26630BA81D10AC3491BB87BA1FD0242E /* PBXContainerItemProxy */;
-		};
-		24AAB56A5E55EB79CBAB44ACA7C8C75C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FMDB-iOS";
-			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
-			targetProxy = E0E184E1559D88DA38170F7CD407950A /* PBXContainerItemProxy */;
-		};
-		3916D8B7E2825F1FC5DB2C10F947C4BF /* PBXTargetDependency */ = {
+		20405AFDD2DA34AFAF6E170B825F4DBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FMDB-macOS";
 			target = 273A0D12E237D6F775EC6DC6588959C3 /* FMDB-macOS */;
-			targetProxy = 45C8927C3F0514B5578925303BCC4034 /* PBXContainerItemProxy */;
+			targetProxy = 9B2DE6D0997720C5AE5B0BB24AC9BD6B /* PBXContainerItemProxy */;
 		};
-		576C45F086956E7E632197F1A845C9E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FMDB-macOS";
-			target = 273A0D12E237D6F775EC6DC6588959C3 /* FMDB-macOS */;
-			targetProxy = B3664C07BC7B8A89BF815000426EA851 /* PBXContainerItemProxy */;
-		};
-		73F0BB1F5D2D3DFA623CA796F3A20EAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FMDB-iOS";
-			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
-			targetProxy = 5D77640C091708601E98C85BC6B4AA7F /* PBXContainerItemProxy */;
-		};
-		98F39266C71366DA8549F36A1A1C4EDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PoporFMDB-macOS";
-			target = 4671509451F85F96892A2D70011A00D8 /* PoporFMDB-macOS */;
-			targetProxy = 98A151A7BE98E7AE193955B943F08820 /* PBXContainerItemProxy */;
-		};
-		B97D69FC88E7A7032F83F9E7EB5782EB /* PBXTargetDependency */ = {
+		6649EF28A0B8145B97182B783B27F3B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PoporFMDB_Example";
 			target = 704D999507025BAD074A0210612E118B /* Pods-PoporFMDB_Example */;
-			targetProxy = D1F95E6068622A50E8DB82AC041E6F17 /* PBXContainerItemProxy */;
+			targetProxy = A336095F74D8DE95F8D589702C93525B /* PBXContainerItemProxy */;
+		};
+		689C6A287763645BFD660A2EE99EA93A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PoporFMDB-iOS";
+			target = 3433F7E33A6AFF0BA7A5240DB89B6FE7 /* PoporFMDB-iOS */;
+			targetProxy = C2ECA3AC9A62EDE070F1DF97BA5F0AA1 /* PBXContainerItemProxy */;
+		};
+		A3A753F72F7C9BA716570462C44B65F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-iOS";
+			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
+			targetProxy = 2137393A171CA2B67625AD997C744013 /* PBXContainerItemProxy */;
+		};
+		A520D3FCCFC3762A2676CE8A2877000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-macOS";
+			target = 273A0D12E237D6F775EC6DC6588959C3 /* FMDB-macOS */;
+			targetProxy = 15476F6FA8F636CB84D68AC8C8BB8DF1 /* PBXContainerItemProxy */;
+		};
+		AD7DE40F7812EE1A284BB18F045DEDFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FMDB-iOS";
+			target = 3FDEFF0D795E620F69126992BD6EFE0C /* FMDB-iOS */;
+			targetProxy = 89D0CAC98C0AC16A60C13F1A775CA174 /* PBXContainerItemProxy */;
+		};
+		B12CB2E009BA360E03D1705B7BF12918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PoporFMDB-macOS";
+			target = 4671509451F85F96892A2D70011A00D8 /* PoporFMDB-macOS */;
+			targetProxy = D8BE4EB85E011F02E02B3627A92270E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		033F57874D335224355C58E2B564B44C /* Debug */ = {
+		0E88EF1A37535812998FD0DA17C5EE51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBDF63AC0F21F80F0C32F698856BBEF5 /* PoporFMDB-macOS.debug.xcconfig */;
+			baseConfigurationReference = ABA618B7F286934B5C0C98BAEC12B5C6 /* PoporFMDB-iOS.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFMDB;
+				PRODUCT_NAME = PoporFMDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F24327BD089A07ACCF1690B9BFDF5A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7450DBA07A86D363FA99DAE088A7B2A5 /* Pods-PoporFMDB_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3052A93531356DDE2CB7798CB1DDF624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9757EB43990C4BEA53BCFB947B6D1B0A /* Pods-PoporFMDBMac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -958,23 +1024,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFMDB;
-				PRODUCT_NAME = PoporFMDB;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		12BAD3CCEACEB0E0EC2380F36D5B8171 /* Release */ = {
+		3EEDE7BD4D0BBDA7CEC717C17527BAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F0FF51472036A8573A5B0DA65B26DFC /* Pods-PoporFMDB_Tests.release.xcconfig */;
 			buildSettings = {
@@ -1007,72 +1075,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		1542AD45CBA00D0B4892922023FEFFDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0ACBE7337DC13EBF006E2E6D272515F /* PoporFMDB-iOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-iOS/PoporFMDB-iOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFMDB;
-				PRODUCT_NAME = PoporFMDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3CE85C22D4E1226ADDCB883B285495BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E8D01CEB164FFCBA2CF5031E56CF97 /* Pods-PoporFMDBMac.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		47546CA2B8B95DDB52515DF6601C0C42 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1171,104 +1173,11 @@
 			};
 			name = Debug;
 		};
-		666A9789B9C5FB2F4B01389CF3635648 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C54C8DF27C9DE59FF64E26A19CD7EE28 /* Pods-PoporFMDB_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDB_Example/Pods-PoporFMDB_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		90C92B4B8A9C716D060005557CB89BCD /* Release */ = {
+		54B98175814CE60E62D1C9E0B9F1C46D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		990C00ABAA84A1616054E20BCD1CB4DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1330,45 +1239,9 @@
 			};
 			name = Debug;
 		};
-		A0ACEC791EBAFAA8B2B1D6B32B1841B6 /* Release */ = {
+		5C3A8B3A737ACC6E0F165C8062EA81B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9757EB43990C4BEA53BCFB947B6D1B0A /* Pods-PoporFMDBMac.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9DAE00FEEBE1BE57FEBF913BA63B3FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7450DBA07A86D363FA99DAE088A7B2A5 /* Pods-PoporFMDB_Example.release.xcconfig */;
+			baseConfigurationReference = C54C8DF27C9DE59FF64E26A19CD7EE28 /* Pods-PoporFMDB_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1394,7 +1267,167 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B05497A3C1FEF87E8C5E0528CEF5A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBDF63AC0F21F80F0C32F698856BBEF5 /* PoporFMDB-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFMDB;
+				PRODUCT_NAME = PoporFMDB;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFD79198CC6F7CF910DA3856FD592167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B89698828EB99D9D9DB099DEB4C5D551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7360DE8FEA4E4B350653106CD31C6A89 /* Pods-PoporFMDB_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDB_Tests/Pods-PoporFMDB_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDB_Tests/Pods-PoporFMDB_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C15AA3496178F43726E8D15249E38AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269C4CF98EC92849EF1DF1C2A6BD64EA /* PoporFMDB-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
+				PRODUCT_MODULE_NAME = PoporFMDB;
+				PRODUCT_NAME = PoporFMDB;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1430,9 +1463,45 @@
 			};
 			name = Debug;
 		};
-		CC94EC2649BFE59429B45AFE58DC46DE /* Release */ = {
+		E2583F977028D381418CC76D32336119 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABA618B7F286934B5C0C98BAEC12B5C6 /* PoporFMDB-iOS.release.xcconfig */;
+			baseConfigurationReference = 34E8D01CEB164FFCBA2CF5031E56CF97 /* Pods-PoporFMDBMac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDBMac/Pods-PoporFMDBMac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F595E4C159F8B2E1EBC682B9C3A33F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0ACBE7337DC13EBF006E2E6D272515F /* PoporFMDB-iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1455,113 +1524,46 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D2843BA9CE6E34AA557B315354D2E0AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7360DE8FEA4E4B350653106CD31C6A89 /* Pods-PoporFMDB_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PoporFMDB_Tests/Pods-PoporFMDB_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PoporFMDB_Tests/Pods-PoporFMDB_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D44B4AAA9598B82538B766853FA4E1E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 269C4CF98EC92849EF1DF1C2A6BD64EA /* PoporFMDB-macOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/PoporFMDB-macOS/PoporFMDB-macOS.modulemap";
-				PRODUCT_MODULE_NAME = PoporFMDB;
-				PRODUCT_NAME = PoporFMDB;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09629AD8428358779C7B4BE7D9A3D4FC /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1542AD45CBA00D0B4892922023FEFFDC /* Debug */,
-				CC94EC2649BFE59429B45AFE58DC46DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				990C00ABAA84A1616054E20BCD1CB4DB /* Debug */,
-				90C92B4B8A9C716D060005557CB89BCD /* Release */,
+				54B98175814CE60E62D1C9E0B9F1C46D /* Debug */,
+				AFD79198CC6F7CF910DA3856FD592167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6900683ED9796DBD8E58F7707E65F29F /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Example" */ = {
+		4F34414E157133B241FEC72FB15150EC /* Build configuration list for PBXNativeTarget "PoporFMDB-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				666A9789B9C5FB2F4B01389CF3635648 /* Debug */,
-				A9DAE00FEEBE1BE57FEBF913BA63B3FC /* Release */,
+				F595E4C159F8B2E1EBC682B9C3A33F6B /* Debug */,
+				0E88EF1A37535812998FD0DA17C5EE51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		751A600088B988E613A020C16380A7EA /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */ = {
+		648C7BCD00E49C98429F444CAA29161E /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				033F57874D335224355C58E2B564B44C /* Debug */,
-				D44B4AAA9598B82538B766853FA4E1E7 /* Release */,
+				B89698828EB99D9D9DB099DEB4C5D551 /* Debug */,
+				3EEDE7BD4D0BBDA7CEC717C17527BAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BF75192B883EAE58D8312959FB35A3 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDBMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2583F977028D381418CC76D32336119 /* Debug */,
+				3052A93531356DDE2CB7798CB1DDF624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1584,20 +1586,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA22C85E7B21514375273FF22F178D4A /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Tests" */ = {
+		BDB5E5399A3CDD91C7CA24410B589E55 /* Build configuration list for PBXNativeTarget "PoporFMDB-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2843BA9CE6E34AA557B315354D2E0AF /* Debug */,
-				12BAD3CCEACEB0E0EC2380F36D5B8171 /* Release */,
+				9B05497A3C1FEF87E8C5E0528CEF5A19 /* Debug */,
+				C15AA3496178F43726E8D15249E38AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5BB4AFE841C84149A93BE69755A7242 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDBMac" */ = {
+		E06029F69D93D676DE149F976748FB87 /* Build configuration list for PBXNativeTarget "Pods-PoporFMDB_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3CE85C22D4E1226ADDCB883B285495BF /* Debug */,
-				A0ACEC791EBAFAA8B2B1D6B32B1841B6 /* Release */,
+				5C3A8B3A737ACC6E0F165C8062EA81B6 /* Debug */,
+				0F24327BD089A07ACCF1690B9BFDF5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

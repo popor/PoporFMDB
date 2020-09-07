@@ -43,6 +43,10 @@ addPlistKey 增加检查 key 是否重复
 
 DELETE 和 UPDATE 的 set 和 where 允许传递数组.
 
+1.09
+sql 语句 where key 增加了适应nsarray 功能. 但是要取消排序功能, 不知道为啥失效了.
+修复对CGFloat参数的支持.
+
 ## Author
 
 wangkq, 908891024@qq.com

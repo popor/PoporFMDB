@@ -50,6 +50,9 @@ sql 语句 where key 增加了适应nsarray 功能. 但是要取消排序功能,
 1.10
 删除增加了 like 和 =
 
+1.11
+更新增加了 like 和 =,  查询更正了like和=逻辑
+
 ## Author
 
 wangkq, 908891024@qq.com

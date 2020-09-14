@@ -38,20 +38,34 @@
  */
 + (BOOL)deleteTable:(NSString *)tableName where:(PoporFMDB_T)whereKey equalSymbol:(NSString *)equalSymbol value:(id)whereValue;
 
-// MARK: update
+#pragma mark - 更新
 /**
  setKey 是数组的话, setValue必须是数组; setKey是NSString的话,setValuebi不能是数组.  SQL value本身不支持数组.
  同样针对于whereKey和whereValue.
  */
+// =
 + (BOOL)updateEntity:(id)entity           set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey equal:(id)whereValue;
 + (BOOL)updateClass:(Class)class          set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey equal:(id)whereValue;
 + (BOOL)updateTable:(NSString *)tableName set:(id)setKey          equal:(id)setValue where:(id)whereKey          equal:(id)whereValue;
 
+// like
++ (BOOL)updateEntity:(id)entity           set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey like:(id)whereValue;
++ (BOOL)updateClass:(Class)class          set:(PoporFMDB_T)setKey equal:(id)setValue where:(PoporFMDB_T)whereKey like:(id)whereValue;
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey          equal:(id)setValue where:(id)whereKey          like:(id)whereValue;
+
+// = like
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey equal:(id)setValue where:(id)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue;
+
+#pragma mark - 查询
 // 升降序功能失效了, 否则会出错.
 + (NSMutableArray *)arrayClass:(Class)class;
-+ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equal:(id)whereValue;
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equal:(id)whereValue; // =
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey like:(id)whereValue;  // like
 
-+ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey like:(id)whereValue;
+/**
+ equalSymbol: = 或者 like
+ */
++ (NSMutableArray *)arrayClass:(Class)class where:(id)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue;
 
 #pragma mark - 模仿plist数据
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'PoporFMDB'
-    s.version          = '1.10'
+    s.version          = '1.11'
     s.summary          = 'Init FMDB table; update db table column; simple sql tool;'
     
     # This description is used to generate tags and improve search results.

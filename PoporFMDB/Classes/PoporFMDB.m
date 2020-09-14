@@ -22,7 +22,7 @@
         for (Class class in tableArray) {
             [classDic setObject:class forKey:NSStringFromClass(class)];
         }
-
+        
         tool.classDic = classDic;
         
         [tool updateDBStruct];
@@ -150,7 +150,8 @@
     return success;
 }
 
-// MARK: update
+#pragma mark - 更新
+// =
 + (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
     if (!entity) {
         NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
@@ -165,10 +166,31 @@
     return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue];
 }
 
-/**
- where 仅支持 and 语法
- */
 + (BOOL)updateTable:(NSString *)tableName set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey equalSymbol:@"=" equal:whereValue];
+}
+
+// like
++ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey like:(id)whereValue {
+    if (!entity) {
+        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
+        return NO;
+    }
+    NSString * tableName  = NSStringFromClass([entity class]);
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey like:whereValue];
+}
+
++ (BOOL)updateClass:(Class)class set:(id)setKey equal:(id)setValue where:(id)whereKey like:(id)whereValue {
+    NSString * tableName  = NSStringFromClass(class);
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey like:whereValue];
+}
+
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey equal:(id)setValue where:(id)whereKey like:(id)whereValue {
+    return [self updateTable:tableName set:setKey equal:setValue where:whereKey equalSymbol:@"like" equal:whereValue];
+}
+
+// = like
++ (BOOL)updateTable:(NSString *)tableName set:(id)setKey equal:(id)setValue where:(id)whereKey equalSymbol:(NSString *)equalSymbol equal:(id)whereValue {
     BOOL success = NO;
     
     NSArray * setKeyArray;
@@ -234,9 +256,9 @@
         [sql appendString:@"where "];
         for (int i=0; i<whereKeyArray.count; i++) {
             if (i == 0) {
-                [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
+                [sql appendFormat:@"%@ %@ ? ", whereKeyArray[i], equalSymbol];
             } else {
-                [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+                [sql appendFormat:@"AND %@ %@ ? ", whereKeyArray[i], equalSymbol];
             }
         }
     }
@@ -256,6 +278,7 @@
     return success;
 }
 
+#pragma mark - 查询
 + (NSMutableArray *)arrayClass:(Class)class {
     return [self arrayClass:class where:nil equal:nil];
 }
@@ -296,9 +319,9 @@
             [futureSQL appendString:@"where "];
             for (int i=0; i<whereKeyArray.count; i++) {
                 if (i == 0) {
-                    [futureSQL appendFormat:@"%@ = ? ", whereKeyArray[i]];
+                    [futureSQL appendFormat:@"%@ %@ ? ", whereKeyArray[i], equalSymbol];
                 } else {
-                    [futureSQL appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+                    [futureSQL appendFormat:@"AND %@ %@ ? ", whereKeyArray[i], equalSymbol];
                 }
             }
             
@@ -359,44 +382,3 @@
 }
 
 @end
-
-// 移除的函数
-//+ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey {
-//    return [self updateEntity:entity set:setKey equal:setValue where:whereKey equal:nil];
-//}
-
-//+ (BOOL)updateEntity:(id)entity set:(id)setKey equal:(id)setValue where:(id)whereKey equal:(id)whereValue {
-//    if (!entity) {
-//        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
-//        return NO;
-//    }
-//    NSString * tableName  = NSStringFromClass([entity class]);
-//
-//    if ((whereKey && whereValue) || (!whereKey && !whereValue)) {
-//        return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue];
-//    } else {
-//        if (!whereKey) {
-//            NSLog(@"❌❌❌ PoporFMDB Error : whereKey is nil, whereValue not nil.");
-//            return NO;
-//        } else {
-//            NSArray * whereKey_edit;
-//            if ([whereKey isKindOfClass:[NSArray class]]) {
-//                whereKey_edit = (NSArray *)whereKey;
-//            } else {
-//                whereKey_edit = @[whereKey];
-//            }
-//
-//            NSMutableArray * whereValue_edit = [NSMutableArray new];
-//            for (NSString * whereKey in whereKey_edit) {
-//                NSObject * ob = [entity valueForKey:whereKey];
-//                if (ob) {
-//                    [whereValue_edit addObject:ob];
-//                } else {
-//                    NSLog(@"❌❌❌ PoporFMDB Error : create whereValueArray with nil object");
-//                    return NO;
-//                }
-//            }
-//            return [self updateTable:tableName set:setKey equal:setValue where:whereKey equal:whereValue_edit];
-//        }
-//    }
-//}

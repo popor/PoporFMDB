@@ -66,19 +66,46 @@
     }
     
     NSString * tableName  = NSStringFromClass([entity class]);
-    success = [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
-    return success;
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"=" value:whereValue];
 }
 
 + (BOOL)deleteClass:(Class)class where:(id)whereKey equal:(id)whereValue {
     NSString * tableName  = NSStringFromClass(class);
-    return [PoporFMDB deleteTable:tableName where:whereKey equal:whereValue];
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"=" value:whereValue];
 }
 
 + (BOOL)deleteTable:(NSString *)tableName where:(NSString *)whereKey equal:(id)whereValue {
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"=" value:whereValue];
+}
+
++ (BOOL)deleteEntity:(id)entity           where:(id)whereKey like:(id)whereValue {
+    BOOL success = NO;
+    if (!entity) {
+        NSLog(@"❌❌❌ PoporFMDB Error : entity is nil");
+        return success;
+    }
+    
+    NSString * tableName  = NSStringFromClass([entity class]);
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"like" value:whereValue];
+}
+
++ (BOOL)deleteClass:(Class)class          where:(id)whereKey like:(id)whereValue {
+    NSString * tableName  = NSStringFromClass(class);
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"like" value:whereValue];
+}
+
++ (BOOL)deleteTable:(NSString *)tableName where:(id)whereKey like:(id)whereValue {
+    return [PoporFMDB deleteTable:tableName where:whereKey equalSymbol:@"like" value:whereValue];
+}
+
++ (BOOL)deleteTable:(NSString *)tableName where:(id)whereKey equalSymbol:(NSString *)equalSymbol value:(id)whereValue {
     BOOL success = NO;
     if (!tableName) {
         NSLog(@"❌❌❌ PoporFMDB Error : tableName is nil");
+        return success;
+    }
+    if (!equalSymbol) {
+        NSLog(@"❌❌❌ PoporFMDB Error : equalSymbol is nil");
         return success;
     }
     
@@ -98,15 +125,15 @@
     
     NSMutableString * sql = [NSMutableString new];
     [sql appendFormat:@"DELETE FROM %@ ", tableName];
-        
+    
     // where 循环
     if (whereKeyArray.count > 0) {
         [sql appendString:@"where "];
         for (int i=0; i<whereKeyArray.count; i++) {
             if (i == 0) {
-                [sql appendFormat:@"%@ = ? ", whereKeyArray[i]];
+                [sql appendFormat:@"%@ %@ ? ", whereKeyArray[i], equalSymbol];
             } else {
-                [sql appendFormat:@"AND %@ = ? ", whereKeyArray[i]];
+                [sql appendFormat:@"AND %@ %@ ? ", whereKeyArray[i], equalSymbol];
             }
         }
     }

@@ -29,6 +29,15 @@
 + (BOOL)deleteClass:(Class)class          where:(PoporFMDB_T)whereKey equal:(id)whereValue;
 + (BOOL)deleteTable:(NSString *)tableName where:(PoporFMDB_T)whereKey equal:(id)whereValue;
 
++ (BOOL)deleteEntity:(id)entity           where:(PoporFMDB_T)whereKey like:(id)whereValue;
++ (BOOL)deleteClass:(Class)class          where:(PoporFMDB_T)whereKey like:(id)whereValue;
++ (BOOL)deleteTable:(NSString *)tableName where:(PoporFMDB_T)whereKey like:(id)whereValue;
+
+/**
+ equalSymbol: = 或者 like
+ */
++ (BOOL)deleteTable:(NSString *)tableName where:(PoporFMDB_T)whereKey equalSymbol:(NSString *)equalSymbol value:(id)whereValue;
+
 // MARK: update
 /**
  setKey 是数组的话, setValue必须是数组; setKey是NSString的话,setValuebi不能是数组.  SQL value本身不支持数组.
